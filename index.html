@@ -1,31 +1,2699 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" style="background:#0E0A0B">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
-  <title>Verre Noir</title>
-  <meta name="description" content="Dégustation de vin à l'aveugle entre amis">
-  <meta name="theme-color" content="#0E0A0B">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Verre Noir">
-  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="icons/icon-192.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>Verre Noir</title>
+<meta name="theme-color" content="#0E0A0B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Verre Noir">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAK1UlEQVR4nO1a329cRxX+ztzZvd61ndixW8tJMDHKj6oKTdRUImlpKyEeAKG+UHjoC1IFEuIhfwJIqH9EK8pT30B9aahUHnhBKC0F9UfaKBVNlbbYTtIkduK1vd71nTk8zJ2Zc2fvOq6DFCFlcr17d+7M3O875ztnzt0NnX34JP6fm7rfAO61PSBwv9sDAve7PSBwv9sDAve77Z4A0f8MxL0stVsChKJv2fLu7+wbWy76FrvloBgIx04bwRY8uX80bzfukQNbztuNyf2jtuCvy8FhVoNdd+FDYAPdVC+89NTRM7O9bkFql9YjRb1ucfTM7AsvPaWbig224cBD4G0noWFkmLkxovN2Y/Wrrtot+vL2ila/6ubtRmNEM6dG24k6NFeuDg2nMIgAIip6ZnOtnzXU11Fe/bpZQ22u9YueIX/zuy7J4j3xAHPlqJvMIE3rd/qdm90Dj0wWhd11DiFCUdgDj0x2bnbX7/RJE3M9egYkMOkV7d6HYGBh+OoQQtZQpOieHQBSlDXUIAIOL9s2LUYnCJPl2PcTAGbeWO2rjCCssXNPsHhVGW2s9kMAbIO7tlcNC5Fh0cNgEJvC3vhydfbwhMqIOZ1y16Mcz1AZzR6euPHlqiksKMijBsYwXyhmZmbLbN3ZgPRrlmCojG5f28jbDZ2rXW8FbFnnWd5u3L62oTKSGOuzXwgGgVknI9wfOz0QkrwUXE8ZLS+t7X2o1Rpvbq5tKV3ePg2VWtzuhWALbo039j7UWl5ao4yGONy91WcUANqCk7tSPZnIhAEi6vVMY0TvmW6t3+5ljTKLD8kiNY2ITGH2TLcaI7rXM0SVfMB1qB2S5AaKAVvNnhacihVgoTFrudHSC5duLS+tzR2fLgqbght+yFYUdu749PLS2sKlW42WZsuVGw2EFuqgxlrIVuReT4bLnYIB7vfM0uWVY6dnDbMBl69gAy6GH+UYP+XY6dmlyyv9ngEFA6W4k60pOcqdOIobFD5SXAqyo/Qj4eLfF587+/j+mfH+WqG0GrL11TUiW9iJmfGpA2PnX/83EaS9IaQo+SCex09aup8ABgutJ5tsWJQUs871V5+v5mONJ5+cv/KXpeZIg82OAyCjfmdr/sn9+Vjj+uerOtfO9glugV6mwMqJignUJyYb5VSqyAlJaIwts87pxkLnk3evTh4ZLwpr/cgdHkVhJ4+Mf/Lu1RsLnSwny6lCrAAQeixgZdJnVraCkh04ScZPTtdynQuXlmdPTY3sa/LWjgt6Am/xyL7m7KmphUvLg2uKSIX1YR1QSbNasBJWgSlZRj6SrhVMXC7SefbZe9ebk82pY3u3Nnf6YECKtjaLqWN7m5PNz967rvPMWK4xUOW+PIBTEDD1XkaYyeCBFWGYszy7+sWdi+cXjz73DdXc6ZbMllVTHX3uGxfPL1794k6WZ5ajeGx0fgqmYtnyI5RlWIZh1E1z3CqTLUTpAWbCW69emD4xMffMTL9TUHYXJ1BG/U4x98zM9ImJt/5wgaksDaKro1zT+wZIhtkyG4ZhqwyshY1+YA58TCRaCeVgBmO5MZJd+8/q229cfvT5Q40xzWbbSCCw4caYfvT5Q2+/cfnal6t6pNRPYu9UFB6xdYaOqoGTEAQ/GFgxzUrPiHVLJoW1zbY+98oHHbN18sXD3ZW+yoY+pqpMdVf6J1883DFb5175oNnWxtpSn6mx4QA40MbfOmLze6IyDMvWMJeHN4ARCxlEt6TWYoZGr2/Ovfz+wacfnnt2prvSU1olOwgRlFbdld7cszMHn3743Mvv9/oGmryfo2kMC8MNgC6xCclpA0sg+P2LuKztfAHHvoZhAhFA7PCw27QJZA3nY/rCO4tvvvbRD88eLzaKq/+61RzVWZ4FAqZn+uv92Semnjj7yJuvfXThncXRPc3CWIAZ5Oq2sAfHssVXCVz+iz3hlX6071tU2sipFIFAPKfyRA0ZCSDLaKPTP3Jy5pe/eWblwu2P/3jlzufrbjNnYO+h0eM/m598bOL3v/vbpx9cb4032bAvsQJKibgshTmlBIiPANMPJuchYZW1NQUCEq7DS/4qxAAAWaY2VntHTsz8+Bcn5uf3da6sX7u4Yi3PfnvfnvnRK1eW//zqh59+eL29J7fGcsWQLM3PLM6RGD5W7a6Tvj95KIGSGN5jrVDyTCpOAJAptdndYsPHv3Pg0dP7HztzsD3afPevVz5+e/HjfyxSRiOthrHWlV0VqfCgE6KLxLMmC+YMgL438c0SYK14AmKq4yA4I8hMEZj7PbPcWf/5r84cfWzmt79+Y3yslbcygKz1FmSBvl5CATcj9UPUlTZgiNxNUUXVZxFG1fBuAEe/+V3YGgbQbOt2P89ypTS1R/NmWxeFDVZHnazdia3qB1FIfgpX/KCNr0/JAwKLc4ooCQwQscDtr/oV2BMEW7vlkjzQN1aXp7EwrtNPRVTu3JbBXHFOlQBbRDTR9qganih6A8ItcnCJvbyTKspv0cpdJchY8hiinzKUU0UlUzh6oDRtVAXVYI1OIH8C0emtSl4jxrpUw4atcQ+84pltMCJleqnXz4CjANZF3KqEspni5lVRkdOH8Ia3epKO4HdQrngANQSE6CHQu/G1IQExQDvLBNNGkw9XEaThOU6B0BIE6ALWREWk4qnii/oB2A656nkwhyAurcgijZJQlHCLUFEFuuv34AHmwn/H4Kos/8URIoAkKEV6qQ2JRHLuqiRQVj6owC0vyJQK7xZU0lGAV8rP+Ao8FGoJ+qBpDAENwD/sp+gDf22YK6ogWSb4Tm97Iqrg9iMV4uMkOQQEVs4TzAT2tglp1HLQRgTtnVfHpE4/8F8txnuDmVIy5BM8pOIphC/RRrdvCqsyFRJRlqkV0y2MBXC7t2nA1nrDE6yxmVatVsNyBF2nH2F1wUpmM21FDMjSgEBgVkITcXfzGgOgiPqbW48/fnB6qn1zeaORKbe0UtTtbpHCteud756ebzbLb34I2DJ2el/75q2N995faObacgXWMFeg4qv4UXu7OCkHORHATgwhb7p+IhEnIBA2C3PqiYM//cmJ1dWeCs/EDKWou7llCnvq1MESO0CAMbxnT/6n1z88/88v9Eh4ovdAWRq+9tnAXfDunBubFLWAyIZU8YZQPAky3hSWx8fyqEOUoaAUgcgaW0aG2Ac6az1S/s4sA7QCNwjJs0kcQjqMFviYQFwGt0PJ5DONzFRgT0bhdmcTMY9u1xycLKNQbwLMoEGJs7d0+CgvuXcZA3DPT24cBSH5uETMQpFMYE46BS/PGWkzKTIbzyOrGtBJLvY7sRcoI55U6wsARBxSViQDn74GHeDtUmleSlSpTHnA9jXQubICg8PPrFyaufSG25FleezTP6TGAjH/xwTYbUUUIHA5MPFDov6EQyhHolGkhIiD7cMivkJIXhEjoXxlserdCUSsiaYHaVR+qhETyx4tVmRxFqua8OOD0wwHLwnPSNDOCcGBtdDrmCQcUmMnT0KSQJB92UXVYeFnDvabdLlL+7uGBIDoH0BslgO4ecBnw0DXLFVRVIwBUVAMSIBlPyO6pYQuAqYWdC2RgKBOIaijF/slMo3qoCASCNvLu4qE66dUYAiug5MrLhoEXY8bQ/TjmvhfOkTJ6iQibOAX7AqZAbRD3TEIrlYhEvTgStJiIohdseWNLsls65YhSMt5Q4cNi2mpk9oxyc/f/wUX2wnVrs7TsQAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0E0A0B; --card: rgba(255, 244, 236, .045); --card2: rgba(255, 244, 236, .075);
+  --line: rgba(255, 236, 220, .10); --line2: rgba(255, 236, 220, .18);
+  --text: #F4ECE6; --muted: #A8989A; --dim: #6E6062;
+  --gold: #DDB878; --gold2: #B8904A; --wine: #9E2346; --wine2: #5C0F26;
+  --ok: #8CC79B; --partial: #E3B85E; --ko: #E07070;
+  --r: 20px; --r-sm: 14px;
+  --serif: 'Cormorant Garamond', 'Times New Roman', serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --sat: env(safe-area-inset-top); --sab: env(safe-area-inset-bottom);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html { background: var(--bg); }
+body { margin: 0; min-height: 100dvh; color: var(--text); font: 400 16px/1.45 var(--sans); -webkit-font-smoothing: antialiased; overscroll-behavior-y: none;
+  background: radial-gradient(900px 520px at 50% -12%, rgba(158, 35, 70, .42), transparent 62%), radial-gradient(700px 500px at 110% 105%, rgba(221, 184, 120, .07), transparent 60%), var(--bg); background-attachment: fixed; }
+body::before { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: .06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+body.noscroll { overflow: hidden; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+input, textarea, select { font: inherit; color: inherit; }
+h1, h2, h3, h4 { margin: 0; font-weight: 600; }
+p { margin: 0; }
+small { font-size: .78em; }
+.muted { color: var(--muted); } .small { font-size: 13px; } .center { text-align: center; } .mt { margin-top: 16px; } .mt-s { margin-top: 8px; } .pad { padding: 24px; }
+.dim { opacity: .4; pointer-events: none; }
+#app { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; }
+.screen { min-height: 100dvh; padding: calc(var(--sat) + 8px) 18px calc(var(--sab) + 120px); animation: enter .38s cubic-bezier(.2, .8, .2, 1); }
+.screen.center-screen { padding-bottom: calc(var(--sab) + 32px); display: flex; flex-direction: column; justify-content: center; }
+@keyframes enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+.topbar { display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; position: sticky; top: 0; z-index: 5; margin: calc(-8px - var(--sat)) -18px 8px; padding: var(--sat) 12px 0; height: calc(52px + var(--sat));
+  background: linear-gradient(to bottom, rgba(14, 10, 11, .92), rgba(14, 10, 11, .75)); backdrop-filter: blur(18px) saturate(1.4); -webkit-backdrop-filter: blur(18px) saturate(1.4); }
+.topbar h1 { font: 600 17px/1 var(--sans); text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.icon-btn { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; font-size: 22px; color: var(--text); transition: background .2s, transform .15s; }
+.icon-btn:active { background: var(--card2); transform: scale(.92); }
+.topbar [data-back] { font-size: 34px; line-height: 1; padding-bottom: 4px; color: var(--gold); }
+.ghost-spacer { visibility: hidden; }
+
+.brand { font: 600 52px/1 var(--serif); text-align: center; background: linear-gradient(180deg, #FBEBD0, var(--gold) 55%, var(--gold2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tagline { text-align: center; color: var(--muted); letter-spacing: .32em; text-transform: uppercase; font-size: 11px; margin-top: 10px; }
+.title { font: 600 34px/1.05 var(--serif); }
+.eyebrow { display: block; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+.h-sm { font: 600 13px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+.h-xs { font: 600 11px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px; }
+.lead { color: var(--muted); font-size: 15px; margin: 4px 2px 16px; }
+.lbl { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 16px 0 8px; font-weight: 500; }
+.lbl:first-child { margin-top: 0; }
+
+.card { display: block; width: 100%; text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 18px; margin-bottom: 14px; box-shadow: 0 1px 0 rgba(255, 255, 255, .04) inset, 0 12px 30px -18px rgba(0, 0, 0, .6); }
+.q-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+.q-head h3 { font: 600 22px/1.1 var(--serif); }
+.hint { font-size: 12px; color: var(--muted); text-align: right; }
+.coef { color: var(--gold); font-weight: 600; margin-left: 6px; }
+.count { font-size: 12px; color: var(--muted); padding: 4px 10px; border: 1px solid var(--line); border-radius: 99px; white-space: nowrap; }
+.count.ok { color: var(--ok); border-color: rgba(140, 199, 155, .35); }
+.row-between { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.row-between b { display: block; font-weight: 600; } .row-between small { color: var(--muted); }
+.row-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.row-btns.center { justify-content: center; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.stack { display: grid; gap: 12px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 50px; padding: 0 22px; border-radius: 16px; font-weight: 600; font-size: 16px; transition: transform .15s cubic-bezier(.2, .8, .2, 1), opacity .2s; user-select: none; -webkit-user-select: none; }
+.btn:active { transform: scale(.97); }
+.btn:disabled { opacity: .4; pointer-events: none; }
+.btn.block { display: flex; width: 100%; }
+.btn.lg { height: 58px; font-size: 17px; border-radius: 18px; }
+.btn.sm { height: 38px; padding: 0 14px; font-size: 14px; border-radius: 12px; }
+.btn.primary { color: #1E1012; background: linear-gradient(135deg, #F2D59B 0%, var(--gold) 45%, var(--gold2) 100%); box-shadow: 0 10px 28px -10px rgba(221, 184, 120, .55), 0 1px 0 rgba(255, 255, 255, .5) inset; }
+.btn.ghost { background: var(--card); border: 1px solid var(--line2); }
+.btn.danger { background: linear-gradient(135deg, #C0394F, #7A1428); color: #fff; }
+.btn.two { flex-direction: column; gap: 0; }
+.btn.two small { font-weight: 400; color: var(--muted); font-size: 12px; }
+.sticky-foot { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding: 14px 18px calc(var(--sab) + 14px); background: linear-gradient(to top, rgba(14, 10, 11, .98) 55%, rgba(14, 10, 11, 0)); max-width: 560px; margin: 0 auto; }
+.sticky-foot.two { display: grid; grid-template-columns: 1fr 2fr; gap: 10px; }
+.sticky-foot.two .btn:only-child { grid-column: 1 / -1; }
+
+.home { display: flex; flex-direction: column; gap: 22px; padding-top: 10px; }
+.hero { display: flex; flex-direction: column; align-items: center; margin-bottom: 8px; }
+.hero .glass { width: 92px; height: 150px; margin-bottom: 14px; filter: drop-shadow(0 18px 30px rgba(158, 35, 70, .45)); }
+.resume { display: flex; align-items: center; gap: 14px; margin: 0; border-color: rgba(221, 184, 120, .35); background: linear-gradient(135deg, rgba(221, 184, 120, .12), rgba(158, 35, 70, .12)); }
+.resume small { display: block; color: var(--gold); letter-spacing: .14em; text-transform: uppercase; font-size: 10px; }
+.resume div { flex: 1; } .resume i { font-style: normal; font-size: 24px; color: var(--gold); }
+.pulse { width: 10px; height: 10px; border-radius: 50%; background: var(--ok); animation: pulse 1.8s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(140, 199, 155, .6); } 70% { box-shadow: 0 0 0 12px rgba(140, 199, 155, 0); } 100% { box-shadow: 0 0 0 0 rgba(140, 199, 155, 0); } }
+.tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.tile { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 16px; border-radius: var(--r); background: var(--card); border: 1px solid var(--line); font-weight: 500; font-size: 14px; transition: transform .15s; }
+.tile:active { transform: scale(.97); }
+.tile span { font-size: 22px; }
+.profile-line { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--muted); font-size: 14px; padding: 6px; }
+.profile-line b { color: var(--text); } .profile-line i { font-style: normal; color: var(--gold); }
+.av { font-size: 20px; line-height: 1; }
+.install { position: relative; padding-right: 48px; margin: 0; border-color: rgba(221, 184, 120, .25); }
+.install p { color: var(--muted); font-size: 14px; margin-top: 4px; }
+.install .icon-btn { position: absolute; top: 8px; right: 8px; font-size: 16px; }
+.ios-share { display: inline-block; color: var(--gold); transform: rotate(-90deg); }
+.demo { font-size: 12px; color: var(--partial); text-align: center; padding: 10px 14px; border: 1px dashed rgba(227, 184, 94, .4); border-radius: 12px; }
+
+.glass .wine-wave { animation: wave 3s linear infinite; }
+.glass.pour .wine-level { animation: pour 2.4s cubic-bezier(.5, 0, .2, 1) both; }
+.glass.slow .wine-level { animation-duration: 4.5s; }
+@keyframes pour { from { transform: translateY(48px); } to { transform: translateY(0); } }
+@keyframes wave { from { transform: translateX(0); } to { transform: translateX(-60px); } }
+.loading { min-height: 70dvh; display: grid; place-items: center; }
+.loading.small { min-height: 40dvh; }
+.loading .glass { width: 64px; height: 106px; animation: float 2.4s ease-in-out infinite; }
+@keyframes float { 50% { transform: translateY(-6px); } }
+
+.inp, .code-input, textarea { width: 100%; background: rgba(0, 0, 0, .28); border: 1px solid var(--line2); border-radius: var(--r-sm); padding: 14px 16px; font-size: 16px; outline: none; transition: border-color .2s, box-shadow .2s; }
+.inp:focus, .code-input:focus, textarea:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(221, 184, 120, .15); }
+.inp::placeholder, textarea::placeholder, .code-input::placeholder { color: var(--dim); }
+.inp:disabled { opacity: .4; }
+textarea { resize: vertical; min-height: 70px; }
+.code-input { text-align: center; font: 600 40px/1 var(--serif); letter-spacing: .5em; padding: 16px 0 16px .5em; text-transform: uppercase; }
+.field { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 52px; padding: 12px 16px; border-radius: var(--r-sm); background: rgba(0, 0, 0, .28); border: 1px solid var(--line2); color: var(--dim); text-align: left; }
+.field.filled { color: var(--text); border-color: rgba(221, 184, 120, .45); }
+.field i { font-style: normal; color: var(--gold); font-size: 20px; }
+.field.add { color: var(--gold); justify-content: center; border-style: dashed; margin-top: 10px; }
+.check { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); margin-top: 10px; }
+.check input { width: 20px; height: 20px; accent-color: var(--gold); }
+.tag { font-size: 10px; letter-spacing: .1em; padding: 3px 8px; border-radius: 99px; background: rgba(221, 184, 120, .15); color: var(--gold); margin-left: 6px; vertical-align: 2px; }
+
+.seg { display: flex; padding: 4px; gap: 4px; background: rgba(0, 0, 0, .3); border: 1px solid var(--line); border-radius: 14px; }
+.seg button { flex: 1; min-height: 40px; padding: 6px 8px; border-radius: 10px; font-size: 14px; font-weight: 500; color: var(--muted); transition: all .2s; white-space: nowrap; }
+.seg button.on { background: linear-gradient(135deg, rgba(221, 184, 120, .28), rgba(221, 184, 120, .12)); color: var(--text); box-shadow: 0 0 0 1px rgba(221, 184, 120, .4) inset; }
+.seg.mini { padding: 3px; border-radius: 10px; } .seg.mini button { min-height: 30px; font-size: 12px; padding: 4px 10px; border-radius: 8px; }
+.seg.colors { flex-wrap: wrap; } .seg.colors button { flex: 1 1 30%; font-size: 13px; display: flex; align-items: center; justify-content: center; gap: 6px; }
+.c-R { --c: #9E2346; } .c-B { --c: #E8D49A; } .c-P { --c: #E99BA6; } .c-E { --c: #F3E4B5; } .c-D { --c: #D7A03B; }
+.cdot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: var(--c); box-shadow: 0 0 8px var(--c); }
+
+.switch { width: 52px; height: 32px; border-radius: 99px; background: rgba(255, 255, 255, .12); position: relative; flex: none; transition: background .25s; }
+.switch span { position: absolute; top: 3px; left: 3px; width: 26px; height: 26px; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, .35); transition: transform .25s cubic-bezier(.3, 1.4, .5, 1); }
+.switch.on { background: linear-gradient(135deg, var(--gold), var(--gold2)); }
+.switch.on span { transform: translateX(20px); }
+
+.stepper { display: flex; align-items: center; gap: 4px; background: rgba(0, 0, 0, .3); border: 1px solid var(--line); border-radius: 14px; padding: 4px; }
+.stepper button { width: 40px; height: 40px; border-radius: 10px; font-size: 22px; color: var(--gold); }
+.stepper button:active { background: var(--card2); }
+.stepper output { min-width: 34px; text-align: center; font: 600 22px/1 var(--serif); }
+.stepper.big { justify-content: space-between; padding: 6px; }
+.stepper.big button { width: 64px; height: 64px; font-size: 30px; background: var(--card); }
+.stepper.big output { font-size: 48px; flex: 1; }
+
+.crit-list { margin-top: 14px; border-top: 1px solid var(--line); }
+.crit { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.crit-n { flex: 1; font-weight: 500; }
+.crit.off .crit-n, .crit.off .seg { opacity: .35; }
+.crit.off .seg { pointer-events: none; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips:empty { display: none; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 99px; background: var(--card2); border: 1px solid var(--line); font-size: 14px; }
+.chip.on { background: rgba(221, 184, 120, .14); border-color: rgba(221, 184, 120, .45); }
+.chip.lure { background: rgba(158, 35, 70, .18); border-color: rgba(158, 35, 70, .5); }
+.chip.ghost { border-style: dashed; color: var(--gold); background: transparent; }
+.chip button { color: var(--muted); font-size: 12px; padding: 2px; }
+.chips.sugg { margin-top: 10px; align-items: center; } .chips.sugg small { color: var(--muted); width: 100%; }
+
+.wine-head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; margin: 8px 0 18px; }
+.timer { font: 600 22px/1 var(--sans); font-variant-numeric: tabular-nums; padding: 8px 16px; border-radius: 99px; background: var(--card2); border: 1px solid var(--line2); margin-top: 6px; }
+.timer.urgent { color: #fff; background: linear-gradient(135deg, #C0394F, #7A1428); border-color: transparent; animation: beat 1s infinite; }
+@keyframes beat { 50% { transform: scale(1.06); } }
+.opts { display: grid; gap: 10px; }
+.opts.cols2 { grid-template-columns: 1fr 1fr; }
+.opts.cols3 { grid-template-columns: 1fr 1fr 1fr; }
+.opt { position: relative; min-height: 56px; padding: 12px 14px; border-radius: 16px; background: rgba(0, 0, 0, .25); border: 1px solid var(--line2); text-align: center; font-weight: 500; font-size: 15px; line-height: 1.2; display: flex; align-items: center; justify-content: center; transition: transform .15s cubic-bezier(.2, .8, .2, 1), background .2s, border-color .2s, box-shadow .2s; }
+.opt:active { transform: scale(.96); }
+.opt .tick { position: absolute; top: 6px; right: 8px; font-style: normal; font-size: 12px; color: #1E1012; background: var(--gold); width: 18px; height: 18px; border-radius: 50%; display: grid; place-items: center; transform: scale(0); transition: transform .25s cubic-bezier(.3, 1.6, .5, 1); }
+.opt.on { background: linear-gradient(135deg, rgba(221, 184, 120, .24), rgba(158, 35, 70, .22)); border-color: var(--gold); box-shadow: 0 8px 22px -12px rgba(221, 184, 120, .6); }
+.opt.on .tick { transform: scale(1); }
+.answer-form.locked { pointer-events: none; opacity: .6; }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 36px; background: transparent; margin: 6px 0 0; }
+input[type=range]::-webkit-slider-runnable-track { height: 6px; border-radius: 99px; background: linear-gradient(90deg, var(--wine), var(--gold)); }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 30px; height: 30px; margin-top: -12px; border-radius: 50%; background: #FBF3EA; border: 3px solid var(--gold); box-shadow: 0 4px 12px rgba(0, 0, 0, .5); }
+input[type=range].untouched::-webkit-slider-runnable-track { background: rgba(255, 255, 255, .14); }
+input[type=range].untouched::-webkit-slider-thumb { border-color: var(--muted); }
+input[type=range]::-moz-range-track { height: 6px; border-radius: 99px; background: linear-gradient(90deg, var(--wine), var(--gold)); }
+input[type=range]::-moz-range-thumb { width: 26px; height: 26px; border-radius: 50%; background: #FBF3EA; border: 3px solid var(--gold); }
+.range-val { font: 600 30px/1 var(--serif); text-align: center; }
+.range-scale { display: flex; justify-content: space-between; font-size: 11px; color: var(--dim); }
+.plaisir { display: flex; align-items: baseline; justify-content: center; gap: 4px; }
+.plaisir b { font: 600 48px/1 var(--serif); color: var(--gold); }
+.plaisir span { color: var(--muted); }
+.plaisir em { margin-left: 12px; font-style: italic; font-family: var(--serif); font-size: 20px; color: var(--muted); }
+.chipsel { display: flex; flex-wrap: wrap; gap: 8px; }
+.chipsel button { padding: 8px 12px; border-radius: 99px; border: 1px solid var(--line2); font-size: 13px; color: var(--muted); transition: all .2s; }
+.chipsel button.on { color: var(--text); border-color: var(--gold); background: rgba(221, 184, 120, .14); }
+.dots { display: flex; gap: 10px; }
+.dots button { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line2); transition: all .2s; }
+.dots button.on { background: radial-gradient(circle at 35% 35%, #C33A5E, var(--wine2)); border-color: var(--wine); }
+
+.sheet-wrap { position: fixed; inset: 0; z-index: 100; }
+.sheet-bg { position: absolute; inset: 0; background: rgba(0, 0, 0, .55); opacity: 0; transition: opacity .3s; backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px); }
+.sheet { position: absolute; left: 0; right: 0; bottom: 0; max-width: 560px; margin: 0 auto; max-height: 88dvh; display: flex; flex-direction: column; background: linear-gradient(180deg, #221619, #150E10); border: 1px solid var(--line2); border-bottom: 0; border-radius: 26px 26px 0 0; padding-bottom: var(--sab); transform: translateY(100%); transition: transform .36s cubic-bezier(.2, .9, .2, 1); box-shadow: 0 -20px 50px rgba(0, 0, 0, .5); }
+.sheet.full { height: 88dvh; }
+.sheet-wrap.open .sheet { transform: none; } .sheet-wrap.open .sheet-bg { opacity: 1; }
+.sheet-grab { width: 40px; height: 5px; border-radius: 99px; background: rgba(255, 255, 255, .2); margin: 8px auto 0; }
+.sheet-head { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px 8px 20px; }
+.sheet-head h3 { font: 600 24px/1.1 var(--serif); }
+.sheet-head .icon-btn { font-size: 16px; color: var(--muted); }
+.sheet-body { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 4px 18px 18px; display: flex; flex-direction: column; }
+.sheet-foot { position: sticky; bottom: 0; padding-top: 12px; margin-top: auto; background: linear-gradient(to top, #150E10 70%, transparent); }
+.search { position: sticky; top: 0; z-index: 2; padding-bottom: 10px; background: #1D1316; }
+.search input { width: 100%; height: 46px; padding: 0 16px 0 40px; border-radius: 12px; background: rgba(0, 0, 0, .35) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23A8989A' stroke-width='2'%3E%3Ccircle cx='7' cy='7' r='5.5'/%3E%3Cpath d='m11 11 4 4'/%3E%3C/svg%3E") 14px center no-repeat; border: 1px solid var(--line2); font-size: 16px; outline: none; }
+.search input:focus { border-color: var(--gold); }
+.pick-list { display: flex; flex-direction: column; }
+.pick { display: flex; align-items: center; gap: 12px; padding: 13px 4px; border-bottom: 1px solid var(--line); text-align: left; }
+.pick-t { flex: 1; display: flex; flex-direction: column; }
+.pick-t small { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.pick .chk { color: var(--gold); opacity: 0; transform: scale(.5); transition: all .2s; }
+.pick.on .chk { opacity: 1; transform: none; }
+.pick.on .pick-t { color: var(--gold); }
+.pick.custom { color: var(--gold); font-style: italic; }
+.gdot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.gdot.r { background: #9E2346; } .gdot.b { background: #E8D49A; }
+.menu-list { display: flex; flex-direction: column; }
+.menu-list button { padding: 16px 4px; border-bottom: 1px solid var(--line); text-align: left; font-size: 16px; }
+.menu-list .danger { color: var(--ko); }
+.year-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.year-grid button { height: 48px; border-radius: 12px; border: 1px solid var(--line2); font-weight: 500; }
+.year-grid button[data-y="NM"] { grid-column: span 2; }
+.year-grid button.on { background: rgba(158, 35, 70, .3); border-color: var(--wine); }
+.avatars { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+.avatars button { aspect-ratio: 1; border-radius: 14px; font-size: 24px; background: rgba(0, 0, 0, .25); border: 1px solid var(--line); transition: all .2s; }
+.avatars button.on { border-color: var(--gold); background: rgba(221, 184, 120, .16); transform: scale(1.05); }
+.zoomed { width: 100%; border-radius: 16px; }
+
+.modal-wrap { position: fixed; inset: 0; z-index: 120; display: grid; place-items: center; padding: 24px; background: rgba(0, 0, 0, .6); opacity: 0; transition: opacity .25s; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.modal-wrap.open { opacity: 1; }
+.modal { width: 100%; max-width: 360px; background: #21161A; border: 1px solid var(--line2); border-radius: 22px; padding: 22px; transform: scale(.94); transition: transform .25s cubic-bezier(.3, 1.4, .5, 1); }
+.modal-wrap.open .modal { transform: none; }
+.modal p { font-size: 16px; margin-bottom: 18px; line-height: 1.5; }
+.modal-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.toast { position: fixed; left: 50%; top: calc(var(--sat) + 12px); z-index: 200; transform: translate(-50%, -30px); opacity: 0; width: max-content; max-width: 90vw; background: rgba(36, 24, 28, .96); border: 1px solid var(--line2); padding: 12px 18px; border-radius: 14px; font-size: 14px; font-weight: 500; box-shadow: 0 14px 30px rgba(0, 0, 0, .5); transition: all .35s cubic-bezier(.2, .9, .2, 1); }
+.toast.show { transform: translate(-50%, 0); opacity: 1; }
+.toast.err { border-color: rgba(224, 112, 112, .5); } .toast.ok { border-color: rgba(140, 199, 155, .5); }
+.confetti { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 150; }
+
+.wine-list { display: grid; gap: 10px; }
+.wine-item, .wd summary { display: flex; align-items: center; gap: 14px; width: 100%; padding: 14px 16px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); text-align: left; }
+.wine-item:active { transform: scale(.98); }
+.wine-item:disabled { opacity: .45; }
+.wi-n { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; flex: none; font: 600 20px/1 var(--serif); background: var(--c, #9E2346); color: #1E1012; box-shadow: 0 0 16px -4px var(--c, #9E2346); }
+.wi-t { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.wi-t b { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wi-t small { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wine-item i { font-style: normal; color: var(--muted); }
+.wine-item.ok i { color: var(--ok); }
+.photo-prev { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.photo-prev img { width: 80px; height: 100px; object-fit: cover; border-radius: 10px; border: 1px solid var(--line2); }
+.file-btn { cursor: pointer; }
+
+.code-card { text-align: center; }
+.code-card small { color: var(--muted); letter-spacing: .2em; text-transform: uppercase; font-size: 11px; }
+.big-code { display: flex; justify-content: center; gap: 10px; margin: 12px 0 18px; }
+.big-code span { width: 60px; height: 74px; display: grid; place-items: center; font: 600 46px/1 var(--serif); border-radius: 14px; color: var(--gold); background: linear-gradient(180deg, rgba(221, 184, 120, .12), rgba(0, 0, 0, .3)); border: 1px solid rgba(221, 184, 120, .35); }
+.qr { width: 170px; height: 170px; border-radius: 16px; padding: 10px; background: #F4ECE6; display: block; margin: 0 auto; }
+.players { display: flex; flex-wrap: wrap; gap: 8px; }
+.player { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px 8px 10px; border-radius: 99px; background: var(--card2); border: 1px solid var(--line); font-size: 14px; animation: pop .35s cubic-bezier(.3, 1.5, .5, 1); }
+.player i { font-style: normal; color: var(--dim); margin-left: 2px; }
+.player.done { border-color: rgba(140, 199, 155, .45); } .player.done i { color: var(--ok); }
+.player.me { border-color: var(--gold); }
+@keyframes pop { from { transform: scale(.6); opacity: 0; } }
+.waiting-dots::after { content: '…'; display: inline-block; animation: dots 1.4s steps(4) infinite; width: 1.2em; text-align: left; overflow: hidden; vertical-align: bottom; }
+@keyframes dots { 0% { width: 0; } 100% { width: 1.2em; } }
+.progress-card { display: grid; place-items: center; position: relative; padding: 24px; }
+.ring { width: 150px; height: 150px; transform: rotate(-90deg); }
+.ring circle { fill: none; stroke-width: 8; }
+.ring-bg { stroke: rgba(255, 255, 255, .08); }
+.ring-fg { stroke: var(--gold); stroke-linecap: round; transition: stroke-dashoffset .6s cubic-bezier(.2, .8, .2, 1); }
+.ring-txt { position: absolute; display: flex; flex-direction: column; align-items: center; }
+.ring-txt b { font: 600 44px/1 var(--serif); } .ring-txt b small { font-size: 22px; color: var(--muted); }
+.ring-txt span { font-size: 12px; color: var(--muted); }
+.sol-toggle { width: 100%; color: var(--muted); font-size: 14px; padding: 2px; }
+.sol-body { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); line-height: 1.6; }
+.host-res { display: flex; flex-direction: column; gap: 6px; }
+.hr { border-radius: 14px; background: rgba(0, 0, 0, .2); border: 1px solid var(--line); }
+.hr summary { display: flex; align-items: center; gap: 10px; padding: 10px 12px; list-style: none; cursor: pointer; }
+.hr summary::-webkit-details-marker, .wd summary::-webkit-details-marker { display: none; }
+.hr-n { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hr-icons { display: flex; gap: 3px; }
+.hr-icons i { width: 8px; height: 8px; border-radius: 50%; background: var(--dim); }
+.hr-icons i.ok { background: var(--ok); } .hr-icons i.partial { background: var(--partial); } .hr-icons i.ko { background: var(--ko); }
+.hr summary b { font: 600 20px/1 var(--serif); color: var(--gold); min-width: 36px; text-align: right; }
+.hr .res-rows { padding: 0 10px 10px; }
+
+.lobby, .waiting, .submitted { display: flex; flex-direction: column; align-items: center; gap: 14px; padding-top: 4vh; }
+.lobby > .card, .submitted > .card { width: 100%; }
+.lobby .glass, .waiting .glass { width: 80px; height: 132px; filter: drop-shadow(0 18px 30px rgba(158, 35, 70, .45)); }
+.check-anim { width: 88px; height: 88px; border-radius: 50%; display: grid; place-items: center; font-size: 44px; color: #1E1012; background: linear-gradient(135deg, #F2D59B, var(--gold2)); box-shadow: 0 0 0 10px rgba(221, 184, 120, .12), 0 16px 40px -10px rgba(221, 184, 120, .6); animation: pop .5s cubic-bezier(.3, 1.6, .5, 1); }
+
+.reveal { display: flex; flex-direction: column; gap: 14px; }
+.reveal .eyebrow { margin-top: 4px; }
+.reveal-card { position: relative; overflow: hidden; border-radius: 24px; border: 1px solid rgba(221, 184, 120, .3); background: radial-gradient(120% 90% at 0% 0%, rgba(var(--rc), .55), transparent 60%), linear-gradient(160deg, #241619, #140D0F); box-shadow: 0 30px 60px -30px rgba(var(--rc), .8); animation: flip .8s cubic-bezier(.2, .8, .2, 1); }
+.reveal-card.red { --rc: 158, 35, 70; } .reveal-card.white { --rc: 200, 170, 90; } .reveal-card.rose { --rc: 220, 120, 140; } .reveal-card.spark { --rc: 220, 200, 140; } .reveal-card.sweet { --rc: 210, 150, 50; }
+@keyframes flip { from { transform: perspective(900px) rotateX(18deg) translateY(20px); opacity: 0; } }
+.label-photo { display: block; width: 100%; }
+.label-photo img { width: 100%; max-height: 300px; object-fit: cover; display: block; -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent); mask-image: linear-gradient(to bottom, #000 60%, transparent); }
+.rc-body { padding: 22px; display: flex; flex-direction: column; gap: 8px; }
+.pill { align-self: flex-start; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; padding: 5px 10px; border-radius: 99px; background: rgba(0, 0, 0, .35); border: 1px solid var(--line2); color: var(--gold); }
+.rc-app { font: 600 38px/1.02 var(--serif); }
+.rc-region { color: var(--gold); font-weight: 500; }
+.rc-prod { color: var(--muted); }
+.rc-facts { display: flex; gap: 24px; margin-top: 6px; }
+.rc-facts:empty { display: none; }
+.rc-facts small { display: block; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .12em; }
+.rc-facts b { font: 600 22px/1.2 var(--serif); }
+.rc-comment { font-family: var(--serif); font-style: italic; font-size: 18px; color: #D9CBC2; border-left: 2px solid var(--gold); padding-left: 12px; margin-top: 6px; }
+.score-card .sc-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 14px; }
+.score-card small { color: var(--muted); }
+.big-pts { font: 600 54px/1 var(--serif); color: var(--gold); }
+.big-pts small { font-size: 22px; color: var(--muted); }
+.sc-rank { text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
+.sc-rank b { font: 600 40px/1 var(--serif); } .sc-rank sup { font-size: 16px; }
+.res-rows { display: flex; flex-direction: column; gap: 6px; }
+.res-row { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 12px; background: rgba(0, 0, 0, .22); animation: enter .4s both; }
+.res-row:nth-child(2) { animation-delay: .06s; } .res-row:nth-child(3) { animation-delay: .12s; } .res-row:nth-child(4) { animation-delay: .18s; } .res-row:nth-child(5) { animation-delay: .24s; } .res-row:nth-child(6) { animation-delay: .3s; }
+.res-row .st { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-style: normal; font-weight: 700; font-size: 13px; flex: none; background: rgba(255, 255, 255, .08); color: var(--dim); }
+.res-row.ok .st { background: rgba(140, 199, 155, .2); color: var(--ok); }
+.res-row.partial .st { background: rgba(227, 184, 94, .2); color: var(--partial); }
+.res-row.ko .st { background: rgba(224, 112, 112, .18); color: var(--ko); }
+.rr-t { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.rr-t small { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
+.rr-t span { overflow: hidden; text-overflow: ellipsis; }
+.res-row > b { font: 600 20px/1 var(--serif); white-space: nowrap; } .res-row > b small { font-size: 13px; color: var(--muted); }
+
+.lb { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.lb li { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; background: rgba(0, 0, 0, .2); }
+.lb li.me { background: linear-gradient(90deg, rgba(221, 184, 120, .18), rgba(221, 184, 120, .04)); box-shadow: 0 0 0 1px rgba(221, 184, 120, .35) inset; }
+.lb-rank { width: 22px; text-align: center; font: 600 18px/1 var(--serif); color: var(--muted); }
+.lb li:nth-child(1) .lb-rank { color: var(--gold); }
+.lb-name { flex: 1; min-width: 0; display: flex; flex-direction: column; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lb-name small { color: var(--muted); font-size: 12px; overflow: hidden; text-overflow: ellipsis; }
+.lb-delta { font-size: 12px; color: var(--ok); }
+.lb-pts { font: 600 20px/1 var(--serif); min-width: 40px; text-align: right; }
+
+.final { display: flex; flex-direction: column; gap: 14px; padding-top: 8px; }
+.podium { display: grid; grid-template-columns: 1fr 1.1fr 1fr; align-items: end; gap: 10px; margin: 10px 0 6px; min-height: 290px; }
+.pod { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; min-width: 0; }
+.pod-av { font-size: 34px; animation: pop .6s both cubic-bezier(.3, 1.6, .5, 1); }
+.pod-name { font-weight: 600; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pod-pts { font-size: 13px; color: var(--muted); }
+.pod-bar { width: 100%; border-radius: 16px 16px 6px 6px; display: grid; place-items: start center; padding-top: 10px; font: 600 34px/1 var(--serif); background: linear-gradient(180deg, rgba(221, 184, 120, .3), rgba(158, 35, 70, .25)); border: 1px solid rgba(221, 184, 120, .35); transform-origin: bottom; animation: rise 1s cubic-bezier(.2, .8, .2, 1) both; }
+.p1 .pod-bar { height: 150px; background: linear-gradient(180deg, #F2D59B, var(--gold2)); color: #1E1012; animation-delay: .9s; box-shadow: 0 20px 40px -14px rgba(221, 184, 120, .7); }
+.p2 .pod-bar { height: 110px; animation-delay: .5s; } .p3 .pod-bar { height: 80px; animation-delay: .2s; }
+.p1 .pod-av { animation-delay: 1.5s; font-size: 44px; } .p2 .pod-av { animation-delay: 1.1s; } .p3 .pod-av { animation-delay: .8s; }
+@keyframes rise { from { transform: scaleY(0); } }
+.solo-score { text-align: center; padding: 20px 0; } .solo-score p { color: var(--muted); margin-top: 8px; }
+.solo-score .big-pts { font-size: 80px; }
+.awards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.awards:empty { display: none; }
+.award { padding: 14px; border-radius: 16px; background: var(--card); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 4px; }
+.award span { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: .1em; }
+.award small { color: var(--muted); }
+.fav { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.fav li { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 12px; background: rgba(0, 0, 0, .2); }
+.fav-n { font-size: 11px; color: var(--muted); width: 40px; }
+.fav-t { flex: 1; display: flex; flex-direction: column; } .fav-t small { color: var(--muted); }
+.fav b { font: 600 22px/1 var(--serif); color: var(--gold); } .fav b small { font-size: 12px; color: var(--muted); }
+
+.mode-card { display: flex; align-items: center; gap: 14px; margin: 0; }
+.mode-card:active { transform: scale(.98); }
+.mode-card b { font: 600 22px/1.1 var(--serif); } .mode-card p { color: var(--muted); font-size: 14px; margin-top: 4px; }
+.mode-card i { font-style: normal; color: var(--gold); font-size: 22px; }
+.mc-ico { font-size: 30px; }
+.quiz { display: flex; flex-direction: column; gap: 20px; padding-top: 10px; }
+.quiz-bar { height: 4px; border-radius: 99px; background: rgba(255, 255, 255, .08); overflow: hidden; }
+.quiz-bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--wine), var(--gold)); transition: width .4s; }
+.quiz-q { font: 500 28px/1.2 var(--serif); }
+.quiz-q b { color: var(--gold); font-weight: 600; }
+.opt.good { border-color: var(--ok); background: rgba(140, 199, 155, .18); }
+.opt.bad { border-color: var(--ko); background: rgba(224, 112, 112, .16); animation: shake .4s; }
+@keyframes shake { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+.quiz-exp { display: flex; flex-direction: column; gap: 14px; animation: enter .3s; }
+.quiz-exp p { color: var(--muted); } .quiz-exp b { color: var(--text); }
+
+.hist { display: flex; flex-direction: column; }
+.hist-item { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+.hist-item > div { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.hist-item b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hist-item small { color: var(--muted); }
+.hi-ico { font-size: 24px; }
+.hi-score { display: flex; flex-direction: column; align-items: flex-end; }
+.hi-score b { font: 600 22px/1 var(--serif); color: var(--gold); } .hi-score sup { font-size: 11px; }
+.empty { display: flex; flex-direction: column; align-items: center; gap: 16px; padding-top: 12vh; }
+.empty .glass { width: 70px; height: 116px; opacity: .6; }
+.wd { padding: 0; overflow: hidden; }
+.wd summary { border: 0; border-radius: 0; background: none; list-style: none; cursor: pointer; }
+.wd[open] summary { border-bottom: 1px solid var(--line); }
+.wd > :not(summary) { margin: 14px; }
+.wd .reveal-card { animation: none; }
+.wd-pts { font: 600 22px/1 var(--serif); color: var(--gold); }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 14px; }
+.kpis div { padding: 14px 6px; border-radius: 16px; background: var(--card); border: 1px solid var(--line); text-align: center; }
+.kpis b { display: block; font: 600 28px/1 var(--serif); color: var(--gold); }
+.kpis small { color: var(--muted); }
+.spark { width: 100%; height: 100px; overflow: visible; }
+.spark polyline { fill: none; stroke: var(--gold); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.spark circle { fill: #1E1012; stroke: var(--gold); stroke-width: 2; }
+.bars { display: flex; flex-direction: column; gap: 12px; }
+.bar { display: grid; grid-template-columns: 92px 1fr 52px; align-items: center; gap: 10px; font-size: 14px; }
+.bar > div { height: 8px; border-radius: 99px; background: rgba(255, 255, 255, .08); overflow: hidden; }
+.bar i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--wine), var(--gold)); animation: grow 1s cubic-bezier(.2, .8, .2, 1) both; transform-origin: left; }
+@keyframes grow { from { transform: scaleX(0); } }
+.bar b { text-align: right; font-weight: 600; white-space: nowrap; }
+.glist { display: flex; flex-direction: column; }
+.glist div { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.glist div:last-child { border: 0; }
+.glist b { color: var(--gold); }
+@media (min-width: 600px) { .screen { padding-left: 24px; padding-right: 24px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+</style>
 </head>
-<body>
-  <div id="app"></div>
-  <noscript>Activez JavaScript pour utiliser l'application.</noscript>
-  <script type="module" src="js/app.js"></script>
-  <script>
-    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-      window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+<body style="background:#0E0A0B;color:#F4ECE6">
+
+<!-- =====================================================================
+     CONFIGURATION FIREBASE : collez ci-dessous, entre les deux lignes
+     de tirets, le bloc "firebaseConfig" donné par la console Firebase.
+     Vous pouvez coller le code Firebase entier, l'app trouve les valeurs.
+     Tant que ce bloc n'est pas rempli, l'app tourne en MODE DÉMO.
+     ===================================================================== -->
+<script type="text/plain" id="firebase-config">
+----------------------------------------------------------------------
+const firebaseConfig = {
+  apiKey: "VOTRE_API_KEY",
+  authDomain: "votre-projet.firebaseapp.com",
+  projectId: "votre-projet",
+  storageBucket: "votre-projet.appspot.com",
+  messagingSenderId: "000000000000",
+  appId: "1:000000000000:web:xxxxxxxx"
+};
+----------------------------------------------------------------------
+</script>
+
+<div id="app"></div>
+<noscript>Activez JavaScript pour utiliser l'application.</noscript>
+
+<script>
+// Autodiagnostic : si l'app ne démarre pas, la cause s'affiche au lieu d'une page blanche
+(function () {
+  var errs = [];
+  window.addEventListener('error', function (e) {
+    var t = e.target && (e.target.src || e.target.href);
+    if (t) return;
+    errs.push((e.message || 'Erreur') + (e.lineno ? ' (ligne ' + e.lineno + ')' : ''));
+  }, true);
+  window.addEventListener('unhandledrejection', function (e) { errs.push(String(e.reason && e.reason.message || e.reason)); });
+  setTimeout(function () {
+    var app = document.getElementById('app');
+    if (app && app.children.length) return;
+    var ua = navigator.userAgent, m = ua.match(/OS (\d+)_/);
+    var tips = [];
+    if (m && +m[1] < 16) tips.push('Votre iPhone est en iOS ' + m[1] + ' : il faut iOS 16.4 minimum (Réglages > Général > Mise à jour).');
+    if (errs.some(function (x) { return /Unexpected|Syntax|Invalid/.test(x); })) tips.push('Le fichier index.html a été modifié de façon incorrecte (souvent lors du collage de la configuration Firebase). Recollez la configuration uniquement entre les deux lignes de tirets.');
+    if (!tips.length) tips.push('Rechargez la page. Si le problème persiste, envoyez une capture de cet écran.');
+    app.innerHTML = '<div style="font:15px/1.5 -apple-system,system-ui,sans-serif;padding:calc(env(safe-area-inset-top) + 28px) 20px 40px;max-width:560px;margin:auto">' +
+      '<h2 style="color:#DDB878;margin:0 0 14px">L’application ne démarre pas</h2>' +
+      tips.map(function (t) { return '<p style="margin:0 0 10px">• ' + t + '</p>'; }).join('') +
+      (errs.length ? '<pre style="white-space:pre-wrap;background:#1C1416;border:1px solid #3a2a2e;border-radius:12px;padding:14px;font-size:12px;color:#E3B85E">' + errs.join('\n').replace(/</g, '&lt;') + '</pre>' : '') +
+      '<p style="color:#A8989A;font-size:12px">' + ua.replace(/</g, '&lt;') + '</p></div>';
+  }, 5000);
+})();
+</script>
+
+<script type="module">
+// ===== data.js =====
+// =====================================================================
+//  Base de données : cépages, régions, appellations (France + pièges)
+//  Format appellation : "Nom|code région|couleurs|cépages principaux"
+//  Couleurs : R rouge · B blanc · P rosé · E effervescent · D doux/liquoreux/VDN
+// =====================================================================
+const G = {
+  cs:['Cabernet Sauvignon','r'], cf:['Cabernet Franc','r','Breton','Bouchet'], me:['Merlot','r'],
+  pv:['Petit Verdot','r'], mal:['Malbec','r','Côt','Cot'], car:['Carménère','r'],
+  pn:['Pinot Noir','r','Spätburgunder'], meu:['Pinot Meunier','r','Meunier'], ga:['Gamay','r'],
+  sy:['Syrah','r','Shiraz'], gr:['Grenache','r','Grenache Noir','Garnacha','Cannonau'],
+  mo:['Mourvèdre','r','Monastrell','Mataro'], ci:['Cinsault','r','Cinsaut'],
+  ca:['Carignan','r','Mazuelo','Cariñena'], cou:['Counoise','r'], vac:['Vaccarèse','r'],
+  mus:['Muscardin','r'], tn:['Terret Noir','r'], tan:['Tannat','r'],
+  fer:['Fer Servadou','r','Braucol','Mansois','Pinenc'], neg:['Négrette','r'], dur:['Duras','r'],
+  pru:['Prunelard','r'], abo:['Abouriou','r'], mn:['Manseng Noir','r'], tro:['Trousseau','r'],
+  pou:['Poulsard','r','Ploussard'], mon:['Mondeuse','r'], per:['Persan','r'],
+  pda:["Pineau d'Aunis",'r','Chenin Noir'], grol:['Grolleau','r','Groslot'],
+  nie:['Nielluccio','r'], sci:['Sciaccarello','r','Sciaccarellu'], tib:['Tibouren','r'],
+  bra:['Braquet','r'], fol:['Folle Noire','r','Fuella'], msl:['Marselan','r'], cal:['Caladoc','r'],
+  abou:['Alicante Bouschet','r'], ces:['César','r'], lle:['Lledoner Pelut','r'],
+  tem:['Tempranillo','r','Tinto Fino','Tinta Roriz','Aragonez','Tinta del País'],
+  grac:['Graciano','r'], neb:['Nebbiolo','r'], san:['Sangiovese','r','Brunello'],
+  cor:['Corvina','r'], barb:['Barbera','r'], nma:['Nerello Mascalese','r'],
+  tna:['Touriga Nacional','r'], tfr:['Touriga Franca','r'], zin:['Zinfandel','r','Primitivo'],
+  pino:['Pinotage','r'], agl:['Aglianico','r'], nda:["Nero d'Avola",'r'], mpu:['Montepulciano','r'],
+  dol:['Dolcetto','r'], blau:['Blaufränkisch','r','Lemberger'], zw:['Zweigelt','r'],
+  ch:['Chardonnay','b','Beaunois'], sb:['Sauvignon Blanc','b','Sauvignon','Blanc Fumé'],
+  sg:['Sauvignon Gris','b'], se:['Sémillon','b'], mu:['Muscadelle','b'],
+  che:['Chenin Blanc','b','Chenin','Pineau de la Loire'], mel:['Melon de Bourgogne','b','Melon'],
+  fb:['Folle Blanche','b','Gros Plant'], ri:['Riesling','b'], gw:['Gewurztraminer','b','Traminer'],
+  pg:['Pinot Gris','b','Malvoisie','Grauburgunder','Pinot Grigio'], pb:['Pinot Blanc','b','Weissburgunder'],
+  aux:['Auxerrois','b'], syl:['Sylvaner','b','Silvaner'],
+  mpg:['Muscat à Petits Grains','b','Muscat Blanc','Muscat de Frontignan'],
+  mda:["Muscat d'Alexandrie",'b'], mot:['Muscat Ottonel','b'],
+  vio:['Viognier','b'], mar:['Marsanne','b'], rsn:['Roussanne','b','Bergeron'],
+  grb:['Grenache Blanc','b'], grg:['Grenache Gris','b'], cla:['Clairette','b'],
+  bou:['Bourboulenc','b'], pic:['Picpoul','b','Piquepoul'], pcd:['Picardan','b'],
+  ver:['Vermentino','b','Rolle'], ugn:['Ugni Blanc','b','Trebbiano'],
+  mac:['Macabeu','b','Macabeo','Viura'], tou:['Tourbat','b','Malvoisie du Roussillon'],
+  mau:['Mauzac','b'], len:["Len de l'El",'b',"Loin de l'Œil"], ond:['Ondenc','b'],
+  col:['Colombard','b'], gmg:['Gros Manseng','b'], pmg:['Petit Manseng','b'],
+  pcou:['Petit Courbu','b','Courbu'], arr:['Arrufiac','b'], baq:['Baroque','b'],
+  sav:['Savagnin','b','Naturé'], jac:['Jacquère','b'], alt:['Altesse','b','Roussette'],
+  chs:['Chasselas','b','Fendant'], gri:['Gringet','b'], mol:['Molette','b'],
+  alig:['Aligoté','b'], sac:['Sacy','b'], rom:['Romorantin','b'],
+  arb:['Arbane','b'], pme:['Petit Meslier','b'], orb:['Orbois','b','Menu Pineau','Arbois'],
+  tre:['Tressallier','b'], bia:['Biancu Gentile','b'],
+  albr:['Albariño','b','Alvarinho'], verd:['Verdejo','b'], xar:['Xarel·lo','b','Xarello'],
+  par:['Parellada','b'], pal:['Palomino','b'], gv:['Grüner Veltliner','b'], fur:['Furmint','b'],
+  tor:['Torrontés','b'], garg:['Garganega','b'], gle:['Glera','b','Prosecco'],
+  ass:['Assyrtiko','b'], fia:['Fiano','b'], god:['Godello','b'], cort:['Cortese','b'],
+};
+
+const REGIONS_FR = ['Alsace','Beaujolais','Bordeaux','Bourgogne','Champagne','Corse','Jura',
+  'Languedoc','Lorraine','Provence','Roussillon','Savoie-Bugey','Sud-Ouest','Vallée de la Loire',
+  'Vallée du Rhône','Vin de France'];
+const REGIONS_WORLD = ['Afrique du Sud','Allemagne','Argentine','Australie','Autriche','Chili',
+  'Espagne','États-Unis','Grèce','Hongrie','Italie','Nouvelle-Zélande','Portugal','Suisse'];
+const REGIONS = [...REGIONS_FR, ...REGIONS_WORLD];
+
+const RC = { A:'Alsace', BJ:'Beaujolais', BX:'Bordeaux', BG:'Bourgogne', CH:'Champagne', CO:'Corse',
+  JU:'Jura', LA:'Languedoc', LO:'Lorraine', PR:'Provence', RO:'Roussillon', SA:'Savoie-Bugey',
+  SO:'Sud-Ouest', LR:'Vallée de la Loire', RH:'Vallée du Rhône', VF:'Vin de France',
+  ZA:'Afrique du Sud', DE:'Allemagne', AR:'Argentine', AU:'Australie', AT:'Autriche', CL:'Chili',
+  ES:'Espagne', US:'États-Unis', GR:'Grèce', HU:'Hongrie', IT:'Italie', NZ:'Nouvelle-Zélande',
+  PT:'Portugal', CHS:'Suisse' };
+
+const RAW = `
+Alsace|A|BRP|ri,gw,pg,mpg,syl,pb,aux,chs,pn
+Crémant d'Alsace|A|E|pb,aux,ri,pg,pn,ch
+Alsace Grand Cru|A|BD|ri,gw,pg,mpg
+Vendanges Tardives (Alsace)|A|D|gw,pg,ri,mpg
+Sélection de Grains Nobles (Alsace)|A|D|gw,pg,ri
+Côtes de Toul|LO|RBP|ga,pn,aux
+Moselle|LO|RBP|aux,pb,pg,ri,gw,pn
+Champagne|CH|E|pn,meu,ch,pb,arb,pme
+Coteaux Champenois|CH|RB|pn,meu,ch
+Rosé des Riceys|CH|P|pn
+Bourgogne|BG|RBP|pn,ch,ga
+Bourgogne Aligoté|BG|B|alig
+Bouzeron|BG|B|alig
+Coteaux Bourguignons|BG|RBP|ga,pn,ch,alig
+Bourgogne Passe-Tout-Grains|BG|RP|ga,pn
+Crémant de Bourgogne|BG|E|pn,ch,ga,alig,pb
+Bourgogne Hautes-Côtes de Nuits|BG|RBP|pn,ch
+Bourgogne Hautes-Côtes de Beaune|BG|RBP|pn,ch
+Bourgogne Côte Chalonnaise|BG|RBP|pn,ch
+Bourgogne Côte d'Or|BG|RB|pn,ch
+Bourgogne Tonnerre|BG|B|ch
+Bourgogne Épineuil|BG|RP|pn
+Bourgogne Chitry|BG|RB|pn,ch
+Bourgogne Coulanges-la-Vineuse|BG|RB|pn,ch
+Irancy|BG|R|pn,ces
+Saint-Bris|BG|B|sb,sg
+Vézelay|BG|B|ch
+Petit Chablis|BG|B|ch
+Chablis|BG|B|ch
+Chablis Premier Cru|BG|B|ch
+Chablis Grand Cru|BG|B|ch
+Marsannay|BG|RBP|pn,ch
+Fixin|BG|RB|pn,ch
+Gevrey-Chambertin|BG|R|pn
+Morey-Saint-Denis|BG|RB|pn,ch
+Chambolle-Musigny|BG|R|pn
+Vougeot|BG|RB|pn,ch
+Vosne-Romanée|BG|R|pn
+Nuits-Saint-Georges|BG|RB|pn,ch
+Côte de Nuits-Villages|BG|RB|pn,ch
+Ladoix|BG|RB|pn,ch
+Aloxe-Corton|BG|RB|pn,ch
+Pernand-Vergelesses|BG|RB|pn,ch
+Savigny-lès-Beaune|BG|RB|pn,ch
+Chorey-lès-Beaune|BG|RB|pn,ch
+Beaune|BG|RB|pn,ch
+Côte de Beaune|BG|RB|pn,ch
+Côte de Beaune-Villages|BG|R|pn
+Pommard|BG|R|pn
+Volnay|BG|R|pn
+Monthélie|BG|RB|pn,ch
+Auxey-Duresses|BG|RB|pn,ch
+Saint-Romain|BG|RB|ch,pn
+Meursault|BG|BR|ch,pn
+Blagny|BG|R|pn
+Puligny-Montrachet|BG|BR|ch,pn
+Chassagne-Montrachet|BG|BR|ch,pn
+Saint-Aubin|BG|BR|ch,pn
+Santenay|BG|RB|pn,ch
+Maranges|BG|RB|pn,ch
+Rully|BG|BR|ch,pn
+Mercurey|BG|RB|pn,ch
+Givry|BG|RB|pn,ch
+Montagny|BG|B|ch
+Mâcon|BG|RBP|ch,ga,pn
+Mâcon-Villages|BG|B|ch
+Viré-Clessé|BG|B|ch
+Pouilly-Fuissé|BG|B|ch
+Pouilly-Loché|BG|B|ch
+Pouilly-Vinzelles|BG|B|ch
+Saint-Véran|BG|B|ch
+Chambertin|BG|R|pn
+Chambertin-Clos de Bèze|BG|R|pn
+Chapelle-Chambertin|BG|R|pn
+Charmes-Chambertin|BG|R|pn
+Griotte-Chambertin|BG|R|pn
+Latricières-Chambertin|BG|R|pn
+Mazis-Chambertin|BG|R|pn
+Mazoyères-Chambertin|BG|R|pn
+Ruchottes-Chambertin|BG|R|pn
+Clos de la Roche|BG|R|pn
+Clos Saint-Denis|BG|R|pn
+Clos des Lambrays|BG|R|pn
+Clos de Tart|BG|R|pn
+Bonnes-Mares|BG|R|pn
+Musigny|BG|RB|pn,ch
+Clos de Vougeot|BG|R|pn
+Échezeaux|BG|R|pn
+Grands-Échezeaux|BG|R|pn
+Richebourg|BG|R|pn
+Romanée-Conti|BG|R|pn
+La Romanée|BG|R|pn
+Romanée-Saint-Vivant|BG|R|pn
+La Tâche|BG|R|pn
+La Grande Rue|BG|R|pn
+Corton|BG|RB|pn,ch
+Corton-Charlemagne|BG|B|ch
+Charlemagne|BG|B|ch
+Montrachet|BG|B|ch
+Chevalier-Montrachet|BG|B|ch
+Bâtard-Montrachet|BG|B|ch
+Bienvenues-Bâtard-Montrachet|BG|B|ch
+Criots-Bâtard-Montrachet|BG|B|ch
+Beaujolais|BJ|RBP|ga,ch
+Beaujolais-Villages|BJ|RBP|ga,ch
+Brouilly|BJ|R|ga
+Côte de Brouilly|BJ|R|ga
+Chénas|BJ|R|ga
+Chiroubles|BJ|R|ga
+Fleurie|BJ|R|ga
+Juliénas|BJ|R|ga
+Morgon|BJ|R|ga
+Moulin-à-Vent|BJ|R|ga
+Régnié|BJ|R|ga
+Saint-Amour|BJ|R|ga
+Coteaux du Lyonnais|BJ|RBP|ga,ch,alig
+Arbois|JU|RBP|sav,ch,pou,tro,pn
+Arbois-Pupillin|JU|RB|pou,sav,ch,tro,pn
+Côtes du Jura|JU|RBP|ch,sav,pou,tro,pn
+L'Étoile|JU|B|ch,sav,pou
+Château-Chalon|JU|B|sav
+Vin Jaune (Jura)|JU|B|sav
+Vin de Paille (Jura)|JU|D|ch,sav,pou,tro
+Crémant du Jura|JU|E|ch,pn,pou,tro,sav
+Macvin du Jura|JU|D|ch,sav,pou,tro,pn
+Vin de Savoie|SA|RBPE|jac,alt,chs,mon,ga,pn,per,rsn,gri
+Vin de Savoie Apremont|SA|B|jac
+Vin de Savoie Abymes|SA|B|jac
+Vin de Savoie Chignin|SA|BR|jac,mon,ga,pn
+Vin de Savoie Chignin-Bergeron|SA|B|rsn
+Vin de Savoie Arbin|SA|R|mon
+Vin de Savoie Saint-Jean-de-la-Porte|SA|R|mon
+Vin de Savoie Jongieux|SA|BR|jac,ga,mon
+Vin de Savoie Ayze|SA|BE|gri
+Vin de Savoie Crépy|SA|B|chs
+Vin de Savoie Marignan|SA|B|chs
+Vin de Savoie Ripaille|SA|B|chs
+Vin de Savoie Marin|SA|B|chs
+Roussette de Savoie|SA|B|alt
+Seyssel|SA|BE|alt,mol,chs
+Crémant de Savoie|SA|E|jac,alt,ch
+Bugey|SA|RBPE|ga,pn,mon,ch,alt,alig
+Bugey Cerdon|SA|E|ga,pou
+Bugey Montagnieu|SA|ER|alt,ch,mon
+Bugey Manicle|SA|RB|ch,pn
+Roussette du Bugey|SA|B|alt,ch
+Muscadet|LR|B|mel
+Muscadet Sèvre et Maine|LR|B|mel
+Muscadet Coteaux de la Loire|LR|B|mel
+Muscadet Côtes de Grandlieu|LR|B|mel
+Gros Plant du Pays Nantais|LR|B|fb
+Coteaux d'Ancenis|LR|RBP|ga,cf,cs,pg
+Fiefs Vendéens|LR|RBP|pn,ga,cf,che,ch,grol
+Anjou|LR|RBE|che,cf,cs,pda
+Anjou Villages|LR|R|cf,cs
+Anjou Villages Brissac|LR|R|cf,cs
+Anjou Gamay|LR|R|ga
+Rosé d'Anjou|LR|P|grol,cf,cs,ga,pda,mal
+Cabernet d'Anjou|LR|P|cf,cs
+Rosé de Loire|LR|P|cf,cs,grol,ga,pda,pn
+Crémant de Loire|LR|E|che,ch,cf,pn,grol,cs,pda
+Savennières|LR|B|che
+Savennières Roche-aux-Moines|LR|B|che
+Coulée de Serrant|LR|B|che
+Coteaux du Layon|LR|D|che
+Quarts de Chaume|LR|D|che
+Bonnezeaux|LR|D|che
+Coteaux de l'Aubance|LR|D|che
+Anjou Coteaux de la Loire|LR|D|che
+Saumur|LR|RBPE|che,cf,ch,cs,pda
+Saumur-Champigny|LR|R|cf,cs,pda
+Saumur Puy-Notre-Dame|LR|R|cf,cs
+Coteaux de Saumur|LR|D|che
+Chinon|LR|RBP|cf,cs,che
+Bourgueil|LR|RP|cf,cs
+Saint-Nicolas-de-Bourgueil|LR|RP|cf,cs
+Vouvray|LR|BED|che,orb
+Montlouis-sur-Loire|LR|BED|che
+Touraine|LR|RBPE|sb,ga,cf,mal,che,pda,grol,sg
+Touraine Amboise|LR|RBP|mal,cf,ga,che
+Touraine Azay-le-Rideau|LR|BP|che,grol
+Touraine Chenonceaux|LR|RB|sb,mal,cf
+Touraine Mesland|LR|RBP|ga,cf,mal,che,sb
+Touraine Oisly|LR|B|sb
+Touraine Noble Joué|LR|P|meu,pg,pn
+Cheverny|LR|RBP|sb,ch,pn,ga,mal
+Cour-Cheverny|LR|B|rom
+Valençay|LR|RBP|sb,ch,ga,mal,pn
+Jasnières|LR|B|che
+Coteaux du Loir|LR|RBP|pda,che,ga,cf,mal
+Coteaux du Vendômois|LR|RBP|pda,che,ch,pn,cf
+Orléans|LR|RBP|meu,pn,ch
+Orléans-Cléry|LR|R|cf
+Sancerre|LR|BRP|sb,pn
+Pouilly-Fumé|LR|B|sb
+Pouilly-sur-Loire|LR|B|chs
+Menetou-Salon|LR|BRP|sb,pn
+Quincy|LR|B|sb,sg
+Reuilly|LR|BRP|sb,pn,pg
+Coteaux du Giennois|LR|BRP|sb,pn,ga
+Châteaumeillant|LR|RP|ga,pn,pg
+Haut-Poitou|LR|RBP|sb,cf,cs,ga,me
+Saint-Pourçain|LR|RBP|tre,ch,sb,ga,pn
+Côte Roannaise|LR|RP|ga
+Côtes du Forez|LR|RP|ga
+Côtes d'Auvergne|LR|RBP|ga,pn,ch
+IGP Val de Loire|LR|RBP|sb,ch,che,cf,ga,mel,grol
+Côte-Rôtie|RH|R|sy,vio
+Condrieu|RH|BD|vio
+Château-Grillet|RH|B|vio
+Saint-Joseph|RH|RB|sy,mar,rsn
+Crozes-Hermitage|RH|RB|sy,mar,rsn
+Hermitage|RH|RBD|sy,mar,rsn
+Cornas|RH|R|sy
+Saint-Péray|RH|BE|mar,rsn
+Clairette de Die|RH|E|mpg,cla
+Crémant de Die|RH|E|cla,alig,mpg
+Châtillon-en-Diois|RH|RBP|ga,sy,pn,alig,ch
+Coteaux de Die|RH|B|cla
+Côtes du Rhône|RH|RBP|gr,sy,mo,ci,ca,cla,grb,mar,rsn,bou,vio
+Côtes du Rhône Villages|RH|RBP|gr,sy,mo,ci,ca,grb,cla,rsn,bou,vio
+Châteauneuf-du-Pape|RH|RB|gr,sy,mo,ci,cou,vac,mus,tn,cla,bou,grb,rsn,pic,pcd
+Gigondas|RH|RP|gr,sy,mo,ci
+Vacqueyras|RH|RBP|gr,sy,mo,cla,grb,bou,rsn
+Rasteau|RH|RD|gr,sy,mo
+Cairanne|RH|RB|gr,sy,mo,cla,grb,rsn
+Vinsobres|RH|R|gr,sy,mo
+Beaumes-de-Venise|RH|R|gr,sy,mo
+Muscat de Beaumes-de-Venise|RH|D|mpg
+Lirac|RH|RBP|gr,sy,mo,ci,cla,grb,bou
+Tavel|RH|P|gr,ci,ca,mo,sy,cla,bou,pic
+Duché d'Uzès|RH|RBP|gr,sy,vio,grb,mar,rsn
+Costières de Nîmes|RH|RBP|gr,sy,mo,ca,ci,grb,rsn,mar
+Clairette de Bellegarde|RH|B|cla
+Ventoux|RH|RBP|gr,sy,ci,ca,mo,cla,grb,bou
+Luberon|RH|RBP|gr,sy,ver,grb,cla,rsn
+Grignan-les-Adhémar|RH|RBP|gr,sy,vio,mar
+Côtes du Vivarais|RH|RBP|gr,sy,mo,ci
+IGP Collines Rhodaniennes|RH|RB|sy,vio,ga,mar
+IGP Ardèche|RH|RBP|sy,vio,ga,ch,mar
+IGP Vaucluse|RH|RBP|gr,sy,mo,ci
+Côtes de Provence|PR|PRB|gr,ci,sy,mo,tib,ca,ver,cla,ugn,se
+Côtes de Provence Sainte-Victoire|PR|PR|gr,ci,sy
+Côtes de Provence Fréjus|PR|PR|gr,ci,tib,mo,sy
+Côtes de Provence La Londe|PR|PRB|gr,ci,mo,ver
+Côtes de Provence Pierrefeu|PR|PR|gr,ci,sy
+Côtes de Provence Notre-Dame des Anges|PR|PR|gr,ci,sy
+Coteaux d'Aix-en-Provence|PR|PRB|gr,ci,sy,cs,mo,ca,ver,cla
+Coteaux Varois en Provence|PR|PRB|gr,ci,sy,mo,ver
+Bandol|PR|RPB|mo,gr,ci,cla,ugn,bou
+Cassis|PR|BRP|mar,cla,ugn,ver,ci,gr,mo
+Bellet|PR|RBP|bra,fol,ver
+Palette|PR|RBP|mo,gr,ci,cla
+Les Baux-de-Provence|PR|RPB|gr,sy,ci,cs,mo,ver,cla
+Pierrevert|PR|RBP|gr,sy,ci,ver,rsn
+IGP Méditerranée|PR|RBP|gr,sy,ci,me,cs,ver
+Corse|CO|RPB|nie,sci,gr,ver
+Corse Calvi|CO|RPB|nie,sci,gr,ver
+Corse Sartène|CO|RPB|sci,gr,ver
+Corse Figari|CO|RPB|nie,sci,ver
+Corse Porto-Vecchio|CO|RPB|nie,sci,ver
+Corse Coteaux du Cap Corse|CO|RB|ver,nie
+Ajaccio|CO|RPB|sci,gr,ver
+Patrimonio|CO|RPB|nie,ver
+Muscat du Cap Corse|CO|D|mpg
+IGP Île de Beauté|CO|RPB|nie,sci,ver,bia,me,cs
+Languedoc|LA|RPB|gr,sy,mo,ca,ci,grb,bou,cla,pic,ver,mar,rsn,vio
+Pic Saint-Loup|LA|RPB|sy,gr,mo
+Terrasses du Larzac|LA|R|sy,gr,mo,ca,ci
+Faugères|LA|RPB|sy,gr,mo,ca,ci,rsn,mar
+Saint-Chinian|LA|RPB|sy,gr,mo,ca,ci
+Saint-Chinian Berlou|LA|R|ca,sy,gr
+Saint-Chinian Roquebrun|LA|R|sy,gr,mo
+Minervois|LA|RPB|sy,gr,mo,ca,ci
+La Livinière|LA|R|sy,gr,mo,ca
+Corbières|LA|RPB|ca,gr,sy,mo,ci
+Corbières-Boutenac|LA|R|ca,gr,sy,mo
+Fitou|LA|R|ca,gr,sy,mo
+Cabardès|LA|RP|me,cs,sy,gr,cf
+Malepère|LA|RP|me,cf,cs
+Limoux|LA|RB|ch,che,mau,me,pn
+Blanquette de Limoux|LA|E|mau,ch,che
+Crémant de Limoux|LA|E|ch,che,mau,pn
+Clairette du Languedoc|LA|B|cla
+Picpoul de Pinet|LA|B|pic
+La Clape|LA|RB|bou,gr,sy,mo,ca
+Pézenas|LA|R|sy,gr,mo
+Grès de Montpellier|LA|R|sy,gr,mo
+Muscat de Frontignan|LA|D|mpg
+Muscat de Lunel|LA|D|mpg
+Muscat de Mireval|LA|D|mpg
+Muscat de Saint-Jean-de-Minervois|LA|D|mpg
+IGP Pays d'Oc|LA|RPB|me,cs,sy,gr,ch,sb,vio,pn,ca,msl
+IGP Cévennes|LA|RPB|sy,gr,me,ch,vio
+Côtes du Roussillon|RO|RPB|gr,sy,mo,ca,lle,mac,grb,grg,ver,tou
+Côtes du Roussillon Villages|RO|R|gr,sy,mo,ca
+Côtes du Roussillon Villages Caramany|RO|R|ca,gr,sy
+Côtes du Roussillon Villages Latour-de-France|RO|R|ca,gr,sy,mo
+Côtes du Roussillon Villages Lesquerde|RO|R|ca,gr,sy
+Côtes du Roussillon Villages Tautavel|RO|R|gr,ca,sy,mo
+Côtes du Roussillon Les Aspres|RO|R|sy,gr,mo,ca
+Collioure|RO|RPB|gr,mo,sy,ca,grg,grb
+Banyuls|RO|D|gr,grg,grb
+Banyuls Grand Cru|RO|D|gr
+Maury|RO|RD|gr,grg,grb,ca,sy,mo
+Rivesaltes|RO|D|gr,grg,grb,mac,tou
+Muscat de Rivesaltes|RO|D|mpg,mda
+IGP Côtes Catalanes|RO|RPB|gr,ca,sy,mac,grg,grb,mda
+Bergerac|SO|RPB|me,cs,cf,mal,se,sb,mu
+Côtes de Bergerac|SO|RBD|me,cs,cf,se
+Pécharmant|SO|R|me,cf,cs,mal
+Monbazillac|SO|D|se,sb,mu
+Saussignac|SO|D|se,sb,mu,che
+Montravel|SO|BR|se,sb,mu,me
+Côtes de Montravel|SO|D|se,sb,mu
+Haut-Montravel|SO|D|se,sb,mu
+Rosette|SO|D|se,sb,mu
+Côtes de Duras|SO|RPBD|me,cs,cf,mal,sb,se,mu
+Côtes du Marmandais|SO|RPB|me,cf,cs,abo,sy,mal,fer
+Buzet|SO|RPB|me,cs,cf,mal
+Brulhois|SO|RP|tan,me,cs,cf,mal
+Cahors|SO|R|mal,me,tan
+Coteaux du Quercy|SO|RP|cf,mal,me,tan,ga
+Fronton|SO|RP|neg,sy,cf,cs,ga
+Saint-Sardos|SO|RP|sy,tan,me,cf
+Gaillac|SO|RPBED|dur,fer,sy,pru,ga,mau,len,ond,mu,sb
+Marcillac|SO|RP|fer
+Entraygues-Le Fel|SO|RPB|fer,cf,che
+Estaing|SO|RPB|fer,ga,che
+Côtes de Millau|SO|RPB|ga,sy,fer,che,mau
+Madiran|SO|R|tan,cf,cs,fer
+Pacherenc du Vic-Bilh|SO|BD|pmg,gmg,pcou,arr
+Saint-Mont|SO|RPB|tan,pru,fer,mn,cs,cf,gmg,pmg,pcou,arr
+Tursan|SO|RPB|tan,cf,cs,baq,gmg,pmg
+Béarn|SO|RPB|tan,cf,cs,mn,pmg,gmg,pcou
+Jurançon|SO|BD|pmg,gmg,pcou
+Irouléguy|SO|RPB|tan,cf,cs,gmg,pmg,pcou
+Floc de Gascogne|SO|D|col,ugn,gmg,tan,me
+IGP Côtes de Gascogne|SO|BRP|col,ugn,gmg,pmg,sb,me,tan,cs
+IGP Comté Tolosan|SO|RBP|me,cs,cf,tan,mal,gmg,sb
+Bordeaux|BX|RBP|me,cs,cf,mal,pv,car,se,sb,mu,sg
+Bordeaux Supérieur|BX|RB|me,cs,cf,mal,pv
+Bordeaux Clairet|BX|P|me,cs,cf
+Bordeaux Rosé|BX|P|me,cs,cf
+Crémant de Bordeaux|BX|E|se,sb,mu,cf,cs,me
+Entre-Deux-Mers|BX|B|sb,se,mu,sg
+Entre-Deux-Mers Haut-Benauge|BX|B|se,sb,mu
+Graves|BX|RB|cs,me,cf,se,sb,mu
+Graves Supérieures|BX|D|se,sb,mu
+Pessac-Léognan|BX|RB|cs,me,cf,se,sb
+Sauternes|BX|D|se,sb,mu
+Barsac|BX|D|se,sb,mu
+Cérons|BX|D|se,sb,mu
+Loupiac|BX|D|se,sb,mu
+Cadillac|BX|D|se,sb,mu
+Sainte-Croix-du-Mont|BX|D|se,sb,mu
+Premières Côtes de Bordeaux|BX|D|se,sb,mu
+Bordeaux Haut-Benauge|BX|BD|se,sb,mu
+Côtes de Bordeaux-Saint-Macaire|BX|BD|se,sb,mu
+Médoc|BX|R|cs,me,cf,pv,mal
+Haut-Médoc|BX|R|cs,me,cf,pv
+Margaux|BX|R|cs,me,cf,pv
+Pauillac|BX|R|cs,me,cf,pv
+Saint-Julien|BX|R|cs,me,cf,pv
+Saint-Estèphe|BX|R|cs,me,cf,pv
+Listrac-Médoc|BX|R|me,cs,cf,pv
+Moulis-en-Médoc|BX|R|me,cs,cf,pv
+Saint-Émilion|BX|R|me,cf,cs
+Saint-Émilion Grand Cru|BX|R|me,cf,cs
+Montagne-Saint-Émilion|BX|R|me,cf,cs
+Lussac-Saint-Émilion|BX|R|me,cf,cs
+Puisseguin-Saint-Émilion|BX|R|me,cf,cs
+Saint-Georges-Saint-Émilion|BX|R|me,cf,cs
+Pomerol|BX|R|me,cf,cs
+Lalande-de-Pomerol|BX|R|me,cf,cs
+Fronsac|BX|R|me,cf,cs,mal
+Canon-Fronsac|BX|R|me,cf,cs,mal
+Côtes de Bourg|BX|RB|me,cs,cf,mal,se,sb
+Blaye|BX|R|me,cs,cf,mal
+Blaye Côtes de Bordeaux|BX|RB|me,cs,cf,mal,sb,se
+Côtes de Bordeaux|BX|R|me,cs,cf
+Cadillac Côtes de Bordeaux|BX|R|me,cs,cf
+Castillon Côtes de Bordeaux|BX|R|me,cf,cs
+Francs Côtes de Bordeaux|BX|RB|me,cf,cs,se,sb
+Sainte-Foy Côtes de Bordeaux|BX|RBD|me,cs,cf,se,sb
+Graves de Vayres|BX|RB|me,cs,cf,se,sb
+IGP Atlantique|BX|RBP|me,cs,cf,sb,ch,col
+Vin de France|VF|RBPE|me,cs,sy,gr,pn,ga,ch,sb,che,vio,ca,mal
+Rioja|ES|RBP|tem,gr,grac,ca,mac
+Ribera del Duero|ES|R|tem,cs,me
+Priorat|ES|R|gr,ca,sy,cs
+Toro|ES|R|tem
+Rías Baixas|ES|B|albr
+Rueda|ES|B|verd,sb
+Valdeorras|ES|B|god
+Cava|ES|E|mac,xar,par,ch
+Jerez|ES|D|pal
+Barolo|IT|R|neb
+Barbaresco|IT|R|neb
+Barbera d'Asti|IT|R|barb
+Gavi|IT|B|cort
+Chianti Classico|IT|R|san
+Brunello di Montalcino|IT|R|san
+Bolgheri|IT|R|cs,me,cf,sy
+Amarone della Valpolicella|IT|R|cor
+Soave|IT|B|garg
+Prosecco|IT|E|gle
+Etna|IT|RB|nma
+Taurasi|IT|R|agl
+Mosel|DE|B|ri
+Rheingau|DE|B|ri
+Pfalz|DE|BR|ri,pn
+Wachau|AT|B|gv,ri
+Burgenland|AT|R|blau,zw
+Tokaj|HU|D|fur
+Douro|PT|RB|tna,tfr,tem
+Porto|PT|D|tna,tfr,tem
+Vinho Verde|PT|B|albr
+Napa Valley|US|RB|cs,me,ch,zin
+Sonoma|US|RB|pn,ch,zin
+Willamette Valley|US|R|pn
+Marlborough|NZ|B|sb,pn
+Central Otago|NZ|R|pn
+Mendoza|AR|R|mal
+Salta|AR|B|tor
+Maipo|CL|R|cs,car
+Barossa Valley|AU|R|sy,gr
+Margaret River|AU|RB|cs,ch
+Stellenbosch|ZA|RB|cs,pino,che
+Valais|CHS|RB|chs,pn,ga
+Santorin|GR|B|ass
+`;
+
+const ALSACE_GC = ['Altenberg de Bergbieten','Altenberg de Bergheim','Altenberg de Wolxheim','Brand',
+  'Bruderthal','Eichberg','Engelberg','Florimont','Frankstein','Froehn','Furstentum','Geisberg',
+  'Gloeckelberg','Goldert','Hatschbourg','Hengst','Kaefferkopf','Kanzlerberg','Kastelberg','Kessler',
+  'Kirchberg de Barr','Kirchberg de Ribeauvillé','Kitterlé','Mambourg','Mandelberg','Marckrain',
+  'Moenchberg','Muenchberg','Ollwiller','Osterberg','Pfersigberg','Pfingstberg','Praelatenberg',
+  'Rangen','Rosacker','Saering','Schlossberg','Schoenenbourg','Sommerberg','Sonnenglanz','Spiegel',
+  'Sporen','Steinert','Steingrubler','Steinklotz','Vorbourg','Wiebelsberg','Wineck-Schlossberg',
+  'Winzenberg','Zinnkoepflé','Zotzenberg'];
+
+const CDRV = ['Plan de Dieu','Séguret','Sablet','Visan','Valréas','Massif d\'Uchaux','Signargues',
+  'Laudun','Chusclan','Saint-Gervais','Roaix','Rochegude','Saint-Maurice','Suze-la-Rousse',
+  'Sainte-Cécile','Vaison-la-Romaine','Puyméras','Gadagne','Nyons','Saint-Andéol',
+  'Saint-Pantaléon-les-Vignes','Rousset-les-Vignes'];
+
+const GRAPES = Object.entries(G).map(([k, [n, c, ...alias]]) => ({ k, n, c, alias }));
+const GRAPE_BY_KEY = Object.fromEntries(GRAPES.map(g => [g.k, g]));
+
+function parseApps() {
+  const out = [], seen = new Set();
+  const add = (n, r, colors, grapes) => { if (seen.has(n)) return; seen.add(n); out.push({ n, r, c: colors, g: grapes }); };
+  for (const line of RAW.trim().split('\n')) {
+    const [n, rc, colors, gs] = line.split('|');
+    add(n, RC[rc], colors, gs.split(',').map(k => GRAPE_BY_KEY[k].n));
+  }
+  const gcGrapes = ['ri', 'gw', 'pg', 'mpg'].map(k => GRAPE_BY_KEY[k].n);
+  ALSACE_GC.forEach(x => add('Alsace Grand Cru ' + x, 'Alsace', 'BD', gcGrapes));
+  const cdrv = ['gr', 'sy', 'mo', 'ci'].map(k => GRAPE_BY_KEY[k].n);
+  CDRV.forEach(x => add('Côtes du Rhône Villages ' + x, 'Vallée du Rhône', 'RBP', cdrv));
+  return out.sort((a, b) => a.n.localeCompare(b.n, 'fr'));
+}
+const APPELLATIONS = parseApps();
+
+const norm = s => String(s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  .toLowerCase().replace(/œ/g, 'oe').replace(/[^a-z0-9]+/g, ' ').trim();
+
+const APP_INDEX = new Map(APPELLATIONS.map(a => [norm(a.n), a]));
+const findApp = name => APP_INDEX.get(norm(name)) || null;
+const regionOfApp = name => findApp(name)?.r || null;
+const GRAPE_INDEX = new Map();
+GRAPES.forEach(g => { GRAPE_INDEX.set(norm(g.n), g); g.alias.forEach(a => { if (!GRAPE_INDEX.has(norm(a))) GRAPE_INDEX.set(norm(a), g); }); });
+const findGrape = name => GRAPE_INDEX.get(norm(name)) || null;
+const canonGrape = name => findGrape(name)?.n || String(name).trim();
+
+function rankSearch(list, q, keyFn, aliasFn) {
+  const nq = norm(q);
+  if (!nq) return list.slice();
+  const res = [];
+  for (const it of list) {
+    const k = norm(keyFn(it));
+    let s = -1;
+    if (k === nq) s = 100;
+    else if (k.startsWith(nq)) s = 80;
+    else if (k.split(' ').some(w => w.startsWith(nq))) s = 60;
+    else if (k.includes(nq)) s = 40;
+    else if (aliasFn) {
+      const al = aliasFn(it).map(norm);
+      if (al.some(a => a.startsWith(nq))) s = 50;
+      else if (al.some(a => a.includes(nq))) s = 30;
     }
-  </script>
+    if (s >= 0) res.push([s, it]);
+  }
+  return res.sort((a, b) => b[0] - a[0] || keyFn(a[1]).localeCompare(keyFn(b[1]), 'fr')).map(x => x[1]);
+}
+const searchApps = (q, limit = 40) => rankSearch(APPELLATIONS, q, a => a.n).slice(0, limit);
+const searchGrapes = (q, limit = 40) => rankSearch(GRAPES, q, g => g.n, g => g.alias).slice(0, limit);
+const searchRegions = q => rankSearch(REGIONS, q, r => r);
+
+const COLORS = { R: 'Rouge', B: 'Blanc', P: 'Rosé', E: 'Effervescent', D: 'Doux / Liquoreux' };
+
+// ===== scoring.js =====
+
+const CRITS = {
+  cepages:     { label: 'Cépage(s)',   max: 4, qcm: true },
+  region:      { label: 'Région',      max: 2, qcm: true },
+  appellation: { label: 'Appellation', max: 3, qcm: true },
+  millesime:   { label: 'Millésime',   max: 3, qcm: true },
+  prix:        { label: 'Prix',        max: 2, qcm: false },
+  alcool:      { label: 'Degré',       max: 2, qcm: false },
+};
+const QCM_KEYS = ['cepages', 'region', 'appellation', 'millesime'];
+const LIBRE_COEF = 1.5;
+
+const PRESETS = {
+  facile:  { label: 'Facile',        desc: 'Tout en choix multiples', modes: { cepages: 'qcm', region: 'qcm', appellation: 'qcm', millesime: 'qcm' } },
+  inter:   { label: 'Intermédiaire', desc: 'Cépages et région en choix multiples, le reste en saisie libre', modes: { cepages: 'qcm', region: 'qcm', appellation: 'libre', millesime: 'libre' } },
+  expert:  { label: 'Expert',        desc: 'Tout en saisie libre (points ×1,5)', modes: { cepages: 'libre', region: 'libre', appellation: 'libre', millesime: 'libre' } },
+};
+
+function defaultSettings() {
+  return {
+    name: '', wineCount: 4, difficulty: 'facile', choices: 4, timer: 0, plaisir: true, grille: false,
+    crit: {
+      cepages: { on: true, mode: 'qcm' }, region: { on: true, mode: 'qcm' },
+      appellation: { on: true, mode: 'qcm' }, millesime: { on: true, mode: 'qcm' },
+      prix: { on: false }, alcool: { on: false },
+    },
+  };
+}
+function applyPreset(s, key) {
+  s.difficulty = key;
+  const p = PRESETS[key];
+  if (p) for (const k of QCM_KEYS) s.crit[k].mode = p.modes[k];
+}
+const isQcm = (s, k) => s.crit[k]?.on && CRITS[k].qcm && s.crit[k].mode === 'qcm';
+const critMax = (s, k) => CRITS[k].max * (CRITS[k].qcm && s.crit[k].mode === 'libre' ? LIBRE_COEF : 1);
+const activeCrits = s => Object.keys(CRITS).filter(k => s.crit[k]?.on);
+const wineMax = s => activeCrits(s).reduce((t, k) => t + critMax(s, k), 0);
+const r05 = x => Math.round(x * 2) / 2;
+
+function scoreWine(sol, ans, s) {
+  const b = {};
+  let pts = 0, max = 0;
+  for (const k of activeCrits(s)) {
+    const m = critMax(s, k), coef = m / CRITS[k].max;
+    let p = 0, st = 'ko';
+    const a = ans?.[k];
+    const empty = a == null || a === '' || (Array.isArray(a) && !a.length);
+    if (empty) st = 'none';
+    else if (k === 'cepages') {
+      const T = new Set((sol.cepages || []).map(norm)), A = new Set(a.map(norm));
+      let hits = 0, wrong = 0;
+      A.forEach(x => T.has(x) ? hits++ : wrong++);
+      const raw = T.size ? Math.max(0, (hits - 0.5 * wrong) / T.size) : 0;
+      p = r05(raw * m);
+      st = hits === T.size && !wrong ? 'ok' : p > 0 ? 'partial' : 'ko';
+    } else if (k === 'region') {
+      if (norm(a) === norm(sol.region)) { p = m; st = 'ok'; }
+    } else if (k === 'appellation') {
+      if (norm(a) === norm(sol.appellation)) { p = m; st = 'ok'; }
+      else if (sol.region && norm(regionOfApp(a)) === norm(sol.region)) { p = r05(1 * coef); st = 'partial'; }
+    } else if (k === 'millesime') {
+      const t = sol.millesime;
+      if (String(t) === 'NM' || String(a) === 'NM') { if (String(t) === String(a)) { p = m; st = 'ok'; } }
+      else {
+        const d = Math.abs(Number(a) - Number(t));
+        if (d === 0) { p = m; st = 'ok'; } else if (d === 1) { p = r05(2 * coef); st = 'partial'; }
+        else if (d === 2) { p = r05(1 * coef); st = 'partial'; }
+      }
+    } else if (k === 'prix') {
+      const t = Number(sol.prix), r = Math.abs(Number(a) - t) / (t || 1);
+      if (r <= 0.2) { p = 2; st = 'ok'; } else if (r <= 0.4) { p = 1; st = 'partial'; }
+    } else if (k === 'alcool') {
+      const d = Math.abs(Number(a) - Number(sol.alcool));
+      if (d <= 0.5) { p = 2; st = 'ok'; } else if (d <= 1) { p = 1; st = 'partial'; }
+    }
+    b[k] = { pts: p, max: m, st };
+    pts += p; max += m;
+  }
+  return { pts, max, b };
+}
+
+// ===== ui.js =====
+// =====================================================================
+//  Outils d'interface : rendu, toasts, feuilles, haptique, confettis…
+// =====================================================================
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const fmt = n => (Math.round((Number(n) || 0) * 10) / 10).toLocaleString('fr-FR', { maximumFractionDigits: 1 });
+const pct = (a, b) => b ? Math.round(100 * a / b) : 0;
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const sample = (a, n) => shuffle(a).slice(0, n);
+const uniq = a => [...new Set(a)];
+const dateFr = ts => ts ? new Date(ts).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+
+const store = {
+  get(k, d = null) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { toast('Mémoire du téléphone pleine (photos trop lourdes ?)', 'err'); return false; } },
+  del(k) { localStorage.removeItem(k); },
+};
+
+let hapticLabel;
+function haptic(strong) {
+  try {
+    if (navigator.vibrate) { navigator.vibrate(strong ? [12, 40, 18] : 8); return; }
+    if (!hapticLabel) {
+      hapticLabel = document.createElement('label');
+      hapticLabel.ariaHidden = 'true';
+      hapticLabel.style.cssText = 'position:fixed;opacity:0;pointer-events:none;width:1px;height:1px;overflow:hidden';
+      const i = document.createElement('input'); i.type = 'checkbox'; i.setAttribute('switch', '');
+      hapticLabel.appendChild(i); document.body.appendChild(hapticLabel);
+    }
+    hapticLabel.click();
+  } catch { }
+}
+
+function toast(msg, type = '') {
+  const t = document.createElement('div');
+  t.className = 'toast ' + type; t.textContent = msg;
+  document.body.appendChild(t);
+  requestAnimationFrame(() => t.classList.add('show'));
+  setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }, 3200);
+}
+
+function sheet(title, build, { onClose, full } = {}) {
+  const wrap = document.createElement('div');
+  wrap.className = 'sheet-wrap';
+  wrap.innerHTML = `<div class="sheet-bg"></div><div class="sheet ${full ? 'full' : ''}">
+      <div class="sheet-grab"></div>
+      <div class="sheet-head"><h3>${esc(title)}</h3><button class="icon-btn" data-x aria-label="Fermer">✕</button></div>
+      <div class="sheet-body"></div></div>`;
+  document.body.appendChild(wrap);
+  document.body.classList.add('noscroll');
+  const close = () => {
+    wrap.classList.remove('open');
+    document.body.classList.remove('noscroll');
+    setTimeout(() => wrap.remove(), 300);
+    onClose && onClose();
+  };
+  wrap.querySelector('.sheet-bg').onclick = close;
+  wrap.querySelector('[data-x]').onclick = close;
+  build(wrap.querySelector('.sheet-body'), close);
+  requestAnimationFrame(() => wrap.classList.add('open'));
+  return close;
+}
+
+function confirmBox(msg, { ok = 'Confirmer', cancel = 'Annuler', danger } = {}) {
+  return new Promise(res => {
+    const w = document.createElement('div');
+    w.className = 'modal-wrap';
+    w.innerHTML = `<div class="modal"><p>${esc(msg)}</p><div class="modal-actions">
+      <button class="btn ghost" data-r="0">${esc(cancel)}</button>
+      <button class="btn ${danger ? 'danger' : 'primary'}" data-r="1">${esc(ok)}</button></div></div>`;
+    document.body.appendChild(w);
+    requestAnimationFrame(() => w.classList.add('open'));
+    w.onclick = e => {
+      const b = e.target.closest('[data-r]');
+      if (!b && e.target !== w) return;
+      w.classList.remove('open'); setTimeout(() => w.remove(), 250);
+      res(b ? b.dataset.r === '1' : false);
+    };
+  });
+}
+
+let wakeLock = null;
+async function keepAwake(on) {
+  try {
+    if (on && 'wakeLock' in navigator && !wakeLock) { wakeLock = await navigator.wakeLock.request('screen'); wakeLock.onrelease = () => { wakeLock = null; }; }
+    if (!on && wakeLock) { await wakeLock.release(); wakeLock = null; }
+  } catch { }
+}
+
+function confetti(duration = 2800) {
+  const c = document.createElement('canvas');
+  c.className = 'confetti';
+  document.body.appendChild(c);
+  const ctx = c.getContext('2d'), dpr = devicePixelRatio || 1;
+  const W = c.width = innerWidth * dpr, H = c.height = innerHeight * dpr;
+  const colors = ['#E9C987', '#C39A52', '#F4ECE6', '#A3244A', '#7B1E3A'];
+  const P = Array.from({ length: 140 }, () => ({
+    x: W / 2 + (Math.random() - .5) * W * .3, y: H * .35, vx: (Math.random() - .5) * 14 * dpr, vy: (-Math.random() * 16 - 6) * dpr,
+    s: (4 + Math.random() * 6) * dpr, r: Math.random() * 6, vr: (Math.random() - .5) * .3, c: colors[Math.random() * colors.length | 0],
+  }));
+  const t0 = performance.now();
+  (function frame(t) {
+    ctx.clearRect(0, 0, W, H);
+    const k = (t - t0) / duration;
+    P.forEach(p => {
+      p.vy += .45 * dpr; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.r += p.vr;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.r); ctx.globalAlpha = Math.max(0, 1 - k);
+      ctx.fillStyle = p.c; ctx.fillRect(-p.s / 2, -p.s / 4, p.s, p.s / 2); ctx.restore();
+    });
+    if (k < 1) requestAnimationFrame(frame); else c.remove();
+  })(t0);
+}
+
+function countUp(el, to, ms = 900) {
+  const t0 = performance.now();
+  const step = t => {
+    const k = Math.min(1, (t - t0) / ms), e = 1 - Math.pow(1 - k, 3);
+    el.textContent = fmt(to * e);
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+function compressImage(file, max = 900, q = .72) {
+  return new Promise((res, rej) => {
+    const img = new Image();
+    img.onload = () => {
+      const k = Math.min(1, max / Math.max(img.width, img.height));
+      const c = document.createElement('canvas');
+      c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(img.src);
+      res(c.toDataURL('image/jpeg', q));
+    };
+    img.onerror = rej;
+    img.src = URL.createObjectURL(file);
+  });
+}
+
+const glassSVG = (cls = '') => `
+<svg class="glass ${cls}" viewBox="0 0 120 200" aria-hidden="true">
+  <defs>
+    <linearGradient id="wineG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B8294F"/><stop offset="1" stop-color="#4A0B1E"/></linearGradient>
+    <linearGradient id="goldG" gradientUnits="userSpaceOnUse" x1="20" y1="10" x2="100" y2="180"><stop offset="0" stop-color="#F1D9A4"/><stop offset="1" stop-color="#B8904A"/></linearGradient>
+    <clipPath id="bowl"><path d="M22 18 H98 C100 70 88 104 60 108 C32 104 20 70 22 18 Z"/></clipPath>
+  </defs>
+  <g clip-path="url(#bowl)">
+    <g class="wine-level"><rect x="0" y="64" width="120" height="60" fill="url(#wineG)"/>
+    <path class="wine-wave" d="M0 64 Q15 59 30 64 T60 64 T90 64 T120 64 T150 64 T180 64 V72 H0 Z" fill="#B8294F"/></g>
+  </g>
+  <path d="M22 18 H98 C100 70 88 104 60 108 C32 104 20 70 22 18 Z" fill="none" stroke="url(#goldG)" stroke-width="2.4"/>
+  <path d="M60 108 V172" stroke="url(#goldG)" stroke-width="2.4"/>
+  <path d="M34 176 Q60 168 86 176" fill="none" stroke="url(#goldG)" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M32 30 C31 52 35 72 44 86" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="3" stroke-linecap="round"/>
+</svg>`;
+
+const AVATARS = ['🍷', '🍇', '🥂', '🍾', '🧀', '🥖', '🦊', '🐻', '🦉', '🐝', '🌿', '🔥', '🎩', '👑', '🌙', '⭐', '🐗', '🦆'];
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+const isStandalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+
+// ===== backend.js =====
+// =====================================================================
+//  Configuration Firebase : lue dans le bloc <script id="firebase-config">
+//  d'index.html. On peut y coller le code Firebase tel quel.
+// =====================================================================
+const CFG_RAW = document.getElementById('firebase-config')?.textContent || '';
+const cfgPick = k => (CFG_RAW.match(new RegExp(k + '["\']?\\s*:\\s*["\']([^"\']+)["\']')) || [])[1] || '';
+const FIREBASE_CONFIG = {
+  apiKey: cfgPick('apiKey'), authDomain: cfgPick('authDomain'), projectId: cfgPick('projectId'),
+  storageBucket: cfgPick('storageBucket'), messagingSenderId: cfgPick('messagingSenderId'), appId: cfgPick('appId'),
+};
+const APP_NAME = 'Verre Noir';
+const MAX_PLAYERS = 15;
+const fbConfigured = /^AIza/.test(FIREBASE_CONFIG.apiKey) && !!FIREBASE_CONFIG.projectId;
+
+async function createBackend() {
+  if (fbConfigured) {
+    const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('network: Firebase ne répond pas (délai dépassé)')), 20000));
+    return Promise.race([(async () => { const b = await firebaseBackend(); await b.init(); return b; })(), timeout]);
+  }
+  const b = localBackend(); await b.init(); return b;
+}
+
+// Messages clairs pour les erreurs Firebase courantes
+function explainError(e) {
+  const c = String(e?.code || e?.message || e);
+  if (/operation-not-allowed|admin-restricted/.test(c)) return 'La connexion « Anonyme » n’est pas activée : Firebase > Authentication > Sign-in method > Anonyme > Activer.';
+  if (/unauthorized-domain|requests-from-referer/.test(c)) return 'Ce domaine n’est pas autorisé : Firebase > Authentication > Settings > Domaines autorisés > ajouter ' + location.hostname + '.';
+  if (/invalid-api-key|api-key-not-valid/.test(c)) return 'La clé apiKey est invalide : recopiez la configuration Firebase dans index.html.';
+  if (/permission-denied|insufficient permissions/i.test(c)) return 'Accès refusé par Firestore : vérifiez que les règles (firestore.rules) ont été collées et publiées.';
+  if (/not-found|NOT_FOUND|does not exist/i.test(c)) return 'La base Firestore n’existe pas : Firebase > Firestore Database > Créer une base de données.';
+  if (/network|failed to fetch|unavailable|offline/i.test(c)) return 'Pas de connexion internet (ou Firebase injoignable).';
+  return c;
+}
+
+async function firebaseBackend() {
+  const V = '10.12.2', base = `https://www.gstatic.com/firebasejs/${V}/`;
+  const [{ initializeApp }, A, F] = await Promise.all([
+    import(base + 'firebase-app.js'), import(base + 'firebase-auth.js'), import(base + 'firebase-firestore.js')]);
+  const fapp = initializeApp(FIREBASE_CONFIG);
+  const auth = A.getAuth(fapp);
+  const db = F.getFirestore(fapp);
+  const { doc, getDoc, deleteDoc, onSnapshot, collection, query, where, getDocs } = F;
+  const clean = x => JSON.parse(JSON.stringify(x)); // Firestore refuse les valeurs undefined
+  const setDoc = (r, d) => F.setDoc(r, clean(d)), updateDoc = (r, d) => F.updateDoc(r, clean(d));
+  const gRef = c => doc(db, 'games', c);
+  const list = snap => snap.docs.map(d => ({ id: d.id, ...d.data() }));
+  return {
+    mode: 'firebase', uid: null,
+    async init() {
+      const u = await new Promise(res => { const un = A.onAuthStateChanged(auth, u => { un(); res(u); }); });
+      if (!u) await A.signInAnonymously(auth);
+      this.uid = auth.currentUser.uid;
+      await getDoc(gRef('ZZZZ')); // test d'accès à Firestore
+    },
+    async getGame(c) { const s = await getDoc(gRef(c)); return s.exists() ? s.data() : null; },
+    createGame: (c, d) => setDoc(gRef(c), d),
+    updateGame: (c, p) => updateDoc(gRef(c), p),
+    watchGame: (c, cb) => onSnapshot(gRef(c), s => cb(s.exists() ? s.data() : null), e => console.warn(e)),
+    setSecret: (c, d) => setDoc(doc(db, 'secrets', c), d),
+    async getSecret(c) { try { const s = await getDoc(doc(db, 'secrets', c)); return s.exists() ? s.data() : null; } catch { return null; } },
+    setPhoto: (c, i, data, hostUid) => setDoc(doc(db, 'secrets', `${c}_p${i}`), { hostUid, data }),
+    async getPhoto(c, i) { try { const s = await getDoc(doc(db, 'secrets', `${c}_p${i}`)); return s.exists() ? s.data().data : null; } catch { return null; } },
+    join: (c, uid, p) => setDoc(doc(db, 'games', c, 'players', uid), p),
+    leave: (c, uid) => deleteDoc(doc(db, 'games', c, 'players', uid)),
+    async getPlayers(c) { return list(await getDocs(collection(db, 'games', c, 'players'))); },
+    watchPlayers: (c, cb) => onSnapshot(collection(db, 'games', c, 'players'), s => cb(list(s)), e => console.warn(e)),
+    submitAnswer: (c, idx, uid, d) => setDoc(doc(db, 'games', c, 'answers', `${idx}_${uid}`), { ...d, idx, uid }),
+    async getAnswers(c, idx) { return list(await getDocs(query(collection(db, 'games', c, 'answers'), where('idx', '==', idx)))); },
+    watchAnswers: (c, idx, cb) => onSnapshot(query(collection(db, 'games', c, 'answers'), where('idx', '==', idx)), s => cb(list(s)), e => console.warn(e)),
+    setReveal: (c, idx, d) => setDoc(doc(db, 'games', c, 'reveals', String(idx)), d),
+    async getReveal(c, idx) { const s = await getDoc(doc(db, 'games', c, 'reveals', String(idx))); return s.exists() ? s.data() : null; },
+    watchReveal: (c, idx, cb) => onSnapshot(doc(db, 'games', c, 'reveals', String(idx)), s => cb(s.exists() ? s.data() : null), e => console.warn(e)),
+    async listMyGames(uid) {
+      const col = collection(db, 'games');
+      const [a, b] = await Promise.all([
+        getDocs(query(col, where('hostUid', '==', uid))),
+        getDocs(query(col, where('playerUids', 'array-contains', uid)))]);
+      const m = new Map(); [...list(a), ...list(b)].forEach(g => m.set(g.id, g));
+      return [...m.values()];
+    },
+  };
+}
+
+// Mode démo : tout est stocké dans le navigateur, synchronisé entre onglets
+function localBackend() {
+  const KEY = 'vn_localdb';
+  const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
+  let db = load();
+  const T = n => (db[n] ||= {});
+  const listeners = new Set();
+  const emit = () => listeners.forEach(l => { const v = JSON.stringify(l.get() ?? null); if (v !== l.last) { l.last = v; l.cb(JSON.parse(v)); } });
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(db)); } catch (e) { console.warn('Stockage plein', e); } queueMicrotask(emit); };
+  window.addEventListener('storage', e => { if (e.key === KEY) { db = load(); emit(); } });
+  const watch = (get, cb) => { const l = { get, cb, last: undefined }; listeners.add(l); setTimeout(() => { if (listeners.has(l)) { l.last = JSON.stringify(get() ?? null); cb(JSON.parse(l.last)); } }); return () => listeners.delete(l); };
+  const clone = x => x == null ? x : JSON.parse(JSON.stringify(x));
+  const vals = o => Object.entries(o || {}).map(([id, v]) => ({ id, ...v }));
+  return {
+    mode: 'local', uid: null,
+    async init() {
+      let id = sessionStorage.getItem('vn_local_uid');
+      if (!id) { id = 'u' + Math.random().toString(36).slice(2, 10); sessionStorage.setItem('vn_local_uid', id); }
+      this.uid = id;
+    },
+    async getGame(c) { db = load(); return clone(T('games')[c]) || null; },
+    async createGame(c, d) { db = load(); T('games')[c] = clone(d); save(); },
+    async updateGame(c, p) { db = load(); Object.assign(T('games')[c], clone(p)); save(); },
+    watchGame: (c, cb) => watch(() => T('games')[c], cb),
+    async setSecret(c, d) { db = load(); T('secrets')[c] = clone(d); save(); },
+    async getSecret(c) { db = load(); return clone(T('secrets')[c]) || null; },
+    async setPhoto(c, i, data) { db = load(); T('photos')[c + '_' + i] = data; save(); },
+    async getPhoto(c, i) { db = load(); return T('photos')[c + '_' + i] || null; },
+    async join(c, uid, p) { db = load(); (T('players')[c] ||= {})[uid] = clone(p); save(); },
+    async leave(c, uid) { db = load(); delete (T('players')[c] || {})[uid]; save(); },
+    async getPlayers(c) { db = load(); return vals(T('players')[c]); },
+    watchPlayers: (c, cb) => watch(() => vals(T('players')[c]), cb),
+    async submitAnswer(c, idx, uid, d) {
+      db = load(); const g = T('games')[c];
+      if (!g || g.phase !== 'answering' || g.current !== idx) throw new Error('closed');
+      (T('answers')[c] ||= {})[idx + '_' + uid] = { ...clone(d), idx, uid }; save();
+    },
+    async getAnswers(c, idx) { db = load(); return vals(T('answers')[c]).filter(a => a.idx === idx); },
+    watchAnswers: (c, idx, cb) => watch(() => vals(T('answers')[c]).filter(a => a.idx === idx), cb),
+    async setReveal(c, idx, d) { db = load(); (T('reveals')[c] ||= {})[idx] = clone(d); save(); },
+    async getReveal(c, idx) { db = load(); return clone((T('reveals')[c] || {})[idx]) || null; },
+    watchReveal: (c, idx, cb) => watch(() => (T('reveals')[c] || {})[idx], cb),
+    async listMyGames(uid) { db = load(); return vals(T('games')).filter(g => g.hostUid === uid || (g.playerUids || []).includes(uid)); },
+  };
+}
+
+// ===== components.js =====
+// =====================================================================
+//  Composants métier : sélecteurs, formulaire de réponse, révélation…
+// =====================================================================
+
+function openPicker({ title, kind, multi = false, selected = [], exclude = [], allowCustom = false, onDone }) {
+  const sel = new Set(selected);
+  const ex = new Set(exclude.map(norm));
+  const search = q => {
+    if (kind === 'grape') return searchGrapes(q, 80).map(g => ({ v: g.n, sub: (g.c === 'r' ? 'Rouge' : 'Blanc') + (g.alias.length ? ' · ' + g.alias.slice(0, 2).join(', ') : ''), dot: g.c }));
+    if (kind === 'app') return searchApps(q, 80).map(a => ({ v: a.n, sub: a.r }));
+    if (kind === 'region') return searchRegions(q).map(r => ({ v: r, sub: REGIONS_FR.includes(r) ? 'France' : 'Étranger' }));
+    return [];
+  };
+  sheet(title, (body, close) => {
+    body.innerHTML = `<div class="search"><input type="search" placeholder="Rechercher…" autocomplete="off" autocapitalize="off" spellcheck="false"></div>
+      <div class="pick-list"></div>${multi ? `<div class="sheet-foot"><button class="btn primary block" data-done>Valider</button></div>` : ''}`;
+    const input = $('input', body), listEl = $('.pick-list', body);
+    const render = () => {
+      const q = input.value.trim();
+      const items = search(q).filter(i => !ex.has(norm(i.v)));
+      let html = items.map(i => `<button class="pick ${sel.has(i.v) ? 'on' : ''}" data-v="${esc(i.v)}">
+          ${i.dot ? `<i class="gdot ${i.dot}"></i>` : ''}<span class="pick-t">${esc(i.v)}<small>${esc(i.sub || '')}</small></span><b class="chk">✓</b></button>`).join('');
+      if (allowCustom && q && !items.some(i => norm(i.v) === norm(q))) html += `<button class="pick custom" data-v="${esc(q)}"><span>${items.length ? 'Autre : ' : ''}utiliser « ${esc(q)} »</span></button>`;
+      listEl.innerHTML = html || `<p class="muted center pad">Aucun résultat</p>`;
+      if (multi) $('[data-done]', body).textContent = sel.size ? `Valider (${sel.size})` : 'Valider';
+    };
+    input.oninput = render;
+    listEl.onclick = e => {
+      const b = e.target.closest('.pick'); if (!b) return;
+      haptic();
+      const v = b.dataset.v;
+      if (multi) { sel.has(v) ? sel.delete(v) : sel.add(v); if (b.classList.contains('custom')) input.value = ''; render(); }
+      else { close(); onDone(v); }
+    };
+    if (multi) $('[data-done]', body).onclick = () => { close(); onDone([...sel]); };
+    render();
+    if (!('ontouchstart' in window)) setTimeout(() => input.focus(), 250);
+  }, { full: true });
+}
+
+const colorOfWine = w => w.couleur || 'R';
+function grapePool(w) {
+  const c = colorOfWine(w);
+  if (c === 'R' || c === 'P') return GRAPES.filter(g => g.c === 'r');
+  if (c === 'E') return GRAPES;
+  return GRAPES.filter(g => g.c === 'b');
+}
+function suggestLures(crit, w, n) {
+  const have = new Set((w.lures?.[crit] || []).map(norm));
+  const truth = crit === 'cepages' ? (w.cepages || []) : [w[crit]];
+  truth.forEach(t => have.add(norm(t)));
+  const need = n - (w.lures?.[crit] || []).length;
+  if (need <= 0) return w.lures[crit];
+  let pool = [];
+  if (crit === 'cepages') {
+    const regionGrapes = uniq(APPELLATIONS.filter(a => a.r === w.region).flatMap(a => a.g));
+    const colorSet = new Set(grapePool(w).map(g => g.n));
+    const near = shuffle(regionGrapes.filter(g => colorSet.has(g)));
+    const french = shuffle(grapePool(w).filter(g => APPELLATIONS.some(a => REGIONS_FR.includes(a.r) && a.g.includes(g.n))).map(g => g.n));
+    pool = [...near.slice(0, Math.ceil(need / 2)), ...french, ...near];
+  } else if (crit === 'region') {
+    pool = REGIONS_FR.includes(w.region) || !w.region ? shuffle(REGIONS_FR.filter(r => r !== 'Vin de France')) : shuffle(REGIONS);
+  } else if (crit === 'appellation') {
+    const c = colorOfWine(w);
+    const okColor = a => a.c.includes(c) && !a.n.startsWith('IGP') && !a.n.startsWith('Alsace Grand Cru ') && !a.n.startsWith('Côtes du Rhône Villages ');
+    const same = shuffle(APPELLATIONS.filter(a => a.r === w.region && okColor(a)).map(a => a.n));
+    const other = shuffle(APPELLATIONS.filter(a => a.r !== w.region && REGIONS_FR.includes(a.r) && okColor(a)).map(a => a.n));
+    pool = [...same.slice(0, Math.ceil(need / 2)), ...other, ...same];
+  } else if (crit === 'millesime') {
+    const t = Number(w.millesime) || new Date().getFullYear() - 3;
+    pool = shuffle([1, -1, 2, -2, 3, -3, 4, 5, -4].map(d => t + d).filter(y => y <= new Date().getFullYear()));
+    if (w.millesime !== 'NM' && Math.random() < .3) pool.unshift('NM');
+  }
+  const out = [...(w.lures?.[crit] || [])];
+  for (const p of pool) { if (out.length >= n) break; if (!have.has(norm(p))) { out.push(p); have.add(norm(p)); } }
+  return out;
+}
+
+function wineIssues(w, s) {
+  const miss = [];
+  const on = k => s.crit[k]?.on;
+  if (on('appellation') && !w.appellation) miss.push('appellation');
+  if (on('region') && !w.region) miss.push('région');
+  if (on('cepages') && !(w.cepages || []).length) miss.push('cépage(s)');
+  if (on('millesime') && (w.millesime == null || w.millesime === '')) miss.push('millésime');
+  if (on('prix') && !(Number(w.prix) > 0)) miss.push('prix');
+  if (on('alcool') && !(Number(w.alcool) > 0)) miss.push('degré');
+  for (const k of QCM_KEYS) if (isQcm(s, k) && (w.lures?.[k] || []).length < s.choices - 1) miss.push('leurres ' + CRITS[k].label.toLowerCase());
+  return miss;
+}
+
+function buildOptions(w, s) {
+  const o = {};
+  const n = s.choices - 1;
+  for (const k of QCM_KEYS) {
+    if (!isQcm(s, k)) continue;
+    const truth = k === 'cepages' ? w.cepages : [w[k]];
+    const all = uniq([...truth, ...(w.lures?.[k] || []).slice(0, n)].map(String));
+    o[k] = k === 'millesime' ? all.sort((a, b) => (a === 'NM' ? 1e9 : +a) - (b === 'NM' ? 1e9 : +b)) : all.sort((a, b) => a.localeCompare(b, 'fr'));
+  }
+  return o;
+}
+
+const publicWine = w => ({
+  appellation: w.appellation || '', region: w.region || '', cepages: w.cepages || [], millesime: w.millesime ?? '',
+  prix: w.prix ?? null, alcool: w.alcool ?? null, couleur: w.couleur || 'R',
+  producteur: w.producteur || '', cuvee: w.cuvee || '', commentaire: w.commentaire || '',
+});
+
+function showVal(k, v) {
+  if (v == null || v === '' || (Array.isArray(v) && !v.length)) return '—';
+  if (k === 'cepages') return v.join(', ');
+  if (k === 'millesime') return v === 'NM' ? 'Non millésimé' : String(v);
+  if (k === 'prix') return fmt(v) + ' €';
+  if (k === 'alcool') return fmt(v) + ' %';
+  return String(v);
+}
+const ST_ICON = { ok: '✓', partial: '≈', ko: '✗', none: '–' };
+const PLAISIR = ['Imbuvable', 'Très décevant', 'Décevant', 'Bof', 'Passable', 'Correct', 'Agréable', 'Bon', 'Très bon', 'Superbe', 'Sublime'];
+
+const PMIN = 3, PMAX = 500;
+const sliderToPrice = t => { const v = PMIN * Math.pow(PMAX / PMIN, t / 1000); return v < 20 ? Math.round(v) : v < 100 ? Math.round(v / 5) * 5 : Math.round(v / 10) * 10; };
+const priceToSlider = p => Math.round(1000 * Math.log(p / PMIN) / Math.log(PMAX / PMIN));
+
+const NEZ = ['Fruits rouges', 'Fruits noirs', 'Fruits blancs', 'Agrumes', 'Fruits exotiques', 'Fruits secs', 'Floral', 'Épices', 'Boisé / Vanille', 'Grillé / Torréfié', 'Beurre / Brioche', 'Minéral', 'Végétal', 'Animal / Cuir', 'Sous-bois'];
+const emptyAnswer = () => ({ cepages: [], region: '', appellation: '', millesime: null, prix: null, alcool: null, plaisir: null, grille: { robe: '', nez: [], acidite: 0, tanins: 0, longueur: '', notes: '' } });
+
+function answerForm(root, { s, opts, idx, total, deadline, ans, onChange, onSubmit, submitLabel = 'Valider ma réponse' }) {
+  ans = Object.assign(emptyAnswer(), ans || {});
+  const thisYear = new Date().getFullYear();
+  const sec = (k, inner, hint = '') => `<section class="card q" data-sec="${k}">
+      <div class="q-head"><h3>${CRITS[k]?.label || k}</h3>${hint ? `<span class="hint">${hint}</span>` : ''}</div>${inner}</section>`;
+  const optBtns = (k, list, multi) => `<div class="opts ${list.length > 4 ? 'cols2' : ''} ${k === 'millesime' ? 'cols3' : ''}">${list.map(v =>
+    `<button class="opt" data-k="${k}" data-v="${esc(v)}" ${multi ? 'data-multi' : ''}><span>${esc(k === 'millesime' && v === 'NM' ? 'Non millésimé' : v)}</span><i class="tick">✓</i></button>`).join('')}</div>`;
+
+  let html = `<div class="wine-head"><span class="eyebrow">${total > 1 ? `Vin ${idx + 1} / ${total}` : 'Votre vin'}</span>
+      <h2 class="title">Votre verdict</h2><div class="timer" hidden></div></div>`;
+  for (const k of activeCrits(s)) {
+    const libre = CRITS[k].qcm && !isQcm(s, k);
+    const coef = libre ? `<span class="coef">×1,5</span>` : '';
+    if (k === 'cepages') html += sec(k, isQcm(s, k) ? optBtns(k, opts.cepages, true) : `<div class="chips" data-chips="cepages"></div><button class="field add" data-pick="cepages">＋ Ajouter un cépage</button>`, (isQcm(s, k) ? 'Un ou plusieurs' : 'Saisie libre') + coef);
+    if (k === 'region') html += sec(k, isQcm(s, k) ? optBtns(k, opts.region) : `<button class="field" data-pick="region"><span data-show="region">Choisir une région</span><i>›</i></button>`, libre ? 'Saisie libre' + coef : '');
+    if (k === 'appellation') html += sec(k, isQcm(s, k) ? optBtns(k, opts.appellation) : `<button class="field" data-pick="appellation"><span data-show="appellation">Rechercher une appellation</span><i>›</i></button>`, libre ? 'Saisie libre' + coef : '');
+    if (k === 'millesime') html += sec(k, isQcm(s, k) ? optBtns(k, opts.millesime) : `
+      <div class="stepper big"><button data-step="-1" aria-label="moins">−</button><output data-show="millesime">—</output><button data-step="1" aria-label="plus">＋</button></div>
+      <label class="check"><input type="checkbox" data-nm> Non millésimé</label>`, libre ? 'Saisie libre' + coef : '');
+    if (k === 'prix') html += sec(k, `<div class="range-val" data-show="prix">Glissez pour estimer</div>
+      <input type="range" min="0" max="1000" value="${priceToSlider(15)}" data-range="prix" class="untouched"><div class="range-scale"><span>3 €</span><span>20 €</span><span>100 €</span><span>500 €</span></div>`, 'Prix public estimé');
+    if (k === 'alcool') html += sec(k, `<div class="range-val" data-show="alcool">Glissez pour estimer</div>
+      <input type="range" min="8" max="20" step="0.5" value="13" data-range="alcool" class="untouched"><div class="range-scale"><span>8 %</span><span>12 %</span><span>16 %</span><span>20 %</span></div>`, 'Degré d’alcool');
+  }
+  if (s.grille) html += `<section class="card q" data-sec="grille"><div class="q-head"><h3>Grille de dégustation</h3><span class="hint">Facultatif · non noté</span></div>
+      <label class="lbl">Robe</label><div class="seg" data-g="robe">${['Pâle', 'Moyenne', 'Soutenue', 'Profonde'].map(x => `<button data-v="${x}">${x}</button>`).join('')}</div>
+      <label class="lbl">Nez</label><div class="chipsel" data-g="nez">${NEZ.map(x => `<button data-v="${x}">${x}</button>`).join('')}</div>
+      <label class="lbl">Acidité</label><div class="dots" data-g="acidite">${[1, 2, 3, 4, 5].map(i => `<button data-v="${i}"></button>`).join('')}</div>
+      <label class="lbl">Tanins / structure</label><div class="dots" data-g="tanins">${[1, 2, 3, 4, 5].map(i => `<button data-v="${i}"></button>`).join('')}</div>
+      <label class="lbl">Longueur</label><div class="seg" data-g="longueur">${['Courte', 'Moyenne', 'Longue'].map(x => `<button data-v="${x}">${x}</button>`).join('')}</div>
+      <label class="lbl">Notes</label><textarea data-g="notes" rows="2" placeholder="Vos impressions…"></textarea></section>`;
+  if (s.plaisir) html += `<section class="card q" data-sec="plaisir"><div class="q-head"><h3>Note de plaisir</h3><span class="hint">Non comptée dans le score</span></div>
+      <div class="plaisir"><b data-show="plaisir">–</b><span>/10</span><em data-show="plaisirTxt">Glissez pour noter</em></div>
+      <input type="range" min="0" max="10" step="1" value="5" data-range="plaisir" class="untouched"></section>`;
+  html += `<div class="sticky-foot"><button class="btn primary block lg" data-submit>${submitLabel}</button></div>`;
+  root.innerHTML = `<div class="answer-form">${html}</div>`;
+  const form = root.firstElementChild;
+
+  const changed = () => { onChange && onChange(ans); };
+  const paint = () => {
+    $$('.opt', form).forEach(b => {
+      const k = b.dataset.k, v = b.dataset.v;
+      b.classList.toggle('on', k === 'cepages' ? ans.cepages.includes(v) : String(ans[k]) === v);
+    });
+    const ch = $('[data-chips="cepages"]', form);
+    if (ch) ch.innerHTML = ans.cepages.map(c => `<span class="chip on">${esc(c)}<button data-rm="${esc(c)}" aria-label="retirer">✕</button></span>`).join('');
+    const show = (k, txt, empty) => { const el = $(`[data-show="${k}"]`, form); if (el) { el.textContent = txt ?? empty; el.closest('.field')?.classList.toggle('filled', txt != null); } };
+    show('region', ans.region || null, 'Choisir une région');
+    show('appellation', ans.appellation || null, 'Rechercher une appellation');
+    const ms = $('[data-show="millesime"]', form);
+    if (ms) { ms.textContent = ans.millesime === 'NM' ? 'NM' : ans.millesime ?? '—'; const nm = $('[data-nm]', form); nm.checked = ans.millesime === 'NM'; }
+    if (ans.prix != null) { show('prix', '≈ ' + fmt(ans.prix) + ' €'); const r = $('[data-range="prix"]', form); r.value = priceToSlider(ans.prix); r.classList.remove('untouched'); }
+    if (ans.alcool != null) { show('alcool', fmt(ans.alcool) + ' % vol.'); const r = $('[data-range="alcool"]', form); r.value = ans.alcool; r.classList.remove('untouched'); }
+    if (ans.plaisir != null && $('[data-range="plaisir"]', form)) { show('plaisir', ans.plaisir); show('plaisirTxt', PLAISIR[ans.plaisir]); const r = $('[data-range="plaisir"]', form); r.value = ans.plaisir; r.classList.remove('untouched'); }
+    const g = ans.grille;
+    $$('[data-g]', form).forEach(el => {
+      const k = el.dataset.g;
+      if (k === 'notes') { if (el.value !== g.notes) el.value = g.notes || ''; return; }
+      $$('button', el).forEach(b => b.classList.toggle('on', k === 'nez' ? g.nez.includes(b.dataset.v) : (k === 'acidite' || k === 'tanins') ? +b.dataset.v <= g[k] : g[k] === b.dataset.v));
+    });
+  };
+
+  form.addEventListener('click', e => {
+    if (form.classList.contains('locked')) return;
+    const o = e.target.closest('.opt');
+    if (o) {
+      haptic();
+      const k = o.dataset.k, v = o.dataset.v;
+      if (k === 'cepages') ans.cepages = ans.cepages.includes(v) ? ans.cepages.filter(x => x !== v) : [...ans.cepages, v];
+      else ans[k] = String(ans[k]) === v ? (k === 'millesime' ? null : '') : (k === 'millesime' && v !== 'NM' ? +v : v);
+      paint(); changed(); return;
+    }
+    const rm = e.target.closest('[data-rm]');
+    if (rm) { ans.cepages = ans.cepages.filter(x => x !== rm.dataset.rm); paint(); changed(); return; }
+    const p = e.target.closest('[data-pick]');
+    if (p) {
+      const k = p.dataset.pick;
+      if (k === 'cepages') openPicker({ title: 'Cépages', kind: 'grape', multi: true, selected: ans.cepages, allowCustom: true, onDone: v => { ans.cepages = v.map(canonGrape); paint(); changed(); } });
+      if (k === 'region') openPicker({ title: 'Région', kind: 'region', onDone: v => { ans.region = v; paint(); changed(); } });
+      if (k === 'appellation') openPicker({ title: 'Appellation', kind: 'app', allowCustom: true, onDone: v => {
+        ans.appellation = findApp(v)?.n || v;
+        if (s.crit.region?.on && !isQcm(s, 'region') && !ans.region && findApp(v)) ans.region = findApp(v).r;
+        paint(); changed();
+      } });
+      return;
+    }
+    const st = e.target.closest('[data-step]');
+    if (st) {
+      haptic();
+      const cur = typeof ans.millesime === 'number' ? ans.millesime : thisYear - 3;
+      ans.millesime = ans.millesime == null || ans.millesime === 'NM' ? cur : Math.min(thisYear, Math.max(1900, cur + +st.dataset.step));
+      paint(); changed(); return;
+    }
+    const gb = e.target.closest('[data-g] button');
+    if (gb) {
+      haptic();
+      const k = gb.parentElement.dataset.g, v = gb.dataset.v, g = ans.grille;
+      if (k === 'nez') g.nez = g.nez.includes(v) ? g.nez.filter(x => x !== v) : [...g.nez, v];
+      else if (k === 'acidite' || k === 'tanins') g[k] = g[k] === +v ? 0 : +v;
+      else g[k] = g[k] === v ? '' : v;
+      paint(); changed(); return;
+    }
+    if (e.target.closest('[data-submit]')) submit(false);
+  });
+  form.addEventListener('input', e => {
+    const r = e.target.dataset.range;
+    if (r) {
+      e.target.classList.remove('untouched');
+      if (r === 'prix') ans.prix = sliderToPrice(+e.target.value);
+      if (r === 'alcool') ans.alcool = +e.target.value;
+      if (r === 'plaisir') ans.plaisir = +e.target.value;
+      paint(); changed();
+    }
+    if (e.target.dataset.g === 'notes') { ans.grille.notes = e.target.value; changed(); }
+    if ('nm' in e.target.dataset) { ans.millesime = e.target.checked ? 'NM' : thisYear - 3; paint(); changed(); }
+  });
+
+  const missing = () => activeCrits(s).filter(k => { const a = ans[k]; return a == null || a === '' || (Array.isArray(a) && !a.length); });
+  async function submit(auto) {
+    const m = missing();
+    if (!auto && m.length) {
+      if (!await confirmBox(`Il manque : ${m.map(k => CRITS[k].label.toLowerCase()).join(', ')}. Valider quand même ?`, { ok: 'Valider' })) return;
+    }
+    haptic(true);
+    onSubmit(JSON.parse(JSON.stringify(ans)), auto);
+  }
+
+  let tick;
+  if (deadline) {
+    const tEl = $('.timer', form); tEl.hidden = false;
+    const upd = () => {
+      const r = Math.max(0, Math.round((deadline - Date.now()) / 1000));
+      tEl.textContent = `${Math.floor(r / 60)}:${String(r % 60).padStart(2, '0')}`;
+      tEl.classList.toggle('urgent', r <= 15);
+      if (r <= 1 && !form.classList.contains('locked')) { form.classList.add('locked'); clearInterval(tick); submit(true); }
+    };
+    upd(); tick = setInterval(upd, 500);
+  }
+  paint();
+  return { destroy: () => clearInterval(tick), lock: () => form.classList.add('locked') };
+}
+
+const COLOR_CLASS = { R: 'red', B: 'white', P: 'rose', E: 'spark', D: 'sweet' };
+function wineCard(w, photo) {
+  return `<article class="reveal-card ${COLOR_CLASS[w.couleur] || 'red'}">
+    ${photo ? `<button class="label-photo" data-zoom><img src="${photo}" alt="Étiquette"></button>` : ''}
+    <div class="rc-body">
+      <span class="pill">${esc(COLORS[w.couleur] || '')}</span>
+      <h2 class="rc-app">${esc(w.appellation || '—')}</h2>
+      <p class="rc-region">${esc(w.region || '')}${w.millesime !== '' && w.millesime != null ? ' · ' + esc(showVal('millesime', w.millesime)) : ''}</p>
+      ${w.producteur || w.cuvee ? `<p class="rc-prod">${esc(w.producteur)}${w.cuvee ? ` — <em>${esc(w.cuvee)}</em>` : ''}</p>` : ''}
+      <div class="chips">${(w.cepages || []).map(c => `<span class="chip">${esc(c)}</span>`).join('')}</div>
+      <div class="rc-facts">${w.prix ? `<div><small>Prix</small><b>${fmt(w.prix)} €</b></div>` : ''}${w.alcool ? `<div><small>Degré</small><b>${fmt(w.alcool)} %</b></div>` : ''}</div>
+      ${w.commentaire ? `<p class="rc-comment">${esc(w.commentaire)}</p>` : ''}
+    </div></article>`;
+}
+function resultRows(res, s) {
+  if (!res) return `<p class="muted center">Pas de réponse pour ce vin.</p>`;
+  return `<div class="res-rows">${activeCrits(s).map(k => {
+    const b = res.b?.[k] || { pts: 0, max: critMax(s, k), st: 'none' };
+    return `<div class="res-row ${b.st}"><i class="st">${ST_ICON[b.st]}</i><div class="rr-t"><small>${CRITS[k].label}</small><span>${esc(showVal(k, res.a?.[k]))}</span></div><b>${fmt(b.pts)}<small>/${fmt(b.max)}</small></b></div>`;
+  }).join('')}</div>`;
+}
+function leaderboard(scores, { me, limit = 99, perWineIdx } = {}) {
+  const rows = Object.entries(scores || {}).map(([uid, p]) => ({ uid, ...p })).sort((a, b) => b.total - a.total);
+  let rank = 0, prev = null;
+  rows.forEach((r, i) => { if (r.total !== prev) rank = i + 1; r.rank = rank; prev = r.total; });
+  return `<ol class="lb">${rows.slice(0, limit).map(r => {
+    const w = perWineIdx != null ? r.perWine?.[perWineIdx] : null;
+    return `<li class="${r.uid === me ? 'me' : ''}"><span class="lb-rank">${r.rank}</span><span class="lb-av">${esc(r.avatar || '🍷')}</span><span class="lb-name">${esc(r.name)}</span>${w ? `<span class="lb-delta">+${fmt(w.pts)}</span>` : ''}<b class="lb-pts">${fmt(r.total)}</b></li>`;
+  }).join('')}</ol>`;
+}
+function rankOf(scores, uid) {
+  const rows = Object.entries(scores || {}).map(([u, p]) => ({ u, t: p.total })).sort((a, b) => b.t - a.t);
+  const me = rows.find(r => r.u === uid); if (!me) return null;
+  return { rank: rows.filter(r => r.t > me.t).length + 1, of: rows.length, total: me.t };
+}
+function bindZoom(root) {
+  root.addEventListener('click', e => {
+    const z = e.target.closest('[data-zoom]'); if (!z) return;
+    const src = $('img', z).src;
+    sheet('Étiquette', b => { b.innerHTML = `<img class="zoomed" src="${src}" alt="">`; }, { full: true });
+  });
+}
+
+function playerReveal(root, { wine, photo, res, s, idx, total, scores, me, footer = '' }) {
+  const rk = rankOf(scores, me);
+  root.innerHTML = `<div class="reveal">
+      <span class="eyebrow center">${total > 1 ? `Vin ${idx + 1} / ${total} · ` : ''}Révélation</span>
+      ${wineCard(wine, photo)}
+      <section class="card score-card">
+        <div class="sc-top"><div><small>Vos points</small><div class="big-pts">+<span data-count>0</span><small> / ${fmt(res?.max ?? wineMax(s))}</small></div></div>
+        ${rk && rk.of > 1 ? `<div class="sc-rank"><small>Classement</small><b>${rk.rank}<sup>${rk.rank === 1 ? 'er' : 'e'}</sup></b><small>sur ${rk.of}</small></div>` : ''}</div>
+        ${resultRows(res, s)}
+        ${res?.a?.plaisir != null ? `<p class="muted small">Votre note de plaisir : <b>${res.a.plaisir}/10</b></p>` : ''}
+      </section>
+      ${scores && Object.keys(scores).length > 1 ? `<section class="card"><h3 class="h-sm">Classement général</h3>${leaderboard(scores, { me, limit: 8, perWineIdx: idx })}</section>` : ''}
+      ${footer}
+    </div>`;
+  const c = $('[data-count]', root); if (c) countUp(c, res?.pts || 0);
+  if (res && res.max && res.pts / res.max >= .8) setTimeout(() => confetti(1800), 400);
+  bindZoom(root);
+  haptic(true);
+}
+
+function finalView(root, { game, me, actions = '' }) {
+  const s = game.settings, scores = game.scores || {}, wines = game.summary?.wines || [];
+  const rows = Object.entries(scores).map(([uid, p]) => ({ uid, ...p })).sort((a, b) => b.total - a.total);
+  const maxTotal = wineMax(s) * (game.summary?.played ?? wines.length);
+  const podium = [rows[1], rows[0], rows[2]];
+  const award = (k, title) => {
+    if (!s.crit[k]?.on || rows.length < 2) return '';
+    const best = rows.map(r => ({ r, v: Object.values(r.perWine || {}).reduce((t, w) => t + (w.b?.[k]?.pts || 0), 0) })).sort((a, b) => b.v - a.v)[0];
+    return best && best.v > 0 ? `<div class="award"><span>${title}</span><b>${esc(best.r.avatar || '')} ${esc(best.r.name)}</b><small>${fmt(best.v)} pts</small></div>` : '';
+  };
+  const fav = wines.map((w, i) => ({ w, i })).filter(x => x.w.plaisirAvg != null).sort((a, b) => b.w.plaisirAvg - a.w.plaisirAvg);
+  const idxs = game.summary?.idxs || wines.map((_, i) => i);
+  root.innerHTML = `<div class="final">
+    <span class="eyebrow center">${esc(game.name || 'Partie terminée')}</span>
+    <h1 class="title center">${rows.length > 1 ? 'Le podium' : 'Résultat'}</h1>
+    ${rows.length > 1 ? `<div class="podium">${podium.map((r, i) => r ? `<div class="pod p${[2, 1, 3][i]}">
+        <div class="pod-av">${esc(r.avatar || '🍷')}</div><div class="pod-name">${esc(r.name)}</div><div class="pod-pts">${fmt(r.total)} pts</div>
+        <div class="pod-bar"><span>${[2, 1, 3][i]}</span></div></div>` : '<div class="pod empty"></div>').join('')}</div>`
+      : rows[0] ? `<div class="solo-score"><div class="big-pts"><span data-count>0</span><small> / ${fmt(maxTotal)}</small></div><p>${pct(rows[0].total, maxTotal)} % de réussite</p></div>` : ''}
+    ${rows.length > 1 ? `<section class="card"><h3 class="h-sm">Classement final</h3>${leaderboard(scores, { me })}</section>` : ''}
+    ${rows.length > 1 ? `<section class="awards">${award('cepages', 'Nez d’or · cépages')}${award('appellation', 'Maître des appellations')}${award('millesime', 'Horloge du millésime')}${award('region', 'Boussole des terroirs')}</section>` : ''}
+    ${fav.length ? `<section class="card"><h3 class="h-sm">Vins préférés de la tablée</h3><ol class="fav">${fav.map(x => `<li><span class="fav-n">Vin ${(idxs[x.i] ?? x.i) + 1}</span><span class="fav-t">${esc(x.w.appellation)} ${x.w.millesime && x.w.millesime !== 'NM' ? x.w.millesime : ''}<small>${esc([x.w.producteur, x.w.cuvee].filter(Boolean).join(' — '))}</small></span><b>${fmt(x.w.plaisirAvg)}<small>/10</small></b></li>`).join('')}</ol></section>` : ''}
+    ${actions}
+  </div>`;
+  const c = $('[data-count]', root); if (c) countUp(c, rows[0]?.total || 0, 1200);
+  setTimeout(() => confetti(), 500);
+}
+
+// ===== app.js =====
+// =====================================================================
+//  Verre Noir — application de dégustation à l'aveugle
+// =====================================================================
+
+const root = document.getElementById('app');
+const S = { be: null, uid: null, profile: store.get('vn_profile', { name: '', avatar: AVATARS[0] }) };
+let cleanups = [];
+const onCleanup = (...f) => cleanups.push(...f);
+
+function go(name, params = {}) {
+  cleanups.forEach(f => { try { f(); } catch { } }); cleanups = [];
+  $$('.sheet-wrap,.modal-wrap').forEach(e => e.remove()); document.body.classList.remove('noscroll');
+  S.screen = name; S.params = params;
+  window.scrollTo(0, 0);
+  SCREENS[name](params);
+}
+function view(html, cls = '') {
+  root.innerHTML = `<main class="screen ${cls}">${html}</main>`;
+  return root.firstElementChild;
+}
+const topbar = (title, { back = 'home', backParams, right = '' } = {}) => {
+  S.backTarget = back ? [back, backParams] : null;
+  return `<header class="topbar">${back ? `<button class="icon-btn" data-back aria-label="Retour">‹</button>` : '<span></span>'}<h1>${esc(title)}</h1><div class="tb-right">${right || '<span class="icon-btn ghost-spacer"></span>'}</div></header>`;
+};
+document.addEventListener('click', e => {
+  const g = e.target.closest('[data-go]');
+  if (g) { haptic(); go(g.dataset.go, g.dataset.params ? JSON.parse(g.dataset.params) : {}); return; }
+  if (e.target.closest('[data-back]') && S.backTarget) { haptic(); go(S.backTarget[0], S.backTarget[1] || {}); }
+});
+
+const draftKey = ctx => ctx.code ? 'vn_host_' + ctx.code : 'vn_draft_' + ctx.mode;
+const getDraft = ctx => store.get(draftKey(ctx));
+const setDraft = (ctx, d) => store.set(draftKey(ctx), d);
+async function pushSecret(code, d, photoIdx) {
+  const wines = d.wines.map(w => { const { photo, ...rest } = w; return { ...rest, hasPhoto: !!photo }; });
+  try {
+    await S.be.setSecret(code, { hostUid: S.uid, settings: d.settings, wines });
+    if (photoIdx != null && d.wines[photoIdx]?.photo) await S.be.setPhoto(code, photoIdx, d.wines[photoIdx].photo, S.uid);
+  } catch (e) { console.warn(e); toast('Sauvegarde en ligne impossible : ' + explainError(e), 'err'); }
+}
+const newWine = () => ({ couleur: 'R', appellation: '', region: '', cepages: [], millesime: null, prix: null, alcool: null, producteur: '', cuvee: '', commentaire: '', photo: null, lures: { cepages: [], region: [], appellation: [], millesime: [] } });
+const ensureWines = d => { d.wines = d.wines || []; while (d.wines.length < d.settings.wineCount) d.wines.push(newWine()); d.wines.length = d.settings.wineCount; return d; };
+const session = { get: () => store.get('vn_session'), set: v => store.set('vn_session', v), clear: () => store.del('vn_session') };
+const stepper = (k, v) => `<div class="stepper"><button data-step="${k}:-1" aria-label="moins">−</button><output>${v}</output><button data-step="${k}:1" aria-label="plus">＋</button></div>`;
+const toggle = (k, on) => `<button class="switch ${on ? 'on' : ''}" data-toggle="${k}" role="switch" aria-checked="${on}"><span></span></button>`;
+
+const SCREENS = {};
+
+// ---------------------------------------------------------------------  ACCUEIL
+SCREENS.home = () => {
+  const sess = session.get();
+  const p = S.profile;
+  view(`
+    <div class="home">
+      <div class="hero">${glassSVG('pour')}<h1 class="brand">${esc(APP_NAME)}</h1><p class="tagline">Dégustation à l’aveugle</p></div>
+      ${sess ? `<button class="card resume" data-resume><span class="pulse"></span><div><small>Partie en cours</small><b>${esc(sess.code)} · ${sess.role === 'host' ? 'Maître du jeu' : 'Joueur'}</b></div><i>›</i></button>` : ''}
+      <div class="stack">
+        <button class="btn primary lg block" data-go="join">Rejoindre une partie</button>
+        <button class="btn ghost lg block two" data-go="setup" data-params='{"mode":"online"}'><span>Créer une partie</span><small>Maître du jeu</small></button>
+        <button class="btn ghost lg block two" data-go="solo"><span>Entraînement solo</span><small>Dégustation ou quiz</small></button>
+      </div>
+      <div class="tiles">
+        <button class="tile" data-go="history"><span>📜</span>Historique</button>
+        <button class="tile" data-go="stats"><span>📈</span>Statistiques</button>
+      </div>
+      <button class="profile-line" data-profile><span class="av">${esc(p.avatar)}</span>${p.name ? `Joue en tant que <b>${esc(p.name)}</b>` : 'Choisir mon pseudo'}<i>✎</i></button>
+      ${isIOS && !isStandalone && !store.get('vn_hide_install') ? `<div class="install card"><b>Installer l’app</b><p>Dans Safari, touchez <span class="ios-share">⎋</span> Partager puis « Sur l’écran d’accueil ».</p><button class="icon-btn" data-hide-install>✕</button></div>` : ''}
+      ${S.be.mode === 'local' ? `<p class="demo">Mode démo : Firebase n’est pas configuré dans index.html, les parties ne fonctionnent qu’entre les onglets de cet appareil.</p>` : ''}
+    </div>`, 'center-screen');
+  $('[data-profile]').onclick = () => editProfile(() => go('home'));
+  const hi = $('[data-hide-install]'); if (hi) hi.onclick = () => { store.set('vn_hide_install', 1); go('home'); };
+  const r = $('[data-resume]');
+  if (r) r.onclick = async () => {
+    const g = await S.be.getGame(sess.code).catch(() => null);
+    if (!g || g.phase === 'finished' && sess.role !== 'host') { session.clear(); toast('Cette partie est terminée'); return go('home'); }
+    go(sess.role === 'host' ? 'host' : 'play', { code: sess.code });
+  };
+};
+
+function editProfile(after) {
+  sheet('Mon profil', (b, close) => {
+    let av = S.profile.avatar;
+    b.innerHTML = `<label class="lbl">Pseudo</label><input class="inp" maxlength="18" value="${esc(S.profile.name)}" placeholder="Votre prénom">
+      <label class="lbl">Avatar</label><div class="avatars">${AVATARS.map(a => `<button class="${a === av ? 'on' : ''}" data-av="${a}">${a}</button>`).join('')}</div>
+      <div class="sheet-foot"><button class="btn primary block" data-ok>Enregistrer</button></div>`;
+    $('.avatars', b).onclick = e => { const x = e.target.closest('[data-av]'); if (!x) return; haptic(); av = x.dataset.av; $$('[data-av]', b).forEach(y => y.classList.toggle('on', y === x)); };
+    $('[data-ok]', b).onclick = () => {
+      const n = $('input', b).value.trim(); if (!n) return toast('Choisissez un pseudo', 'err');
+      S.profile = { name: n, avatar: av }; store.set('vn_profile', S.profile); close(); after && after();
+    };
+  });
+}
+
+// ---------------------------------------------------------------------  REJOINDRE
+SCREENS.join = ({ code = '' } = {}) => {
+  let av = S.profile.avatar;
+  view(`${topbar('Rejoindre')}
+    <section class="card">
+      <label class="lbl">Code de la partie</label>
+      <input class="code-input" maxlength="4" value="${esc(code)}" autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="ABCD">
+      <label class="lbl">Votre pseudo</label>
+      <input class="inp" data-name maxlength="18" value="${esc(S.profile.name)}" placeholder="Votre prénom">
+      <label class="lbl">Avatar</label><div class="avatars">${AVATARS.map(a => `<button class="${a === av ? 'on' : ''}" data-av="${a}">${a}</button>`).join('')}</div>
+    </section>
+    <div class="sticky-foot"><button class="btn primary block lg" data-join>Entrer dans la cave</button></div>`);
+  const ci = $('.code-input');
+  ci.oninput = () => { ci.value = ci.value.toUpperCase().replace(/[^A-Z]/g, ''); };
+  $('.avatars').onclick = e => { const x = e.target.closest('[data-av]'); if (!x) return; haptic(); av = x.dataset.av; $$('[data-av]').forEach(y => y.classList.toggle('on', y === x)); };
+  $('[data-join]').onclick = async () => {
+    const c = ci.value.trim(), name = $('[data-name]').value.trim();
+    if (c.length !== 4) return toast('Le code fait 4 lettres', 'err');
+    if (!name) return toast('Choisissez un pseudo', 'err');
+    const btn = $('[data-join]'); btn.disabled = true;
+    try {
+      const g = await S.be.getGame(c);
+      if (!g) throw new Error('Partie introuvable');
+      if (g.phase === 'finished') throw new Error('Cette partie est terminée');
+      if (g.hostUid === S.uid) { session.set({ code: c, role: 'host' }); return go('host', { code: c }); }
+      const players = await S.be.getPlayers(c);
+      if (!players.some(p => p.id === S.uid) && players.length >= MAX_PLAYERS) throw new Error(`Partie complète (${MAX_PLAYERS} joueurs max)`);
+      S.profile = { name, avatar: av }; store.set('vn_profile', S.profile);
+      await S.be.join(c, S.uid, { name, avatar: av, joinedAt: Date.now() });
+      session.set({ code: c, role: 'player' });
+      haptic(true);
+      go('play', { code: c });
+    } catch (e) { toast(e.code ? explainError(e) : (e.message || 'Connexion impossible'), 'err'); btn.disabled = false; }
+  };
+};
+
+// ---------------------------------------------------------------------  PARAMÉTRAGE
+SCREENS.setup = ({ mode = 'online' }) => {
+  const ctx = { mode };
+  const d = getDraft(ctx) || { settings: defaultSettings(), wines: [] };
+  const s = d.settings;
+  const save = () => setDraft(ctx, ensureWines(d));
+  const render = () => {
+    const y = scrollY;
+    const diffLabel = PRESETS[s.difficulty] ? PRESETS[s.difficulty].desc : 'Réglage personnalisé';
+    view(`${topbar(mode === 'solo' ? 'Dégustation solo' : 'Nouvelle partie', { back: mode === 'solo' ? 'solo' : 'home' })}
+      <section class="card">
+        <label class="lbl">Nom de la session</label>
+        <input class="inp" data-name maxlength="40" value="${esc(s.name)}" placeholder="${mode === 'solo' ? 'Ex. Entraînement Loire' : 'Ex. Soirée Bourgogne'}">
+        <div class="row-between mt"><div><b>Nombre de vins</b></div>${stepper('wc', s.wineCount)}</div>
+      </section>
+      <section class="card">
+        <h3 class="h-sm">Difficulté</h3>
+        <div class="seg" data-diff>${Object.entries(PRESETS).map(([k, p]) => `<button data-v="${k}" class="${s.difficulty === k ? 'on' : ''}">${p.label}</button>`).join('')}</div>
+        <p class="muted small mt-s">${diffLabel}</p>
+        <div class="crit-list">${Object.keys(CRITS).map(k => `
+          <div class="crit ${s.crit[k].on ? '' : 'off'}">
+            <span class="crit-n">${CRITS[k].label}</span>
+            ${CRITS[k].qcm ? `<div class="seg mini" data-mode="${k}"><button data-v="qcm" class="${s.crit[k].mode === 'qcm' ? 'on' : ''}">Choix</button><button data-v="libre" class="${s.crit[k].mode === 'libre' ? 'on' : ''}">Libre</button></div>` : '<span class="muted small">Curseur</span>'}
+            ${toggle('crit-' + k, s.crit[k].on)}
+          </div>`).join('')}</div>
+        <div class="row-between mt ${QCM_KEYS.some(k => isQcm(s, k)) ? '' : 'dim'}"><div><b>Choix proposés</b><small>par question à choix</small></div>${stepper('ch', s.choices)}</div>
+        <p class="muted small mt-s">Barème : cépages 4 · appellation 3 · millésime 3 (±1 an : 2, ±2 ans : 1) · région 2 · prix 2 (±20 %) · degré 2 (±0,5°). Saisie libre : ×1,5. Points partiels sur les assemblages et pour une appellation de la bonne région.</p>
+      </section>
+      <section class="card">
+        <h3 class="h-sm">Options</h3>
+        <label class="lbl">Chrono par vin</label>
+        <div class="seg" data-timer>${[[0, 'Aucun'], [120, '2 min'], [180, '3 min'], [300, '5 min'], [600, '10 min']].map(([v, l]) => `<button data-v="${v}" class="${s.timer === v ? 'on' : ''}">${l}</button>`).join('')}</div>
+        <div class="row-between mt"><div><b>Note de plaisir</b><small>sur 10, non comptée</small></div>${toggle('plaisir', s.plaisir)}</div>
+        <div class="row-between mt"><div><b>Grille de dégustation</b><small>robe, nez, bouche (facultative)</small></div>${toggle('grille', s.grille)}</div>
+      </section>
+      <div class="sticky-foot"><button class="btn primary block lg" data-next>Suivant · saisir les vins</button></div>`);
+    scrollTo(0, y);
+    $('[data-name]').oninput = e => { s.name = e.target.value; save(); };
+  };
+  const handler = e => {
+    const t = e.target;
+    const st = t.closest('[data-step]');
+    if (st) {
+      haptic();
+      const [k, dlt] = st.dataset.step.split(':');
+      if (k === 'wc') s.wineCount = Math.min(15, Math.max(1, s.wineCount + +dlt));
+      if (k === 'ch') s.choices = Math.min(8, Math.max(2, s.choices + +dlt));
+      save(); return render();
+    }
+    const b = t.closest('.seg button');
+    if (b) {
+      haptic();
+      const seg = b.parentElement;
+      if ('diff' in seg.dataset) applyPreset(s, b.dataset.v);
+      if (seg.dataset.mode) { s.crit[seg.dataset.mode].mode = b.dataset.v; s.difficulty = 'perso'; }
+      if ('timer' in seg.dataset) s.timer = +b.dataset.v;
+      save(); return render();
+    }
+    const tg = t.closest('[data-toggle]');
+    if (tg) {
+      haptic();
+      const k = tg.dataset.toggle;
+      if (k.startsWith('crit-')) { const c = k.slice(5); s.crit[c].on = !s.crit[c].on; if (!activeCrits(s).length) { s.crit[c].on = true; toast('Gardez au moins un critère', 'err'); } }
+      else s[k] = !s[k];
+      save(); return render();
+    }
+    if (t.closest('[data-next]')) { save(); go('wines', { mode }); }
+  };
+  root.addEventListener('click', handler); onCleanup(() => root.removeEventListener('click', handler));
+  save(); render();
+};
+
+// ---------------------------------------------------------------------  LISTE DES VINS
+SCREENS.wines = async ({ mode, code }) => {
+  const ctx = { mode, code };
+  const d = ensureWines(getDraft(ctx) || { settings: defaultSettings(), wines: [] });
+  const s = d.settings;
+  const g = code ? await S.be.getGame(code) : null;
+  const served = i => g && (g.revealed?.[i] || g.current === i && g.phase !== 'lobby');
+  const items = d.wines.map((w, i) => {
+    const iss = wineIssues(w, s);
+    return `<button class="wine-item ${iss.length ? '' : 'ok'}" data-i="${i}" ${served(i) ? 'disabled' : ''}>
+      <span class="wi-n ${w.couleur ? 'c-' + w.couleur : ''}">${i + 1}</span>
+      <span class="wi-t"><b>${esc(w.appellation || 'Vin à compléter')}${w.millesime ? ' ' + esc(showVal('millesime', w.millesime)) : ''}</b>
+      <small>${served(i) ? 'Déjà servi' : iss.length ? 'Manque : ' + esc(iss.join(', ')) : esc([w.producteur, (w.cepages || []).join(', ')].filter(Boolean).join(' · '))}</small></span>
+      <i>${served(i) ? '🔒' : iss.length ? '›' : '✓'}</i></button>`;
+  }).join('');
+  const done = d.wines.every(w => !wineIssues(w, s).length);
+  view(`${topbar('Les vins', { back: code ? 'host' : 'setup', backParams: code ? { code } : { mode } })}
+    <p class="lead">${mode === 'solo' ? 'Demandez à quelqu’un de saisir les vins à l’abri de vos regards, puis de vous rendre le téléphone.' : 'Saisissez chaque vin et ses leurres à l’abri des regards. Les joueurs ne voient rien avant la révélation.'}</p>
+    <div class="wine-list">${items}</div>
+    <div class="sticky-foot">${code ? `<button class="btn primary block lg" data-go="host" data-params='${JSON.stringify({ code })}'>Retour au salon</button>`
+      : `<button class="btn primary block lg" data-start ${mode === 'solo' && !done ? 'disabled' : ''}>${mode === 'solo' ? 'Commencer la dégustation' : 'Créer la partie'}</button>`}</div>`);
+  $('.wine-list').onclick = e => { const b = e.target.closest('[data-i]'); if (b) { haptic(); go('wineEdit', { mode, code, idx: +b.dataset.i }); } };
+  const st = $('[data-start]');
+  if (st) st.onclick = async () => {
+    if (mode === 'solo') {
+      if (!await confirmBox('Rendez le téléphone au dégustateur. Les vins resteront cachés jusqu’à chaque révélation.', { ok: 'C’est parti' })) return;
+      store.set('vn_solo_run', { i: 0, results: {}, opts: {}, startedAt: Date.now() });
+      return go('soloPlay');
+    }
+    if (!done && !await confirmBox('Certains vins sont incomplets. Vous pourrez les compléter depuis le salon avant de les servir.', { ok: 'Créer quand même' })) return;
+    if (!S.profile.name) return editProfile(() => st.click());
+    st.disabled = true;
+    try {
+      const c = await createGame(d);
+      store.del(draftKey(ctx));
+      go('host', { code: c });
+    } catch (e) { console.error(e); toast('Création impossible : ' + explainError(e), 'err'); st.disabled = false; }
+  };
+};
+
+async function createGame(d) {
+  const A = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
+  let code;
+  for (let k = 0; k < 12; k++) {
+    code = Array.from({ length: 4 }, () => A[Math.random() * A.length | 0]).join('');
+    if (!await S.be.getGame(code)) break;
+  }
+  const s = d.settings;
+  await S.be.createGame(code, {
+    code, hostUid: S.uid, hostName: S.profile.name, hostAvatar: S.profile.avatar, name: s.name || 'Dégustation du ' + dateFr(Date.now()),
+    settings: s, wineCount: s.wineCount, phase: 'lobby', current: -1, options: null, deadline: null,
+    scores: {}, revealed: {}, playerUids: [], createdAt: Date.now(),
+  });
+  const hostDraft = { settings: s, wines: d.wines };
+  setDraft({ code }, hostDraft);
+  await pushSecret(code, hostDraft);
+  for (let i = 0; i < d.wines.length; i++) if (d.wines[i].photo) await S.be.setPhoto(code, i, d.wines[i].photo, S.uid).catch(() => { });
+  session.set({ code, role: 'host' });
+  return code;
+}
+
+// ---------------------------------------------------------------------  ÉDITION D'UN VIN
+SCREENS.wineEdit = ({ mode, code, idx }) => {
+  const ctx = { mode, code };
+  const d = ensureWines(getDraft(ctx));
+  const s = d.settings;
+  const w = d.wines[idx];
+  w.lures ||= { cepages: [], region: [], appellation: [], millesime: [] };
+  let photoChanged = false;
+  const save = () => setDraft(ctx, d);
+  const year = new Date().getFullYear();
+  const render = () => {
+    const y = scrollY;
+    const app = findApp(w.appellation);
+    const suggestions = app ? app.g.filter(g => !w.cepages.includes(g)) : [];
+    const lureCard = k => {
+      if (!isQcm(s, k)) return '';
+      const need = s.choices - 1, have = w.lures[k] || [];
+      return `<section class="card">
+        <div class="q-head"><h3>Leurres · ${CRITS[k].label}</h3><span class="count ${have.length >= need ? 'ok' : ''}">${have.length}/${need}</span></div>
+        <p class="muted small">Les joueurs verront ${k === 'cepages' ? 'les vrais cépages mélangés' : 'la bonne réponse mélangée'} à ces leurres.</p>
+        <div class="chips">${have.map(v => `<span class="chip lure">${esc(k === 'millesime' ? showVal('millesime', v) : v)}<button data-unlure="${k}|${esc(v)}">✕</button></span>`).join('')}</div>
+        <div class="row-btns"><button class="btn ghost sm" data-lure="${k}">＋ Choisir</button><button class="btn ghost sm" data-suggest="${k}">✨ Suggérer</button>${have.length ? `<button class="btn ghost sm" data-clear="${k}">Vider</button>` : ''}</div>
+      </section>`;
+    };
+    view(`${topbar(`Vin ${idx + 1}`, { back: 'wines', backParams: { mode, code } })}
+      <section class="card">
+        <label class="lbl">Type</label>
+        <div class="seg colors" data-color>${Object.entries(COLORS).map(([k, l]) => `<button data-v="${k}" class="${w.couleur === k ? 'on' : ''}"><i class="cdot c-${k}"></i>${l.split(' ')[0]}</button>`).join('')}</div>
+        <label class="lbl">Appellation</label>
+        <button class="field ${w.appellation ? 'filled' : ''}" data-pick="app"><span>${esc(w.appellation || 'Rechercher une appellation')}</span><i>›</i></button>
+        <label class="lbl">Région</label>
+        <button class="field ${w.region ? 'filled' : ''}" data-pick="region"><span>${esc(w.region || 'Choisir une région')}</span><i>›</i></button>
+        <label class="lbl">Cépage(s) ${w.cepages.length > 1 ? '<span class="tag">Assemblage</span>' : ''}</label>
+        <div class="chips">${w.cepages.map(c => `<span class="chip on">${esc(c)}<button data-rmg="${esc(c)}">✕</button></span>`).join('')}</div>
+        ${suggestions.length ? `<div class="chips sugg"><small>Autorisés ici :</small>${suggestions.slice(0, 10).map(c => `<button class="chip ghost" data-addg="${esc(c)}">＋ ${esc(c)}</button>`).join('')}</div>` : ''}
+        <button class="field add" data-pick="grape">＋ Ajouter un cépage</button>
+        <div class="grid2 mt">
+          <div><label class="lbl">Millésime</label><input class="inp" data-f="millesime" type="number" inputmode="numeric" min="1900" max="${year}" placeholder="${year - 3}" value="${w.millesime === 'NM' || w.millesime == null ? '' : w.millesime}" ${w.millesime === 'NM' ? 'disabled' : ''}>
+            <label class="check"><input type="checkbox" data-nm ${w.millesime === 'NM' ? 'checked' : ''}> Non millésimé</label></div>
+          <div><label class="lbl">Prix (€)</label><input class="inp" data-f="prix" type="number" inputmode="decimal" min="0" step="0.5" placeholder="${s.crit.prix.on ? 'requis' : 'facultatif'}" value="${w.prix ?? ''}">
+            <label class="lbl">Degré (% vol.)</label><input class="inp" data-f="alcool" type="number" inputmode="decimal" min="0" max="25" step="0.5" placeholder="${s.crit.alcool.on ? 'requis' : 'facultatif'}" value="${w.alcool ?? ''}"></div>
+        </div>
+      </section>
+      ${QCM_KEYS.map(lureCard).join('')}
+      <section class="card">
+        <h3 class="h-sm">Pour la révélation <span class="muted small">· facultatif</span></h3>
+        <label class="lbl">Producteur</label><input class="inp" data-f="producteur" value="${esc(w.producteur)}" placeholder="Domaine, château…">
+        <label class="lbl">Cuvée</label><input class="inp" data-f="cuvee" value="${esc(w.cuvee)}" placeholder="Nom de la cuvée">
+        <label class="lbl">Commentaire</label><textarea class="inp" data-f="commentaire" rows="3" placeholder="Anecdote, accord, élevage…">${esc(w.commentaire)}</textarea>
+        <label class="lbl">Photo de l’étiquette</label>
+        ${w.photo ? `<div class="photo-prev"><img src="${w.photo}" alt=""><button class="btn ghost sm" data-rmphoto>Supprimer</button></div>` : ''}
+        <label class="btn ghost block file-btn">📷 ${w.photo ? 'Remplacer la photo' : 'Photographier l’étiquette'}<input type="file" accept="image/*" data-photo hidden></label>
+      </section>
+      <div class="sticky-foot"><button class="btn primary block lg" data-save>Enregistrer le vin</button></div>`);
+    scrollTo(0, y);
+  };
+  const handler = async e => {
+    const t = e.target;
+    const c = t.closest('[data-color] button');
+    if (c) { haptic(); w.couleur = c.dataset.v; save(); return render(); }
+    const p = t.closest('[data-pick]');
+    if (p) {
+      const k = p.dataset.pick;
+      if (k === 'app') openPicker({ title: 'Appellation', kind: 'app', allowCustom: true, onDone: v => {
+        const a = findApp(v);
+        w.appellation = a?.n || v;
+        if (a) { w.region = a.r; if (a.c.length === 1) w.couleur = a.c; if (!w.cepages.length && a.g.length === 1) w.cepages = [a.g[0]]; }
+        w.lures.appellation = (w.lures.appellation || []).filter(x => norm(x) !== norm(w.appellation));
+        save(); render();
+      } });
+      if (k === 'region') openPicker({ title: 'Région', kind: 'region', onDone: v => { w.region = v; save(); render(); } });
+      if (k === 'grape') openPicker({ title: 'Cépages du vin', kind: 'grape', multi: true, selected: w.cepages, allowCustom: true, onDone: v => { w.cepages = uniq(v.map(canonGrape)); w.lures.cepages = w.lures.cepages.filter(x => !w.cepages.includes(x)); save(); render(); } });
+      return;
+    }
+    const ag = t.closest('[data-addg]'); if (ag) { haptic(); w.cepages.push(ag.dataset.addg); w.lures.cepages = w.lures.cepages.filter(x => x !== ag.dataset.addg); save(); return render(); }
+    const rg = t.closest('[data-rmg]'); if (rg) { w.cepages = w.cepages.filter(x => x !== rg.dataset.rmg); save(); return render(); }
+    const lu = t.closest('[data-lure]');
+    if (lu) {
+      const k = lu.dataset.lure, need = s.choices - 1;
+      const truth = k === 'cepages' ? w.cepages : [String(w[k] ?? '')];
+      if (k === 'millesime') return pickYears(w, need, () => { save(); render(); });
+      openPicker({ title: `Leurres · ${CRITS[k].label} (${need})`, kind: k === 'cepages' ? 'grape' : k === 'region' ? 'region' : 'app', multi: true, selected: w.lures[k], exclude: truth, allowCustom: k !== 'region',
+        onDone: v => { w.lures[k] = v; if (v.length > need) toast(`${v.length} leurres : seuls les ${need} premiers seront proposés`); save(); render(); } });
+      return;
+    }
+    const sg = t.closest('[data-suggest]');
+    if (sg) {
+      const k = sg.dataset.suggest;
+      if (k !== 'region' && k !== 'millesime' && !w.appellation && !w.region) return toast('Renseignez d’abord l’appellation', 'err');
+      if (k === 'millesime' && (w.millesime == null || w.millesime === '')) return toast('Renseignez d’abord le millésime', 'err');
+      haptic(); w.lures[k] = suggestLures(k, w, s.choices - 1); save(); return render();
+    }
+    const cl = t.closest('[data-clear]'); if (cl) { w.lures[cl.dataset.clear] = []; save(); return render(); }
+    const ul = t.closest('[data-unlure]'); if (ul) { const [k, v] = ul.dataset.unlure.split('|'); w.lures[k] = w.lures[k].filter(x => String(x) !== v); save(); return render(); }
+    if (t.closest('[data-rmphoto]')) { w.photo = null; photoChanged = true; save(); return render(); }
+    if (t.closest('[data-save]')) {
+      save();
+      if (code) await pushSecret(code, d, photoChanged ? idx : null);
+      const iss = wineIssues(w, s);
+      if (iss.length) toast('Enregistré · il manque : ' + iss.join(', '));
+      else { haptic(true); toast('Vin enregistré ✓', 'ok'); }
+      go('wines', { mode, code });
+    }
+  };
+  const onInput = e => {
+    const f = e.target.dataset.f;
+    if (f) {
+      const v = e.target.value;
+      if (f === 'millesime') w.millesime = v ? Math.round(+v) : null;
+      else if (f === 'prix' || f === 'alcool') w[f] = v === '' ? null : +String(v).replace(',', '.');
+      else w[f] = v;
+      save();
+    }
+    if ('nm' in e.target.dataset) { w.millesime = e.target.checked ? 'NM' : null; w.lures.millesime = []; save(); render(); }
+  };
+  const onChange = async e => {
+    if (!('photo' in e.target.dataset) || !e.target.files[0]) return;
+    try { w.photo = await compressImage(e.target.files[0]); photoChanged = true; if (!save()) w.photo = null; render(); }
+    catch { toast('Photo illisible', 'err'); }
+  };
+  root.addEventListener('click', handler); root.addEventListener('input', onInput); root.addEventListener('change', onChange);
+  onCleanup(() => { root.removeEventListener('click', handler); root.removeEventListener('input', onInput); root.removeEventListener('change', onChange); });
+  render();
+};
+
+function pickYears(w, need, done) {
+  const t = Number(w.millesime) || new Date().getFullYear() - 3;
+  const thisYear = new Date().getFullYear();
+  const years = []; for (let y = Math.min(thisYear, t + 8); y >= t - 12; y--) if (y !== t) years.push(y);
+  const sel = new Set(w.lures.millesime.map(String));
+  sheet(`Leurres · Millésime (${need})`, (b, close) => {
+    const paint = () => {
+      b.innerHTML = `<div class="year-grid">${w.millesime !== 'NM' ? `<button data-y="NM" class="${sel.has('NM') ? 'on' : ''}">Non millésimé</button>` : ''}${years.map(y => `<button data-y="${y}" class="${sel.has(String(y)) ? 'on' : ''}">${y}</button>`).join('')}</div>
+        <div class="sheet-foot"><button class="btn primary block" data-ok>Valider (${sel.size}/${need})</button></div>`;
+    };
+    paint();
+    b.onclick = e => {
+      const y = e.target.closest('[data-y]');
+      if (y) { haptic(); const v = y.dataset.y; sel.has(v) ? sel.delete(v) : sel.add(v); return paint(); }
+      if (e.target.closest('[data-ok]')) { w.lures.millesime = [...sel].map(v => v === 'NM' ? 'NM' : +v); close(); done(); }
+    };
+  }, { full: true });
+}
+
+// ---------------------------------------------------------------------  MAÎTRE DU JEU
+SCREENS.host = async ({ code }) => {
+  view(`<div class="loading">${glassSVG('pour')}</div>`);
+  let d = getDraft({ code });
+  if (!d) {
+    const sec = await S.be.getSecret(code);
+    if (sec) { d = { settings: sec.settings, wines: sec.wines }; setDraft({ code }, d); }
+  }
+  if (!d) { toast('Données du maître du jeu introuvables sur cet appareil', 'err'); session.clear(); return go('home'); }
+  const s = d.settings;
+  let g = null, players = [], answers = [], ansIdx = null, unAns = null, busy = false, showSol = false, lastKey = '', rvCache = null;
+  keepAwake(true);
+  const vis = () => document.visibilityState === 'visible' && keepAwake(true);
+  document.addEventListener('visibilitychange', vis);
+  onCleanup(() => keepAwake(false), () => document.removeEventListener('visibilitychange', vis), () => unAns && unAns());
+
+  const syncAnswers = () => {
+    const need = g && (g.phase === 'answering' || g.phase === 'closed') ? g.current : null;
+    if (need === ansIdx) return;
+    unAns && unAns(); unAns = null; answers = []; ansIdx = need;
+    if (need != null) unAns = S.be.watchAnswers(code, need, x => { answers = x; render(); });
+  };
+  onCleanup(S.be.watchGame(code, x => {
+    if (!x) { toast('Partie introuvable', 'err'); session.clear(); return go('home'); }
+    g = x; syncAnswers();
+    const key = g.phase + g.current; if (key !== lastKey) { lastKey = key; showSol = false; scrollTo(0, 0); }
+    render();
+  }));
+  onCleanup(S.be.watchPlayers(code, x => { players = x.sort((a, b) => a.joinedAt - b.joinedAt); render(); }));
+
+  const tick = setInterval(() => {
+    if (!g) return;
+    const el = $('.timer');
+    if (el && g.deadline) { const r = Math.max(0, Math.round((g.deadline - Date.now()) / 1000)); el.textContent = `${Math.floor(r / 60)}:${String(r % 60).padStart(2, '0')}`; el.classList.toggle('urgent', r <= 15); }
+    if (g.phase === 'answering' && g.deadline && Date.now() > g.deadline + 2500 && !busy) setPhase('closed');
+  }, 500);
+  onCleanup(() => clearInterval(tick));
+
+  const setPhase = async p => { busy = true; try { await S.be.updateGame(code, { phase: p }); } finally { busy = false; } };
+  const joinUrl = () => location.origin + location.pathname + '?code=' + code;
+  const menu = `<button class="icon-btn" data-menu aria-label="Menu">⋯</button>`;
+
+  async function startWine(i) {
+    const w = d.wines[i];
+    const iss = wineIssues(w, s);
+    if (iss.length) { toast('Vin ' + (i + 1) + ' incomplet : ' + iss.join(', '), 'err'); return go('wineEdit', { mode: 'host', code, idx: i }); }
+    if (!players.length && !await confirmBox('Aucun joueur n’a encore rejoint. Servir quand même ?', { ok: 'Servir' })) return;
+    busy = true; haptic(true);
+    try { await S.be.updateGame(code, { phase: 'answering', current: i, options: buildOptions(w, s), deadline: s.timer ? Date.now() + s.timer * 1000 : null, startedAt: Date.now() }); }
+    catch (e) { toast('Erreur : ' + explainError(e), 'err'); }
+    busy = false;
+  }
+  async function reveal() {
+    if (busy) return; busy = true;
+    try {
+      const i = g.current, w = d.wines[i], sol = publicWine(w);
+      const list = await S.be.getAnswers(code, i);
+      const scores = JSON.parse(JSON.stringify(g.scores || {}));
+      const results = {};
+      const uids = uniq([...players.map(p => p.id), ...list.map(a => a.uid)]);
+      for (const uid of uids) {
+        const a = list.find(x => x.uid === uid);
+        const p = players.find(x => x.id === uid) || { name: a?.name || 'Joueur', avatar: a?.avatar || '🍷' };
+        const r = a ? scoreWine(sol, a, s) : { pts: 0, max: wineMax(s), b: {} };
+        const compact = a ? { cepages: a.cepages || [], region: a.region || '', appellation: a.appellation || '', millesime: a.millesime ?? null, prix: a.prix ?? null, alcool: a.alcool ?? null, plaisir: a.plaisir ?? null } : null;
+        results[uid] = { name: p.name, avatar: p.avatar, pts: r.pts, max: r.max, b: r.b, a: compact };
+        const prev = scores[uid] || { perWine: {} };
+        prev.name = p.name; prev.avatar = p.avatar;
+        prev.perWine = { ...(prev.perWine || {}), [i]: { pts: r.pts, max: r.max, b: r.b, a: compact } };
+        prev.total = Object.values(prev.perWine).reduce((t, x) => t + x.pts, 0);
+        scores[uid] = prev;
+      }
+      const pl = list.map(a => a.plaisir).filter(x => x != null);
+      const plaisirAvg = pl.length ? Math.round(10 * pl.reduce((a, b) => a + b, 0) / pl.length) / 10 : null;
+      let photo = w.photo || null;
+      if (!photo && w.hasPhoto) photo = await S.be.getPhoto(code, i);
+      await S.be.setReveal(code, i, { idx: i, wine: sol, photo, results, plaisirAvg });
+      await S.be.updateGame(code, { phase: 'reveal', scores, revealed: { ...(g.revealed || {}), [i]: { ...sol, plaisirAvg } } });
+      haptic(true);
+    } catch (e) { console.error(e); toast('Erreur lors de la révélation : ' + explainError(e), 'err'); }
+    busy = false;
+  }
+  async function finish() {
+    busy = true;
+    const idxs = Object.keys(g.revealed || {}).map(Number).sort((a, b) => a - b);
+    const wines = idxs.map(i => g.revealed[i]);
+    await S.be.updateGame(code, { phase: 'finished', finishedAt: Date.now(), playerUids: uniq([...Object.keys(g.scores || {}), ...players.map(p => p.id)]), summary: { wines, played: wines.length, idxs } });
+    busy = false;
+  }
+
+  function render() {
+    if (!g) return;
+    const ph = g.phase, i = g.current;
+    if (ph === 'lobby') {
+      view(`${topbar('Salon', { right: menu })}
+        <section class="card code-card">
+          <small>Code de la partie</small>
+          <div class="big-code">${code.split('').map(c => `<span>${c}</span>`).join('')}</div>
+          <img class="qr" alt="QR code" src="https://api.qrserver.com/v1/create-qr-code/?size=360x360&margin=0&color=241418&bgcolor=F4ECE6&data=${encodeURIComponent(joinUrl())}">
+          <div class="row-btns center"><button class="btn ghost sm" data-share>Partager le lien</button></div>
+        </section>
+        <section class="card"><div class="q-head"><h3>Joueurs</h3><span class="count">${players.length}/${MAX_PLAYERS}</span></div>
+          ${players.length ? `<div class="players">${players.map(p => `<button class="player" data-kick="${p.id}"><span class="av">${esc(p.avatar)}</span>${esc(p.name)}</button>`).join('')}</div><p class="muted small">Touchez un joueur pour le retirer.</p>` : `<p class="muted waiting-dots">En attente des joueurs</p>`}
+        </section>
+        <section class="card"><div class="q-head"><h3>${esc(g.name)}</h3><button class="btn ghost sm" data-edit>Modifier les vins</button></div>
+          <p class="muted small">${s.wineCount} vin${s.wineCount > 1 ? 's' : ''} · ${PRESETS[s.difficulty]?.label || 'Personnalisé'} · ${activeCrits(s).map(k => CRITS[k].label).join(', ')}${s.timer ? ' · chrono ' + s.timer / 60 + ' min' : ''}</p>
+          <p class="small">${d.wines.filter(w => !wineIssues(w, s).length).length}/${s.wineCount} vins prêts</p></section>
+        <div class="sticky-foot"><button class="btn primary block lg" data-start="0">Servir le vin 1</button></div>`);
+    } else if (ph === 'answering' || ph === 'closed') {
+      const w = d.wines[i];
+      const answered = new Set(answers.map(a => a.uid));
+      const n = players.length, k = players.filter(p => answered.has(p.id)).length;
+      const R = 52, C = 2 * Math.PI * R;
+      view(`${topbar(`Vin ${i + 1} / ${s.wineCount}`, { right: menu })}
+        <div class="wine-head"><span class="eyebrow">${ph === 'closed' ? 'Réponses closes' : 'Dégustation en cours'}</span>${g.deadline ? `<div class="timer"></div>` : ''}</div>
+        <section class="card progress-card">
+          <svg viewBox="0 0 120 120" class="ring"><circle cx="60" cy="60" r="${R}" class="ring-bg"/><circle cx="60" cy="60" r="${R}" class="ring-fg" style="stroke-dasharray:${C};stroke-dashoffset:${C * (1 - (n ? k / n : 0))}"/></svg>
+          <div class="ring-txt"><b>${k}<small>/${n}</small></b><span>ont répondu</span></div>
+        </section>
+        <section class="card"><div class="players">${players.map(p => `<span class="player ${answered.has(p.id) ? 'done' : ''}"><span class="av">${esc(p.avatar)}</span>${esc(p.name)}<i>${answered.has(p.id) ? '✓' : '…'}</i></span>`).join('')}</div></section>
+        <section class="card sol ${showSol ? 'open' : ''}">
+          <button class="sol-toggle" data-sol>${showSol ? 'Masquer la solution' : 'Afficher la solution (discrètement)'}</button>
+          ${showSol ? `<div class="sol-body"><b>${esc(w.appellation)}</b> · ${esc(w.region)} · ${esc(showVal('millesime', w.millesime))}<br>${esc(w.cepages.join(', '))}${w.producteur ? '<br>' + esc(w.producteur) : ''}</div>` : ''}
+        </section>
+        <div class="sticky-foot two">${ph === 'answering' ? `<button class="btn ghost lg" data-close>Clore</button>` : ''}<button class="btn primary lg" data-reveal>Révéler${k < n && ph === 'answering' ? ` (${k}/${n})` : ''}</button></div>`);
+    } else if (ph === 'reveal') {
+      const last = i >= s.wineCount - 1;
+      (rvCache?.idx === i ? Promise.resolve(rvCache) : S.be.getReveal(code, i)).then(rv => {
+        if (!rv || g.phase !== 'reveal' || g.current !== i) return;
+        rvCache = rv;
+        const rows = Object.entries(rv.results || {}).sort((a, b) => b[1].pts - a[1].pts);
+        view(`${topbar(`Vin ${i + 1} / ${s.wineCount}`, { right: menu })}
+          <div class="reveal">${wineCard(rv.wine, rv.photo)}
+          <section class="card"><h3 class="h-sm">Résultats du vin</h3>
+            <div class="host-res">${rows.map(([uid, r]) => `<details class="hr"><summary><span class="av">${esc(r.avatar)}</span><span class="hr-n">${esc(r.name)}</span><span class="hr-icons">${activeCrits(s).map(k2 => `<i class="${r.b?.[k2]?.st || 'none'}"></i>`).join('')}</span><b>${fmt(r.pts)}</b></summary>${resultRows(r.a ? r : null, s)}</details>`).join('') || '<p class="muted">Aucune réponse.</p>'}</div>
+            ${rv.plaisirAvg != null ? `<p class="muted small">Plaisir moyen : <b>${fmt(rv.plaisirAvg)}/10</b></p>` : ''}
+          </section>
+          <section class="card"><h3 class="h-sm">Classement général</h3>${leaderboard(g.scores, { perWineIdx: i })}</section></div>
+          <div class="sticky-foot"><button class="btn primary block lg" data-${last ? 'finish' : 'next'}>${last ? 'Terminer · voir le podium' : `Servir le vin ${i + 2}`}</button></div>`);
+        bindZoom(root);
+      });
+    } else if (ph === 'finished') {
+      const el = view(`${topbar('Fin de partie')}<div data-final></div>`);
+      finalView($('[data-final]', el), { game: g, me: S.uid, actions: `<div class="stack mt"><button class="btn ghost block" data-go="gameDetail" data-params='${JSON.stringify({ code })}'>Détail vin par vin</button><button class="btn primary block" data-home>Retour à l’accueil</button></div>` });
+    }
+  }
+
+  const handler = async e => {
+    const t = e.target;
+    if (t.closest('[data-share]')) {
+      const url = joinUrl();
+      if (navigator.share) navigator.share({ title: APP_NAME, text: `Rejoins la dégustation « ${g.name} » — code ${code}`, url }).catch(() => { });
+      else { navigator.clipboard?.writeText(url); toast('Lien copié'); }
+    }
+    const kk = t.closest('[data-kick]');
+    if (kk) { const p = players.find(x => x.id === kk.dataset.kick); if (p && await confirmBox(`Retirer ${p.name} de la partie ?`, { ok: 'Retirer', danger: true })) S.be.leave(code, p.id); }
+    if (t.closest('[data-edit]')) go('wines', { mode: 'host', code });
+    const st = t.closest('[data-start]'); if (st) startWine(+st.dataset.start);
+    if (t.closest('[data-sol]')) { showSol = !showSol; render(); }
+    if (t.closest('[data-close]')) setPhase('closed');
+    if (t.closest('[data-reveal]')) {
+      const n = players.length, k = new Set(answers.map(a => a.uid)).size;
+      if (g.phase === 'answering' && k < n && !await confirmBox(`${n - k} joueur${n - k > 1 ? 's n’ont' : ' n’a'} pas encore répondu. Révéler quand même ?`, { ok: 'Révéler' })) return;
+      reveal();
+    }
+    if (t.closest('[data-next]')) startWine(g.current + 1);
+    if (t.closest('[data-finish]')) finish();
+    if (t.closest('[data-home]')) { session.clear(); go('home'); }
+    if (t.closest('[data-menu]')) {
+      sheet('Partie ' + code, (b, close) => {
+        b.innerHTML = `<div class="menu-list">
+          <button data-m="wines">🍷 Modifier les vins à venir</button>
+          <button data-m="share">🔗 Partager le code</button>
+          ${g.phase !== 'lobby' && Object.keys(g.revealed || {}).length ? '<button data-m="finish">🏁 Terminer maintenant (podium)</button>' : ''}
+          <button data-m="leave">🏠 Retour à l’accueil (la partie continue)</button>
+          <button data-m="abort" class="danger">✕ Abandonner la partie</button></div>`;
+        b.onclick = async ev => {
+          const m = ev.target.closest('[data-m]')?.dataset.m; if (!m) return;
+          close();
+          if (m === 'wines') go('wines', { mode: 'host', code });
+          if (m === 'share') { if (navigator.share) navigator.share({ title: APP_NAME, text: `Code ${code}`, url: joinUrl() }).catch(() => { }); else { navigator.clipboard?.writeText(joinUrl()); toast('Lien copié'); } }
+          if (m === 'finish' && await confirmBox('Terminer la partie maintenant ?', { ok: 'Terminer' })) finish();
+          if (m === 'leave') go('home');
+          if (m === 'abort' && await confirmBox('Abandonner définitivement cette partie ?', { ok: 'Abandonner', danger: true })) { await S.be.updateGame(code, { phase: 'finished', aborted: true, finishedAt: Date.now(), summary: { wines: [], played: 0 } }); session.clear(); go('home'); }
+        };
+      });
+    }
+  };
+  root.addEventListener('click', handler); onCleanup(() => root.removeEventListener('click', handler));
+};
+
+// ---------------------------------------------------------------------  JOUEUR
+SCREENS.play = async ({ code }) => {
+  view(`<div class="loading">${glassSVG('pour')}</div>`);
+  let g = null, players = [], key = '', form = null, unRev = null, wasIn = false, leaving = false;
+  keepAwake(true);
+  const vis = () => document.visibilityState === 'visible' && keepAwake(true);
+  document.addEventListener('visibilitychange', vis);
+  onCleanup(() => keepAwake(false), () => document.removeEventListener('visibilitychange', vis), () => form && form.destroy(), () => unRev && unRev());
+  const menu = `<button class="icon-btn" data-menu aria-label="Menu">⋯</button>`;
+  const ansKey = i => `vn_ans_${code}_${i}`, subKey = i => `vn_sub_${code}_${i}`;
+
+  onCleanup(S.be.watchGame(code, x => {
+    if (!x) { session.clear(); toast('Partie introuvable', 'err'); return go('home'); }
+    g = x;
+    const k = g.phase + ':' + g.current;
+    if (k !== key) { key = k; renderPhase(); }
+    else if (g.phase === 'lobby') renderLobbyPlayers();
+  }));
+  onCleanup(S.be.watchPlayers(code, x => {
+    players = x.sort((a, b) => a.joinedAt - b.joinedAt);
+    const isIn = players.some(p => p.id === S.uid);
+    if (isIn) wasIn = true;
+    if (wasIn && !isIn && !leaving && g?.phase !== 'finished') { session.clear(); toast('Vous avez été retiré de la partie', 'err'); return go('home'); }
+    if (g?.phase === 'lobby') renderLobbyPlayers();
+  }));
+
+  const renderLobbyPlayers = () => { const el = $('[data-plist]'); if (el) el.innerHTML = players.map(p => `<span class="player ${p.id === S.uid ? 'me' : ''}"><span class="av">${esc(p.avatar)}</span>${esc(p.name)}</span>`).join(''); };
+
+  function renderPhase() {
+    scrollTo(0, 0);
+    form && form.destroy(); form = null; unRev && unRev(); unRev = null;
+    const ph = g.phase, i = g.current, s = g.settings;
+    if (ph === 'lobby') {
+      view(`${topbar(g.name, { right: menu })}
+        <div class="lobby">${glassSVG('pour slow')}
+          <h2 class="title center">Bienvenue ${esc(S.profile.name)}</h2>
+          <p class="muted center">${esc(g.hostName || 'Le maître du jeu')} prépare les verres.<br>La partie va bientôt commencer.</p>
+          <section class="card"><div class="q-head"><h3>À table</h3><span class="count">code ${esc(code)}</span></div><div class="players" data-plist></div></section>
+          <p class="muted small center">${s.wineCount} vin${s.wineCount > 1 ? 's' : ''} · ${PRESETS[s.difficulty]?.label || 'Personnalisé'} · ${activeCrits(s).map(k => CRITS[k].label).join(', ')}</p>
+        </div>`);
+      renderLobbyPlayers();
+    } else if (ph === 'answering') {
+      if (store.get(subKey(i))) return submittedView();
+      showForm();
+    } else if (ph === 'closed') {
+      const sub = store.get(subKey(i));
+      view(`${topbar(`Vin ${i + 1} / ${s.wineCount}`, { right: menu })}<div class="waiting">${glassSVG('pour slow')}<h2 class="title center">${sub ? 'Réponses closes' : 'Temps écoulé'}</h2><p class="muted center">Révélation imminente…</p></div>`);
+    } else if (ph === 'reveal') {
+      view(`${topbar(`Vin ${i + 1} / ${s.wineCount}`, { right: menu })}<div class="waiting">${glassSVG('pour')}<p class="muted center">Révélation…</p></div>`);
+      unRev = S.be.watchReveal(code, i, rv => {
+        if (!rv) return;
+        const el = view(`${topbar(`Vin ${i + 1} / ${s.wineCount}`, { right: menu })}<div data-r></div>`);
+        playerReveal($('[data-r]', el), { wine: rv.wine, photo: rv.photo, res: rv.results?.[S.uid], s, idx: i, total: s.wineCount, scores: g.scores, me: S.uid,
+          footer: `<p class="muted center waiting-dots">${i >= s.wineCount - 1 ? 'Le podium arrive' : 'Prochain vin dans un instant'}</p>` });
+      });
+    } else if (ph === 'finished') {
+      session.clear();
+      if (g.aborted) { toast('La partie a été annulée'); return go('home'); }
+      const el = view(`${topbar('Fin de partie')}<div data-final></div>`);
+      finalView($('[data-final]', el), { game: g, me: S.uid, actions: `<div class="stack mt"><button class="btn ghost block" data-go="gameDetail" data-params='${JSON.stringify({ code })}'>Détail vin par vin</button><button class="btn primary block" data-go="home">Retour à l’accueil</button></div>` });
+    }
+  }
+
+  function showForm() {
+    const i = g.current, s = g.settings;
+    const el = view(`${topbar(g.name, { right: menu })}<div data-form></div>`);
+    form = answerForm($('[data-form]', el), {
+      s, opts: g.options || {}, idx: i, total: s.wineCount, deadline: g.deadline, ans: store.get(ansKey(i)),
+      onChange: a => store.set(ansKey(i), a),
+      onSubmit: async (a, auto) => {
+        try {
+          await S.be.submitAnswer(code, i, S.uid, { ...a, name: S.profile.name, avatar: S.profile.avatar, at: Date.now() });
+          store.set(subKey(i), 1);
+          if (auto) toast('Temps écoulé : réponse envoyée');
+          if (g.phase === 'answering' && g.current === i) submittedView();
+        } catch (e) { toast(g.phase !== 'answering' ? 'Les réponses sont closes' : 'Envoi impossible : ' + explainError(e), 'err'); }
+      },
+    });
+  }
+  function submittedView() {
+    form && form.destroy(); form = null;
+    const i = g.current, s = g.settings, a = store.get(ansKey(i)) || {};
+    view(`${topbar(`Vin ${i + 1} / ${s.wineCount}`, { right: menu })}
+      <div class="submitted"><div class="check-anim">✓</div><h2 class="title center">Réponse envoyée</h2>
+      <p class="muted center">En attente de la révélation par le maître du jeu.</p>
+      <section class="card"><div class="res-rows">${activeCrits(s).map(k => `<div class="res-row"><div class="rr-t"><small>${CRITS[k].label}</small><span>${esc(showVal(k, a[k]))}</span></div></div>`).join('')}
+        ${a.plaisir != null ? `<div class="res-row"><div class="rr-t"><small>Plaisir</small><span>${a.plaisir}/10</span></div></div>` : ''}</div></section>
+      <button class="btn ghost block" data-edit-ans>Modifier ma réponse</button></div>`);
+    $('[data-edit-ans]').onclick = () => { if (g.phase !== 'answering') return toast('Les réponses sont closes', 'err'); store.del(subKey(i)); showForm(); };
+  }
+
+  const handler = async e => {
+    if (!e.target.closest('[data-menu]')) return;
+    sheet('Partie ' + code, (b, close) => {
+      b.innerHTML = `<div class="menu-list"><button data-m="home">🏠 Accueil (je reviens)</button><button data-m="quit" class="danger">✕ Quitter la partie</button></div>`;
+      b.onclick = async ev => {
+        const m = ev.target.closest('[data-m]')?.dataset.m; if (!m) return; close();
+        if (m === 'home') go('home');
+        if (m === 'quit' && await confirmBox('Quitter définitivement la partie ?', { ok: 'Quitter', danger: true })) { leaving = true; await S.be.leave(code, S.uid).catch(() => { }); session.clear(); go('home'); }
+      };
+    });
+  };
+  root.addEventListener('click', handler); onCleanup(() => root.removeEventListener('click', handler));
+};
+
+// ---------------------------------------------------------------------  SOLO
+SCREENS.solo = () => {
+  const best = store.get('vn_quiz_best', null);
+  view(`${topbar('Entraînement solo')}
+    <div class="stack">
+      <button class="card mode-card" data-go="setup" data-params='{"mode":"solo"}'><span class="mc-ico">🍷</span><div><b>Dégustation solo</b><p>Un proche saisit les vins (et leurres) à l’abri de vos regards, vous dégustez, l’app révèle et note.</p></div><i>›</i></button>
+      <button class="card mode-card" data-go="quiz"><span class="mc-ico">🎓</span><div><b>Quiz des appellations</b><p>10 questions sur les régions, appellations et cépages français.${best != null ? ` Record : ${best}/10.` : ''}</p></div><i>›</i></button>
+    </div>`);
+};
+
+SCREENS.soloPlay = () => {
+  const d = getDraft({ mode: 'solo' });
+  const run = store.get('vn_solo_run');
+  if (!d || !run) return go('solo');
+  const s = d.settings, i = run.i, w = d.wines[i];
+  const sol = publicWine(w);
+  const scores = () => ({ [S.uid]: { name: S.profile.name || 'Moi', avatar: S.profile.avatar, total: Object.values(run.results).reduce((t, r) => t + r.pts, 0), perWine: run.results } });
+  if (run.results[i]) return showReveal();
+  run.opts ||= {};
+  if (!run.opts[i]) run.opts[i] = buildOptions(w, s);
+  if (s.timer && !run.deadline) run.deadline = Date.now() + s.timer * 1000;
+  store.set('vn_solo_run', run);
+  const el = view(`${topbar(s.name || 'Dégustation solo', { back: 'solo' })}<div data-form></div>`);
+  const f = answerForm($('[data-form]', el), {
+    s, opts: run.opts[i], idx: i, total: s.wineCount, deadline: run.deadline, ans: run.ans,
+    onChange: a => { run.ans = a; store.set('vn_solo_run', run); },
+    onSubmit: a => {
+      const r = scoreWine(sol, a, s);
+      run.results[i] = { pts: r.pts, max: r.max, b: r.b, a: { cepages: a.cepages, region: a.region, appellation: a.appellation, millesime: a.millesime, prix: a.prix, alcool: a.alcool, plaisir: a.plaisir } };
+      run.ans = null; run.deadline = null;
+      store.set('vn_solo_run', run);
+      f.destroy();
+      showReveal();
+    },
+  });
+  onCleanup(() => f.destroy());
+  function showReveal() {
+    const last = i >= s.wineCount - 1;
+    const el2 = view(`${topbar(s.name || 'Dégustation solo', { back: 'solo' })}<div data-r></div>`);
+    playerReveal($('[data-r]', el2), { wine: sol, photo: w.photo, res: run.results[i], s, idx: i, total: s.wineCount, scores: scores(), me: S.uid,
+      footer: `<div class="sticky-foot"><button class="btn primary block lg" data-nextw>${last ? 'Voir le bilan' : `Vin suivant (${i + 2}/${s.wineCount})`}</button></div>` });
+    $('[data-nextw]').onclick = () => {
+      if (!last) { run.i++; store.set('vn_solo_run', run); return go('soloPlay'); }
+      const wines = d.wines.map((x, j) => ({ ...publicWine(x), plaisirAvg: run.results[j]?.a?.plaisir ?? null }));
+      const game = { id: 'S' + Date.now(), code: 'SOLO', solo: true, name: s.name || 'Dégustation solo', settings: s, phase: 'finished', createdAt: run.startedAt, finishedAt: Date.now(), hostUid: S.uid, scores: scores(), summary: { wines, played: wines.length } };
+      const hist = store.get('vn_solo_history', []); hist.unshift(game); store.set('vn_solo_history', hist.slice(0, 60));
+      store.del('vn_solo_run');
+      go('gameFinal', { id: game.id });
+    };
+  }
+};
+
+SCREENS.gameFinal = ({ id }) => {
+  const g = store.get('vn_solo_history', []).find(x => x.id === id);
+  if (!g) return go('home');
+  const el = view(`${topbar('Bilan', { back: 'solo' })}<div data-final></div>`);
+  finalView($('[data-final]', el), { game: g, me: S.uid, actions: `<div class="stack mt"><button class="btn ghost block" data-go="gameDetail" data-params='${JSON.stringify({ id })}'>Détail vin par vin</button><button class="btn primary block" data-go="home">Accueil</button></div>` });
+};
+
+SCREENS.quiz = () => {
+  const pool = APPELLATIONS.filter(a => REGIONS_FR.includes(a.r) && a.r !== 'Vin de France' && !/^IGP|Grand Cru |Villages [A-Z]|\(/.test(a.n));
+  const regions = REGIONS_FR.filter(r => r !== 'Vin de France');
+  const grapesFr = uniq(pool.flatMap(a => a.g));
+  const colorOf = n => GRAPES.find(g => g.n === n)?.c;
+  const make = () => {
+    const a = sample(pool, 1)[0], t = Math.random();
+    if (t < .4) return { q: `Dans quelle région se trouve l’appellation <b>${esc(a.n)}</b> ?`, ok: a.r, opts: shuffle([a.r, ...sample(regions.filter(r => r !== a.r), 3)]), a };
+    if (t < .75) { const g0 = a.g[0]; return { q: `Quel est le cépage principal de <b>${esc(a.n)}</b> ?`, ok: g0, opts: shuffle([g0, ...sample(grapesFr.filter(x => !a.g.includes(x) && colorOf(x) === colorOf(g0)), 3)]), a }; }
+    const others = sample(pool.filter(x => x.r !== a.r), 3).map(x => x.n);
+    return { q: `Quelle appellation se trouve en <b>${esc(a.r)}</b> ?`, ok: a.n, opts: shuffle([a.n, ...others]), a };
+  };
+  const qs = Array.from({ length: 10 }, make);
+  let n = 0, score = 0;
+  const render = () => {
+    if (n >= 10) {
+      const best = Math.max(score, store.get('vn_quiz_best', 0)); store.set('vn_quiz_best', best);
+      view(`${topbar('Quiz', { back: 'solo' })}<div class="final"><h1 class="title center">${score}/10</h1><p class="muted center">${score >= 9 ? 'Sommelier confirmé !' : score >= 7 ? 'Très beau palais' : score >= 5 ? 'Bonne base, on continue' : 'Les vignobles n’attendent que vous'}</p><p class="center small">Record : ${best}/10</p>
+        <div class="stack mt"><button class="btn primary block" data-go="quiz">Rejouer</button><button class="btn ghost block" data-go="solo">Retour</button></div></div>`);
+      if (score >= 8) confetti();
+      return;
+    }
+    const q = qs[n];
+    view(`${topbar(`Question ${n + 1}/10`, { back: 'solo' })}
+      <div class="quiz"><div class="quiz-bar"><span style="width:${n * 10}%"></span></div>
+      <h2 class="quiz-q">${q.q}</h2>
+      <div class="opts">${q.opts.map(o => `<button class="opt" data-o="${esc(o)}"><span>${esc(o)}</span></button>`).join('')}</div>
+      <div class="quiz-exp" hidden></div></div>`);
+    $('.opts').onclick = e => {
+      const b = e.target.closest('[data-o]'); if (!b || $('.opts').classList.contains('done')) return;
+      $('.opts').classList.add('done');
+      const good = b.dataset.o === q.ok; if (good) score++;
+      haptic(good);
+      $$('.opt').forEach(x => { if (x.dataset.o === q.ok) x.classList.add('good'); else if (x === b) x.classList.add('bad'); });
+      const ex = $('.quiz-exp'); ex.hidden = false;
+      ex.innerHTML = `<p><b>${esc(q.a.n)}</b> · ${esc(q.a.r)}<br><small>${esc(q.a.g.join(', '))}</small></p><button class="btn primary block" data-nq>${n < 9 ? 'Question suivante' : 'Résultat'}</button>`;
+      $('[data-nq]').onclick = () => { n++; render(); };
+    };
+  };
+  render();
+};
+
+// ---------------------------------------------------------------------  HISTORIQUE / STATS
+async function loadAllGames() {
+  let online = [];
+  try { online = await S.be.listMyGames(S.uid); } catch (e) { console.warn(e); }
+  online = online.filter(g => g.phase === 'finished' && !g.aborted);
+  const solo = store.get('vn_solo_history', []);
+  return [...online, ...solo].sort((a, b) => (b.finishedAt || b.createdAt) - (a.finishedAt || a.createdAt));
+}
+
+SCREENS.history = async () => {
+  view(`${topbar('Historique')}<div class="loading small">${glassSVG('pour')}</div>`);
+  const games = await loadAllGames();
+  if (S.screen !== 'history') return;
+  view(`${topbar('Historique')}
+    ${games.length ? `<div class="hist">${games.map(g => {
+      const rk = rankOf(g.scores, S.uid), me = g.scores?.[S.uid];
+      const max = wineMax(g.settings) * (g.summary?.played || 0);
+      const host = g.hostUid === S.uid && !g.solo;
+      const winner = Object.values(g.scores || {}).sort((a, b) => b.total - a.total)[0];
+      return `<button class="card hist-item" data-go="gameDetail" data-params='${JSON.stringify(g.solo ? { id: g.id } : { code: g.code })}'>
+        <span class="hi-ico">${g.solo ? '🎯' : host ? '🎩' : '🍷'}</span>
+        <div><b>${esc(g.name)}</b><small>${dateFr(g.finishedAt || g.createdAt)} · ${g.summary?.played || 0} vin${(g.summary?.played || 0) > 1 ? 's' : ''} · ${g.solo ? 'Solo' : host ? 'Maître du jeu' : 'Joueur'}</small></div>
+        <span class="hi-score">${me ? `${rk && rk.of > 1 ? `<b>${rk.rank}<sup>${rk.rank === 1 ? 'er' : 'e'}</sup></b>` : ''}<small>${pct(me.total, max)} %</small>` : winner ? `<small>🏆 ${esc(winner.name)}</small>` : ''}</span></button>`;
+    }).join('')}</div>` : `<div class="empty">${glassSVG()}<p class="muted center">Aucune partie terminée pour l’instant.</p></div>`}`);
+};
+
+SCREENS.gameDetail = async ({ code, id }) => {
+  view(`${topbar('Détail', { back: 'history' })}<div class="loading small">${glassSVG('pour')}</div>`);
+  const g = id ? store.get('vn_solo_history', []).find(x => x.id === id) : await S.be.getGame(code);
+  if (!g) return go('history');
+  const s = g.settings, wines = g.summary?.wines || [], idxs = g.summary?.idxs || wines.map((_, i) => i);
+  const players = Object.entries(g.scores || {}).sort((a, b) => b[1].total - a[1].total);
+  const me = g.scores?.[S.uid];
+  view(`${topbar(g.name, { back: 'history' })}
+    <p class="muted center small">${dateFr(g.finishedAt || g.createdAt)} · ${PRESETS[s.difficulty]?.label || 'Personnalisé'} · ${players.length} joueur${players.length > 1 ? 's' : ''}</p>
+    ${players.length > 1 ? `<section class="card"><h3 class="h-sm">Classement</h3>${leaderboard(g.scores, { me: S.uid })}</section>` : ''}
+    ${wines.map((w, j) => {
+      const i = idxs[j];
+      const mine = me?.perWine?.[i];
+      return `<details class="card wd" ${j === 0 ? 'open' : ''}><summary><span class="wi-n c-${w.couleur}">${i + 1}</span><span class="wi-t"><b>${esc(w.appellation)} ${esc(w.millesime && w.millesime !== 'NM' ? w.millesime : '')}</b><small>${esc([w.producteur, w.cuvee].filter(Boolean).join(' — ') || w.region)}</small></span>${mine ? `<b class="wd-pts">${fmt(mine.pts)}</b>` : ''}</summary>
+        ${wineCard(w, null)}
+        ${mine ? `<h4 class="h-xs">Mes réponses</h4>${resultRows(mine, s)}` : ''}
+        ${players.length > 1 ? `<h4 class="h-xs">Tous les joueurs</h4><ol class="lb">${players.map(([uid, p]) => ({ uid, p, r: p.perWine?.[i] })).sort((a, b) => (b.r?.pts || 0) - (a.r?.pts || 0)).map(x => `<li class="${x.uid === S.uid ? 'me' : ''}"><span class="lb-av">${esc(x.p.avatar)}</span><span class="lb-name">${esc(x.p.name)}<small>${esc(x.r?.a ? [x.r.a.appellation, showVal('millesime', x.r.a.millesime)].filter(v => v && v !== '—').join(' · ') : 'pas de réponse')}</small></span><b class="lb-pts">${fmt(x.r?.pts || 0)}</b></li>`).join('')}</ol>` : ''}
+      </details>`;
+    }).join('')}`);
+};
+
+SCREENS.stats = async () => {
+  view(`${topbar('Statistiques')}<div class="loading small">${glassSVG('pour')}</div>`);
+  const games = (await loadAllGames()).filter(g => g.scores?.[S.uid]).reverse();
+  if (S.screen !== 'stats') return;
+  if (!games.length) return view(`${topbar('Statistiques')}<div class="empty">${glassSVG()}<p class="muted center">Jouez une première partie pour voir vos statistiques.</p></div>`);
+  let pts = 0, max = 0, nWines = 0, wins = 0;
+  const crit = {}, grapes = {}, regions = {}, prog = [];
+  for (const g of games) {
+    const me = g.scores[S.uid], idxs = g.summary?.idxs || (g.summary?.wines || []).map((_, i) => i);
+    let gp = 0, gm = 0;
+    Object.entries(me.perWine || {}).forEach(([i, r]) => {
+      nWines++; gp += r.pts; gm += r.max;
+      Object.entries(r.b || {}).forEach(([k, b]) => { (crit[k] ||= { p: 0, m: 0 }); crit[k].p += b.pts; crit[k].m += b.max; });
+      const w = g.summary?.wines?.[idxs.indexOf(+i)];
+      if (w && r.a) {
+        (w.cepages || []).forEach(c => { (grapes[c] ||= { seen: 0, ok: 0 }); grapes[c].seen++; if ((r.a.cepages || []).map(norm).includes(norm(c))) grapes[c].ok++; });
+        if (w.region) { (regions[w.region] ||= { seen: 0, ok: 0 }); regions[w.region].seen++; if (r.b?.region?.st === 'ok' || r.b?.appellation?.st === 'ok') regions[w.region].ok++; }
+      }
+    });
+    pts += gp; max += gm; prog.push(pct(gp, gm));
+    const rk = rankOf(g.scores, S.uid); if (rk && rk.of > 1 && rk.rank === 1) wins++;
+  }
+  const bars = Object.keys(CRITS).filter(k => crit[k]?.m).map(k => `<div class="bar"><span>${CRITS[k].label}</span><div><i style="width:${pct(crit[k].p, crit[k].m)}%"></i></div><b>${pct(crit[k].p, crit[k].m)} %</b></div>`).join('');
+  const gl = Object.entries(grapes).map(([n, v]) => ({ n, ...v, r: v.ok / v.seen }));
+  const top = gl.filter(x => x.ok).sort((a, b) => b.r - a.r || b.seen - a.seen).slice(0, 6);
+  const work = gl.filter(x => x.r < .5).sort((a, b) => b.seen - a.seen).slice(0, 6);
+  const W = 300, H = 80, n = prog.length;
+  const line = n > 1 ? prog.map((v, i) => `${(i / (n - 1) * W).toFixed(1)},${(H - v / 100 * H).toFixed(1)}`).join(' ') : '';
+  view(`${topbar('Statistiques')}
+    <div class="kpis"><div><b>${games.length}</b><small>parties</small></div><div><b>${nWines}</b><small>vins</small></div><div><b>${pct(pts, max)}%</b><small>réussite</small></div><div><b>${wins}</b><small>victoires</small></div></div>
+    ${n > 1 ? `<section class="card"><h3 class="h-sm">Progression</h3><svg class="spark" viewBox="-4 -4 ${W + 8} ${H + 8}"><polyline points="${line}"/>${prog.map((v, i) => `<circle cx="${(i / (n - 1) * W).toFixed(1)}" cy="${(H - v / 100 * H).toFixed(1)}" r="3.5"/>`).join('')}</svg><p class="muted small">Score en % par partie, de la plus ancienne à la plus récente.</p></section>` : ''}
+    <section class="card"><h3 class="h-sm">Réussite par critère</h3><div class="bars">${bars}</div></section>
+    ${top.length ? `<section class="card"><h3 class="h-sm">Cépages les mieux reconnus</h3><div class="glist">${top.map(x => `<div><span>${esc(x.n)}</span><b>${x.ok}/${x.seen}</b></div>`).join('')}</div></section>` : ''}
+    ${work.length ? `<section class="card"><h3 class="h-sm">Cépages à travailler</h3><div class="glist">${work.map(x => `<div><span>${esc(x.n)}</span><b>${x.ok}/${x.seen}</b></div>`).join('')}</div></section>` : ''}
+    ${Object.keys(regions).length ? `<section class="card"><h3 class="h-sm">Régions</h3><div class="glist">${Object.entries(regions).sort((a, b) => b[1].seen - a[1].seen).map(([r, v]) => `<div><span>${esc(r)}</span><b>${v.ok}/${v.seen}</b></div>`).join('')}</div></section>` : ''}`);
+};
+
+// ---------------------------------------------------------------------  DÉMARRAGE
+(async function boot() {
+  document.title = APP_NAME;
+  root.innerHTML = `<div class="loading">${glassSVG('pour')}</div>`;
+  try { S.be = await createBackend(); S.uid = S.be.uid; }
+  catch (e) {
+    console.error(e);
+    root.innerHTML = `<main class="screen center-screen"><div class="empty">${glassSVG()}<h2 class="title center">Connexion impossible</h2>
+      <p class="center" style="color:#E3B85E">${esc(explainError(e))}</p><p class="muted center small">${esc(e?.code || e?.message || '')}</p>
+      <button class="btn primary" onclick="location.reload()">Réessayer</button></div></main>`;
+    return;
+  }
+  const code = new URLSearchParams(location.search).get('code');
+  if (code) { history.replaceState(null, '', location.pathname); return go('join', { code: code.toUpperCase().slice(0, 4) }); }
+  go('home');
+})();
+
+</script>
 </body>
 </html>
